@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import { createPinia } from 'pinia';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import DeckViewer from './DeckViewer.vue';
@@ -43,6 +44,7 @@ describe('DeckViewer', () => {
   it('previews the first card initially and changes when a card row is pointed at', async () => {
     const wrapper = mount(DeckViewer, {
       props: { groups, sideboard: [], commanders: [], companion: [], deckCount: 8, sideboardCount: 0 },
+      global: { plugins: [createPinia()] },
     });
 
     expect(wrapper.get('[data-preview-image]').attributes('alt')).toContain('First Elf');
@@ -61,6 +63,7 @@ describe('DeckViewer', () => {
     );
     const wrapper = mount(DeckViewer, {
       props: { groups, sideboard: [], commanders: [], companion: [], deckCount: 8, sideboardCount: 0 },
+      global: { plugins: [createPinia()] },
     });
 
     await wrapper.get('[data-card-id="2"]').trigger('click');
@@ -79,6 +82,7 @@ describe('DeckViewer', () => {
         deckCount: 9,
         sideboardCount: 0,
       },
+      global: { plugins: [createPinia()] },
     });
 
     expect(wrapper.get('#deck-heading').element.parentElement?.textContent).toContain('9');

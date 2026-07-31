@@ -11,12 +11,21 @@ importers:
       '@astrojs/vue':
         specifier: ^7.0.1
         version: 7.0.1(@types/node@26.1.2)(astro@7.1.6(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.1.2)(jiti@2.7.0)(yaml@2.9.0))(esbuild@0.28.1)(jiti@2.7.0)(vue@3.5.40(typescript@6.0.3))(yaml@2.9.0)
+      '@primeicons/vue':
+        specifier: ^8.0.0
+        version: 8.0.0(vue@3.5.40(typescript@6.0.3))
+      '@primeuix/themes':
+        specifier: ^1.2.5
+        version: 1.2.5
       astro:
         specifier: ^7.1.6
         version: 7.1.6(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.1.2)(jiti@2.7.0)(yaml@2.9.0)
       pinia:
         specifier: ^4.0.2
         version: 4.0.2(@vue/devtools-api@8.2.1)(typescript@6.0.3)(vue@3.5.40(typescript@6.0.3))
+      primevue:
+        specifier: ^4.5.5
+        version: 4.5.5(vue@3.5.40(typescript@6.0.3))
       vue:
         specifier: ^3.5.40
         version: 3.5.40(typescript@6.0.3)
@@ -47,7 +56,7 @@ importers:
         version: 0.14.3
       jsdom:
         specifier: ^30.0.1
-        version: 30.0.1
+        version: 30.0.1(@noble/hashes@2.2.0)
       oxlint:
         specifier: ^1.76.0
         version: 1.76.0
@@ -59,7 +68,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.1.2)(jsdom@30.0.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
+        version: 4.1.10(@types/node@26.1.2)(jsdom@30.0.1(@noble/hashes@2.2.0))(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
 
 packages:
 
@@ -903,6 +912,10 @@ packages:
       '@emnapi/core': ^1.7.1 || ^2.0.0-alpha.3
       '@emnapi/runtime': ^1.7.1 || ^2.0.0-alpha.3
 
+  '@noble/hashes@2.2.0':
+    resolution: {integrity: sha512-IYqDGiTXab6FniAgnSdZwgWbomxpy9FtYvLKs7wCUs2a8RkITG+DFGO1DM9cr+E3/RgADRpFjrKVaJ1z6sjtEg==}
+    engines: {node: '>= 20.19.0'}
+
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
@@ -1040,6 +1053,42 @@ packages:
 
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
+
+  '@primeicons/core@8.0.0':
+    resolution: {integrity: sha512-vPif+sXxajXCSL2bmNBP0QYliJONVRgFVpCg9e7hGn7IG18JkMAm4fF5HVld1N4sDATkZQM7jKVxdZ8EK09Giw==}
+
+  '@primeicons/vue@8.0.0':
+    resolution: {integrity: sha512-sIqk+kZB9Bn0FqODjDAnNvRXY4Ypky2TInY/oIC3aAJOud1A3FoKruMC8IwiRDz1uHzxYnQqWwtFsfZAgC7qXQ==}
+    peerDependencies:
+      vue: ^3
+
+  '@primeuix/styled@0.7.4':
+    resolution: {integrity: sha512-QSO/NpOQg8e9BONWRBx9y8VGMCMYz0J/uKfNJEya/RGEu7ARx0oYW0ugI1N3/KB1AAvyGxzKBzGImbwg0KUiOQ==}
+    engines: {node: '>=12.11.0'}
+
+  '@primeuix/styles@2.0.3':
+    resolution: {integrity: sha512-2ykAB6BaHzR/6TwF8ShpJTsZrid6cVIEBVlookSdvOdmlWuevGu5vWOScgIwqWwlZcvkFYAGR/SUV3OHCTBMdw==}
+
+  '@primeuix/themes@1.2.5':
+    resolution: {integrity: sha512-n3YkwJrHQaEESc/D/A/iD815sxp8cKnmzscA6a8Tm8YvMtYU32eCahwLLe6h5rywghVwxASWuG36XBgISYOIjQ==}
+
+  '@primeuix/utils@0.6.4':
+    resolution: {integrity: sha512-pZ5f+vj7wSzRhC7KoEQRU5fvYAe+RP9+m39CTscZ3UywCD1Y2o6Fe1rRgklMPSkzUcty2jzkA0zMYkiJBD1hgg==}
+    engines: {node: '>=12.11.0'}
+
+  '@primeuix/utils@0.8.0':
+    resolution: {integrity: sha512-dZSMKU2XJ7W7VDLuFMS/o4k+QYw4SYIpqSNhR/jdasMaaXl8eq0Gt7fTzTwwq7hgfmfOsI6V5xtzUUIvybOJ/w==}
+    engines: {node: '>=12.11.0'}
+
+  '@primevue/core@4.5.5':
+    resolution: {integrity: sha512-JpkXhq1ddc70JdsC3CC4dM+UbeeWuCW/8DpS9dNBfrOk824TLSlRlMEGFyVKqRMn5WPQvYLiy3xXfLQeNdSqhQ==}
+    engines: {node: '>=12.11.0'}
+    peerDependencies:
+      vue: ^3.5.0
+
+  '@primevue/icons@4.5.5':
+    resolution: {integrity: sha512-eteOhTdAOXEYE9qW1AOrBBgDxQ2szHJxSkEK1XVdV2TKxGM5FQf03Ovms0VDyZTc16XBIgvwYjXJQS0BPbhPaA==}
+    engines: {node: '>=12.11.0'}
 
   '@rolldown/binding-android-arm64@1.2.1':
     resolution: {integrity: sha512-02hOeOSryYxVrOIphmLAsqnCJWxwlzFk+pEt/N/i6OgT3lShHO7xGCU5cpgchRDHboAEbSjzgGh+O/u1GswQmA==}
@@ -2526,6 +2575,10 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  primevue@4.5.5:
+    resolution: {integrity: sha512-Kv5REIewCdP806QaoU+4nBXfmpzOGFKkZ9qH4KsL6MjiAQVc4PUzypt8erl4r3Vzh3nr3aWZIxkxYRRsLGiX2A==}
+    engines: {node: '>=12.11.0'}
+
   prismjs@1.30.0:
     resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
     engines: {node: '>=6'}
@@ -3915,7 +3968,9 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@exodus/bytes@1.15.1': {}
+  '@exodus/bytes@1.15.1(@noble/hashes@2.2.0)':
+    optionalDependencies:
+      '@noble/hashes': 2.2.0
 
   '@img/colour@1.1.0':
     optional: true
@@ -4066,6 +4121,9 @@ snapshots:
       '@tybys/wasm-util': 0.10.3
     optional: true
 
+  '@noble/hashes@2.2.0':
+    optional: true
+
   '@one-ini/wasm@0.1.1': {}
 
   '@oslojs/encoding@1.1.0': {}
@@ -4133,6 +4191,45 @@ snapshots:
     optional: true
 
   '@polka/url@1.0.0-next.29': {}
+
+  '@primeicons/core@8.0.0':
+    dependencies:
+      '@primeuix/utils': 0.8.0
+
+  '@primeicons/vue@8.0.0(vue@3.5.40(typescript@6.0.3))':
+    dependencies:
+      '@primeicons/core': 8.0.0
+      '@primeuix/utils': 0.8.0
+      vue: 3.5.40(typescript@6.0.3)
+
+  '@primeuix/styled@0.7.4':
+    dependencies:
+      '@primeuix/utils': 0.6.4
+
+  '@primeuix/styles@2.0.3':
+    dependencies:
+      '@primeuix/styled': 0.7.4
+
+  '@primeuix/themes@1.2.5':
+    dependencies:
+      '@primeuix/styled': 0.7.4
+
+  '@primeuix/utils@0.6.4': {}
+
+  '@primeuix/utils@0.8.0': {}
+
+  '@primevue/core@4.5.5(vue@3.5.40(typescript@6.0.3))':
+    dependencies:
+      '@primeuix/styled': 0.7.4
+      '@primeuix/utils': 0.6.4
+      vue: 3.5.40(typescript@6.0.3)
+
+  '@primevue/icons@4.5.5(vue@3.5.40(typescript@6.0.3))':
+    dependencies:
+      '@primeuix/utils': 0.6.4
+      '@primevue/core': 4.5.5(vue@3.5.40(typescript@6.0.3))
+    transitivePeerDependencies:
+      - vue
 
   '@rolldown/binding-android-arm64@1.2.1':
     optional: true
@@ -4886,10 +4983,10 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  data-urls@7.0.0:
+  data-urls@7.0.0(@noble/hashes@2.2.0):
     dependencies:
       whatwg-mimetype: 5.0.0
-      whatwg-url: 16.0.1
+      whatwg-url: 16.0.1(@noble/hashes@2.2.0)
     transitivePeerDependencies:
       - '@noble/hashes'
 
@@ -5161,9 +5258,9 @@ snapshots:
 
   hookable@5.5.3: {}
 
-  html-encoding-sniffer@6.0.0:
+  html-encoding-sniffer@6.0.0(@noble/hashes@2.2.0):
     dependencies:
-      '@exodus/bytes': 1.15.1
+      '@exodus/bytes': 1.15.1(@noble/hashes@2.2.0)
     transitivePeerDependencies:
       - '@noble/hashes'
 
@@ -5271,17 +5368,17 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdom@30.0.1:
+  jsdom@30.0.1(@noble/hashes@2.2.0):
     dependencies:
       '@asamuzakjp/css-color': 6.0.5
       '@asamuzakjp/dom-selector': 8.3.0
       '@bramus/specificity': 2.4.2
       '@csstools/css-syntax-patches-for-csstree': 1.1.7(css-tree@3.2.1)
-      '@exodus/bytes': 1.15.1
+      '@exodus/bytes': 1.15.1(@noble/hashes@2.2.0)
       css-tree: 3.2.1
-      data-urls: 7.0.0
+      data-urls: 7.0.0(@noble/hashes@2.2.0)
       decimal.js: 10.6.0
-      html-encoding-sniffer: 6.0.0
+      html-encoding-sniffer: 6.0.0(@noble/hashes@2.2.0)
       is-potential-custom-element-name: 1.0.1
       lru-cache: 11.5.2
       parse5: 8.0.1
@@ -5292,7 +5389,7 @@ snapshots:
       w3c-xmlserializer: 5.0.0
       webidl-conversions: 8.0.1
       whatwg-mimetype: 5.0.0
-      whatwg-url: 17.1.0
+      whatwg-url: 17.1.0(@noble/hashes@2.2.0)
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - '@noble/hashes'
@@ -5627,6 +5724,16 @@ snapshots:
   powershell-utils@0.1.0: {}
 
   prettier@3.9.6: {}
+
+  primevue@4.5.5(vue@3.5.40(typescript@6.0.3)):
+    dependencies:
+      '@primeuix/styled': 0.7.4
+      '@primeuix/styles': 2.0.3
+      '@primeuix/utils': 0.6.4
+      '@primevue/core': 4.5.5(vue@3.5.40(typescript@6.0.3))
+      '@primevue/icons': 4.5.5(vue@3.5.40(typescript@6.0.3))
+    transitivePeerDependencies:
+      - vue
 
   prismjs@1.30.0: {}
 
@@ -6049,7 +6156,7 @@ snapshots:
     optionalDependencies:
       vite: 8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)
 
-  vitest@4.1.10(@types/node@26.1.2)(jsdom@30.0.1)(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)):
+  vitest@4.1.10(@types/node@26.1.2)(jsdom@30.0.1(@noble/hashes@2.2.0))(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)):
     dependencies:
       '@vitest/expect': 4.1.10
       '@vitest/mocker': 4.1.10(vite@8.2.0(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
@@ -6073,7 +6180,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 26.1.2
-      jsdom: 30.0.1
+      jsdom: 30.0.1(@noble/hashes@2.2.0)
     transitivePeerDependencies:
       - msw
 
@@ -6205,17 +6312,17 @@ snapshots:
 
   whatwg-mimetype@5.0.0: {}
 
-  whatwg-url@16.0.1:
+  whatwg-url@16.0.1(@noble/hashes@2.2.0):
     dependencies:
-      '@exodus/bytes': 1.15.1
+      '@exodus/bytes': 1.15.1(@noble/hashes@2.2.0)
       tr46: 6.0.0
       webidl-conversions: 8.0.1
     transitivePeerDependencies:
       - '@noble/hashes'
 
-  whatwg-url@17.1.0:
+  whatwg-url@17.1.0(@noble/hashes@2.2.0):
     dependencies:
-      '@exodus/bytes': 1.15.1
+      '@exodus/bytes': 1.15.1(@noble/hashes@2.2.0)
       tr46: 6.0.0
       webidl-conversions: 8.0.1
     transitivePeerDependencies:

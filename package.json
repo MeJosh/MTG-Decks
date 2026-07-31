@@ -18,8 +18,11 @@
   },
   "dependencies": {
     "@astrojs/vue": "^7.0.1",
+    "@primeicons/vue": "^8.0.0",
+    "@primeuix/themes": "^1.2.5",
     "astro": "^7.1.6",
     "pinia": "^4.0.2",
+    "primevue": "^4.5.5",
     "vue": "^3.5.40"
   },
   "devDependencies": {

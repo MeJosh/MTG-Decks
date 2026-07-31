@@ -5,7 +5,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://mejosh.github.io',
   base: '/MTG-Decks',
-  integrations: [vue()],
+  integrations: [vue({ appEntrypoint: './src/vue-app.ts' })],
   vite: {
     define: {
       __VUE_PROD_DEVTOOLS__: 'false',

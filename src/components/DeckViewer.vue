@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { createPinia } from 'pinia';
 import { computed, onMounted, onUnmounted } from 'vue';
 
 import type { DeckGroup } from '../lib/deck/grouping';
@@ -15,9 +14,7 @@ const props = defineProps<{
   sideboardCount: number;
 }>();
 
-const piniaRuntime = globalThis as Record<string, unknown>;
-piniaRuntime['__VUE_' + 'PROD_DEVTOOLS__'] ??= false;
-const previewStore = usePreviewStore(createPinia());
+const previewStore = usePreviewStore();
 const initialEntry = props.groups[0]?.entries[0] ?? props.commanders[0] ?? props.companion[0] ?? props.sideboard[0];
 
 const supplementalSections = computed(() => [
