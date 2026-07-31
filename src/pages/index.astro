@@ -148,25 +148,127 @@ const manaColors = {
       .filter((color): color is string => Boolean(color)),
   );
   let matchMode: 'any' | 'all' = 'any';
+  let isFiltering = false;
+  let needsFilterUpdate = false;
 
-  const filterDecks = () => {
+  const FADE_DURATION = 140;
+  const MOVE_DURATION = 300;
+
+  const wait = (duration: number) => new Promise<void>((resolve) => {
+    window.setTimeout(resolve, duration);
+  });
+  const nextFrame = () => new Promise<void>((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+  });
+  const matchingCards = () => {
     const query = search?.value.trim().toLocaleLowerCase('en-US') ?? '';
-    let visible = 0;
 
-    cards.forEach((card) => {
+    return cards.filter((card) => {
       const cardColors = card.dataset.deckColors?.split(',') ?? [];
       const matchesSearch = !query || card.dataset.deckSearchable?.includes(query);
       const matchesColors = selectedColors.size > 0 && (matchMode === 'all'
         ? [...selectedColors].every((color) => cardColors.includes(color))
         : cardColors.some((color) => selectedColors.has(color)));
-      const matches = matchesSearch && matchesColors;
 
-      card.hidden = !matches;
-      if (matches) visible += 1;
+      return matchesSearch && matchesColors;
+    });
+  };
+  const clearTransitionStyles = (elements: HTMLElement[]) => {
+    elements.forEach((element) => {
+      element.style.opacity = '';
+      element.style.pointerEvents = '';
+      element.style.transform = '';
+      element.style.transition = '';
+    });
+  };
+  const animateReflow = async (elements: HTMLElement[], previousPositions: Map<HTMLElement, DOMRect>) => {
+    const movingElements = elements.flatMap((element) => {
+      const previous = previousPositions.get(element);
+      if (!previous) return [];
+      const next = element.getBoundingClientRect();
+      const x = previous.left - next.left;
+      const y = previous.top - next.top;
+      return x || y ? [{ element, x, y }] : [];
     });
 
-    if (count) count.textContent = `${visible} ${visible === 1 ? 'deck' : 'decks'}`;
-    if (empty) empty.hidden = visible !== 0;
+    if (!movingElements.length) return;
+
+    movingElements.forEach(({ element, x, y }) => {
+      element.style.transition = 'none';
+      element.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    await nextFrame();
+    movingElements.forEach(({ element }) => {
+      element.style.transition = `transform ${MOVE_DURATION}ms cubic-bezier(.42, 0, .58, 1)`;
+      element.style.transform = '';
+    });
+    await wait(MOVE_DURATION);
+    movingElements.forEach(({ element }) => {
+      element.style.transition = '';
+    });
+  };
+
+  const filterDecks = async () => {
+    if (isFiltering) {
+      needsFilterUpdate = true;
+      return;
+    }
+    isFiltering = true;
+
+    do {
+      needsFilterUpdate = false;
+      const shownCards = cards.filter((card) => !card.hidden);
+      const nextCards = matchingCards();
+      const nextCardSet = new Set(nextCards);
+      const previousPositions = new Map(
+        shownCards.map((card) => [card, card.getBoundingClientRect()]),
+      );
+      const removedCards = shownCards.filter((card) => !nextCardSet.has(card));
+      const addedCards = nextCards.filter((card) => card.hidden);
+      const retainedCards = shownCards.filter((card) => nextCardSet.has(card));
+
+      if (removedCards.length) {
+        removedCards.forEach((card) => {
+          card.style.opacity = '1';
+          card.style.pointerEvents = 'none';
+          card.style.transition = `opacity ${FADE_DURATION}ms ease`;
+        });
+        await nextFrame();
+        removedCards.forEach((card) => {
+          card.style.opacity = '0';
+        });
+        await wait(FADE_DURATION);
+        removedCards.forEach((card) => {
+          card.hidden = true;
+        });
+        clearTransitionStyles(removedCards);
+      }
+
+      addedCards.forEach((card) => {
+        card.hidden = false;
+        card.style.opacity = '0';
+        card.style.pointerEvents = 'none';
+      });
+
+      await animateReflow(retainedCards, previousPositions);
+
+      if (addedCards.length) {
+        addedCards.forEach((card) => {
+          card.style.transition = `opacity ${FADE_DURATION}ms ease`;
+        });
+        await nextFrame();
+        addedCards.forEach((card) => {
+          card.style.opacity = '1';
+        });
+        await wait(FADE_DURATION);
+        clearTransitionStyles(addedCards);
+      }
+
+      if (count) count.textContent = `${nextCards.length} ${nextCards.length === 1 ? 'deck' : 'decks'}`;
+      if (empty) empty.hidden = nextCards.length !== 0;
+    } while (needsFilterUpdate);
+
+    isFiltering = false;
   };
 
   search?.addEventListener('input', filterDecks);
