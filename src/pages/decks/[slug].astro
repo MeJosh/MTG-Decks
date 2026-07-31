@@ -14,6 +14,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const deck = await loadPublishedDeck(entry.data.decklist, entry.data.featuredCard);
 const deckSource = Buffer.from(deck.source, 'utf8').toString('base64');
+const deckFileUrl = `https://github.com/MeJosh/MTG-Decks/blob/main/decks/${encodeURIComponent(entry.data.decklist)}`;
 ---
 
 <BaseLayout title={`${entry.data.title} · MTG Decks`}>
@@ -27,7 +28,7 @@ const deckSource = Buffer.from(deck.source, 'utf8').toString('base64');
         <a href={entry.data.source} target="_blank" rel="noreferrer">View source on Moxfield ↗</a>
       )}
       <div class="deck-file-actions" data-deck-source={deckSource} data-deck-filename={entry.data.decklist}>
-        <span class="deck-file">{entry.data.decklist}</span>
+        <a class="deck-file" href={deckFileUrl} target="_blank" rel="noreferrer">{entry.data.decklist}</a>
         <button class="deck-file-action" type="button" data-action="download" aria-label={`Download ${entry.data.decklist}`} title={`Download ${entry.data.decklist}`}>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" /></svg>
         </button>
