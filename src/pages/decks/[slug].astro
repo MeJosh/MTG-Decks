@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const deck = await loadPublishedDeck(entry.data.decklist, entry.data.featuredCard);
+const deckSource = Buffer.from(deck.source, 'utf8').toString('base64');
 ---
 
 <BaseLayout title={`${entry.data.title} · MTG Decks`}>
@@ -25,7 +26,15 @@ const deck = await loadPublishedDeck(entry.data.decklist, entry.data.featuredCar
       {entry.data.source && (
         <a href={entry.data.source} target="_blank" rel="noreferrer">View source on Moxfield ↗</a>
       )}
-      <span class="deck-file">{entry.data.decklist}</span>
+      <div class="deck-file-actions" data-deck-source={deckSource} data-deck-filename={entry.data.decklist}>
+        <span class="deck-file">{entry.data.decklist}</span>
+        <button class="deck-file-action" type="button" data-action="download" aria-label={`Download ${entry.data.decklist}`} title={`Download ${entry.data.decklist}`}>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" /></svg>
+        </button>
+        <button class="deck-file-action" type="button" data-action="copy" aria-label={`Copy ${entry.data.decklist} contents`} title={`Copy ${entry.data.decklist} contents`}>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="1" /><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3" /></svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -41,3 +50,39 @@ const deck = await loadPublishedDeck(entry.data.decklist, entry.data.featuredCar
 
   <article class="primer"><Content /></article>
 </BaseLayout>
+
+<script>
+  for (const actions of document.querySelectorAll<HTMLElement>('[data-deck-source]')) {
+    const encodedSource = actions.dataset.deckSource ?? '';
+    const source = new TextDecoder().decode(Uint8Array.from(atob(encodedSource), (byte) => byte.charCodeAt(0)));
+    const filename = actions.dataset.deckFilename ?? 'deck.dec';
+
+    actions.querySelector<HTMLButtonElement>('[data-action="download"]')?.addEventListener('click', () => {
+      const url = URL.createObjectURL(new Blob([source], { type: 'text/plain;charset=utf-8' }));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      link.click();
+      URL.revokeObjectURL(url);
+    });
+
+    actions.querySelector<HTMLButtonElement>('[data-action="copy"]')?.addEventListener('click', async (event) => {
+      const button = event.currentTarget;
+      if (!(button instanceof HTMLButtonElement)) return;
+
+      try {
+        await navigator.clipboard.writeText(source);
+        button.dataset.copied = 'true';
+        button.setAttribute('aria-label', 'Decklist copied');
+        button.title = 'Copied';
+        window.setTimeout(() => {
+          delete button.dataset.copied;
+          button.setAttribute('aria-label', `Copy ${filename} contents`);
+          button.title = `Copy ${filename} contents`;
+        }, 1600);
+      } catch {
+        button.setAttribute('aria-label', 'Unable to copy decklist');
+      }
+    });
+  }
+</script>

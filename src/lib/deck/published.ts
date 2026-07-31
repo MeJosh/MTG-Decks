@@ -37,6 +37,7 @@ export async function loadPublishedDeck(decklist: string, featuredCardName?: str
   const companion = await resolveEntries(parsed.companion, catalog, preferred);
 
   return {
+    source,
     groups: groupMainboard(mainboard),
     sideboard,
     commanders,
