@@ -15,6 +15,7 @@ const hunter: CardPrinting = {
   releasedAt: '2022-06-10',
   scryfallUri: 'https://scryfall.com/card/clb/215/avenging-hunter',
   image: 'https://cards.scryfall.io/normal/example.jpg',
+  artCrop: 'https://cards.scryfall.io/art_crop/example.jpg',
 };
 
 function catalog(overrides: Partial<CardCatalog> = {}): CardCatalog {

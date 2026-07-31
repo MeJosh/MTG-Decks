@@ -11,6 +11,7 @@ export interface CardPrinting {
   releasedAt: string;
   scryfallUri: string;
   image: string;
+  artCrop: string;
   backImage?: string;
 }
 

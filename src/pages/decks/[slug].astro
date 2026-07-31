@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const deck = await loadPublishedDeck(entry.data.decklist);
+const deck = await loadPublishedDeck(entry.data.decklist, entry.data.featuredCard);
 ---
 
 <BaseLayout title={`${entry.data.title} · MTG Decks`}>

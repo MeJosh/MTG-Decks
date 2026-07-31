@@ -6,6 +6,7 @@ import type { CardCatalog, CardPrinting } from '../deck/resolver';
 
 interface ScryfallImageUris {
   normal?: string;
+  art_crop?: string;
 }
 
 interface ScryfallCardFace {
@@ -34,6 +35,7 @@ interface ScryfallList {
 function toCardPrinting(card: ScryfallCard): CardPrinting | undefined {
   const image = card.image_uris?.normal ?? card.card_faces?.[0]?.image_uris?.normal;
   if (!image) return undefined;
+  const artCrop = card.image_uris?.art_crop ?? card.card_faces?.[0]?.image_uris?.art_crop ?? image;
 
   return {
     id: card.id,
@@ -46,6 +48,7 @@ function toCardPrinting(card: ScryfallCard): CardPrinting | undefined {
     releasedAt: card.released_at,
     scryfallUri: card.scryfall_uri,
     image,
+    artCrop,
     backImage: card.card_faces?.[1]?.image_uris?.normal,
   };
 }
@@ -96,7 +99,9 @@ export class ScryfallCatalog implements CardCatalog {
     const cacheFile = path.join(this.cacheDirectory, `${key}.json`);
     try {
       const cached = JSON.parse(await readFile(cacheFile, 'utf8')) as Partial<CardPrinting>;
-      if (typeof cached.manaCost === 'string') return cached as CardPrinting;
+      if (typeof cached.manaCost === 'string' && typeof cached.artCrop === 'string') {
+        return cached as CardPrinting;
+      }
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
     }

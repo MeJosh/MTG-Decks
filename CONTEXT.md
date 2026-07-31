@@ -30,6 +30,18 @@ _Avoid_: Uploaded deck, saved deck
 The shareable presentation of one Published Deck, including its title, format, and an optional Primer.
 _Avoid_: Page definition, deck article
 
+**Featured Card**:
+A card in a Published Deck whose Resolved Printing supplies the Deck's representative artwork. If none is designated, the first card in the maindeck is the Featured Card.
+_Avoid_: Deck image, cover image
+
+**Mana Profile**:
+The proportional distribution of colored mana symbols among a Deck's maindeck and Commanders, weighted by card quantity. A Deck with no colored mana symbols has a colorless Mana Profile.
+_Avoid_: Color identity, color breakdown
+
+**Deck Tag**:
+An optional short label used to characterize a Published Deck in the Deck Library. A Deck Tag describes the Deck but is not part of its card composition.
+_Avoid_: Category
+
 **Primer**:
 Optional authored guidance about a Deck, such as its strategy, card choices, matchups, or play patterns. A Primer may range from a short note to a long-form guide.
 _Avoid_: Writeup, description
@@ -55,6 +67,18 @@ _Avoid_: Default printing
 > **Developer:** Where should your matchup notes and deck description appear?
 >
 > **Owner:** Put them in the Published Deck's Primer; they are commentary about the Deck, not part of its card composition.
+>
+> **Developer:** Which artwork represents the Deck in the library?
+>
+> **Owner:** Use its Featured Card. If I have not designated one, use the first card in its maindeck.
+>
+> **Developer:** Does the tile's Mana Profile include the sideboard?
+>
+> **Owner:** No. Derive it from colored mana symbols in the maindeck and Commanders, accounting for card quantities.
+>
+> **Developer:** Is “Aggro” part of the Deck itself?
+>
+> **Owner:** No. It is a Deck Tag used to characterize the Published Deck in the library.
 >
 > **Developer:** Should I include the cards you are considering from the source Deck?
 >

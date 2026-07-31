@@ -7,11 +7,15 @@ A static Astro site for publishing Git-managed Magic: The Gathering decklists.
 - Put portable decklists in `decks/*.dec`.
 - Put deck pages in `src/content/decks/*.md`. The Markdown filename owns the URL slug.
 - Point the frontmatter `decklist` field at any filename in `decks/`.
+- Optionally set `featuredCard` to the name of a card in the Deck; otherwise the first maindeck card supplies the library tile artwork.
+- Optionally add unique, free-form Deck Tags with `tags: [Aggro, Graveyard]`.
 - Source-backed deck pages may include a canonical external `source` URL.
 - Add preferred fallback printings to `config/preferred-printings.json`, keyed by lowercase card name.
 - Scryfall metadata is generated under `.cache/card-data/`; this directory is ignored by Git and kept away from deck sources.
 
 Portable decklists may use optional `COMMANDER:`, `COMPANION:`, `MAINBOARD:`, and `SIDEBOARD:` sections. Existing files without a `MAINBOARD:` marker remain valid. Commanders contribute to the Deck count; a Companion does not.
+
+Library tiles derive their Mana Profile from colored mana symbols in the maindeck and Commanders, weighted by card quantity. Hybrid symbols divide their weight evenly among their colors.
 
 ## Importing from Moxfield
 

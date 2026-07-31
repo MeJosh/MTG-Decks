@@ -21,6 +21,7 @@ function entry(name: string, id: string): ResolvedDeckEntry {
       releasedAt: '2026-01-01',
       scryfallUri: `https://scryfall.com/card/tst/${id}`,
       image: `https://cards.scryfall.io/${id}.jpg`,
+      artCrop: `https://cards.scryfall.io/art/${id}.jpg`,
     },
   };
 }

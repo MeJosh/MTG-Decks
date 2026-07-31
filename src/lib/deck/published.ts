@@ -7,8 +7,9 @@ import { groupMainboard } from './grouping';
 import { parseDeck } from './parser';
 import { resolveEntries } from './resolver';
 import type { PreferredPrintings } from './resolver';
+import { calculateManaProfile, selectFeaturedCard } from './summary';
 
-export async function loadPublishedDeck(decklist: string) {
+export async function loadPublishedDeck(decklist: string, featuredCardName?: string) {
   if (
     path.basename(decklist) !== decklist ||
     path.extname(decklist).toLocaleLowerCase('en-US') !== '.dec'
@@ -40,6 +41,14 @@ export async function loadPublishedDeck(decklist: string) {
     sideboard,
     commanders,
     companion,
+    featuredCard: selectFeaturedCard(
+      mainboard,
+      commanders,
+      sideboard,
+      companion,
+      featuredCardName,
+    ),
+    manaProfile: calculateManaProfile(mainboard, commanders),
     deckCount: [...mainboard, ...commanders].reduce(
       (total, entry) => total + entry.quantity,
       0,

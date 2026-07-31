@@ -19,6 +19,7 @@ function entry(name: string, typeLine: string): ResolvedDeckEntry {
       releasedAt: '2026-01-01',
       scryfallUri: '#',
       image: '#',
+      artCrop: '#',
     },
   };
 }

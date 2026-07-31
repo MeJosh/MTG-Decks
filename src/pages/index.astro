@@ -2,21 +2,69 @@
 import { getCollection } from 'astro:content';
 
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadPublishedDeck } from '../lib/deck/published';
 
-const decks = (await getCollection('decks')).sort((a, b) => a.data.title.localeCompare(b.data.title));
+const entries = (await getCollection('decks')).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title),
+);
+const decks = await Promise.all(
+  entries.map(async (entry) => ({
+    entry,
+    deck: await loadPublishedDeck(entry.data.decklist, entry.data.featuredCard),
+  })),
+);
+
+const manaColors = {
+  W: { name: 'White', symbol: 'W' },
+  U: { name: 'Blue', symbol: 'U' },
+  B: { name: 'Black', symbol: 'B' },
+  R: { name: 'Red', symbol: 'R' },
+  G: { name: 'Green', symbol: 'G' },
+  C: { name: 'Colorless', symbol: 'C' },
+} as const;
 ---
 
 <BaseLayout title="MTG Decks">
   <header class="home-header">
     <p class="eyebrow">Deck library</p>
-    <h1>Lists worth keeping.</h1>
+    <h1>Decks worth keeping.</h1>
     <p>A small, Git-managed collection of Magic decks, built for quick reference now and deeper analysis later.</p>
   </header>
-  <section class="deck-index" aria-label="Published decks">
-    {decks.map((deck) => (
-      <a href={`${import.meta.env.BASE_URL}/decks/${deck.id}`}>
-        <span class="deck-index-title">{deck.data.title}</span>
-        <span class="deck-index-format">{deck.data.format}</span>
+  <section class="deck-grid" aria-label="Published decks">
+    {decks.map(({ entry, deck }) => (
+      <a class="deck-tile" href={`${import.meta.env.BASE_URL}/decks/${entry.id}`}>
+        <div class="deck-tile-art">
+          <img
+            src={deck.featuredCard.artCrop}
+            alt=""
+            width="488"
+            height="680"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="mana-profile"
+          aria-label={`Mana profile: ${deck.manaProfile.map(({ color }) => manaColors[color].name).join(', ')}`}
+        >
+          {deck.manaProfile.map(({ color, weight }) => (
+            <span
+              class={`mana-profile-segment mana-${color.toLocaleLowerCase('en-US')}`}
+              style={`flex-grow: ${weight}`}
+              title={manaColors[color].name}
+            >
+              <span aria-hidden="true">{manaColors[color].symbol}</span>
+            </span>
+          ))}
+        </div>
+        <div class="deck-tile-body">
+          <h2>{entry.data.title}</h2>
+          <p>{entry.data.format}</p>
+        </div>
+        {entry.data.tags.length > 0 && (
+          <div class="deck-tags" aria-label="Deck tags">
+            {entry.data.tags.map((tag) => <span>{tag}</span>)}
+          </div>
+        )}
       </a>
     ))}
   </section>
