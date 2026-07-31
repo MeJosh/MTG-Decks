@@ -12,7 +12,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "oxlint .",
-    "check": "astro check"
+    "check": "astro check",
+    "ci": "pnpm test && pnpm lint && pnpm check && pnpm build"
   },
   "dependencies": {
     "@astrojs/vue": "^7.0.1",

@@ -14,7 +14,7 @@ const decks = (await getCollection('decks')).sort((a, b) => a.data.title.localeC
   </header>
   <section class="deck-index" aria-label="Published decks">
     {decks.map((deck) => (
-      <a href={`/decks/${deck.id}`}>
+      <a href={`${import.meta.env.BASE_URL}/decks/${deck.id}`}>
         <span class="deck-index-title">{deck.data.title}</span>
         <span class="deck-index-format">{deck.data.format}</span>
       </a>
