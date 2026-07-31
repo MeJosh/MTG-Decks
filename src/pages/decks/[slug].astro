@@ -1,0 +1,36 @@
+---
+import { getCollection, render } from 'astro:content';
+
+import DeckViewer from '../../components/DeckViewer.vue';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadPublishedDeck } from '../../lib/deck/published';
+
+export async function getStaticPaths() {
+  const decks = await getCollection('decks');
+  return decks.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const deck = await loadPublishedDeck(entry.data.decklist);
+---
+
+<BaseLayout title={`${entry.data.title} · MTG Decks`}>
+  <header class="deck-header">
+    <div>
+      <p class="eyebrow">{entry.data.format}</p>
+      <h1>{entry.data.title}</h1>
+    </div>
+    <span class="deck-file">{entry.data.decklist}</span>
+  </header>
+
+  <DeckViewer
+    client:load
+    groups={deck.groups}
+    sideboard={deck.sideboard}
+    mainboardCount={deck.mainboardCount}
+    sideboardCount={deck.sideboardCount}
+  />
+
+  <article class="primer"><Content /></article>
+</BaseLayout>

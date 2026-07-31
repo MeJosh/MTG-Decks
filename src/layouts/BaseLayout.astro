@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'A Git-managed library of Magic: The Gathering decks.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2225%22 font-size=%2225%22>♠</text></svg>" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-width site-header-inner">
+        <a class="site-mark" href="/"><span>●</span> MTG Decks</a>
+        <nav class="site-nav" aria-label="Primary"><a href="/">Deck library</a></nav>
+      </div>
+    </header>
+    <main class="site-width page-main"><slot /></main>
+    <footer class="site-footer">
+      <div class="site-width">
+        Card data and images courtesy of Scryfall. Portions of the materials used are property of Wizards of the Coast.
+      </div>
+    </footer>
+  </body>
+</html>

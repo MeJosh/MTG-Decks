@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const decks = (await getCollection('decks')).sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout title="MTG Decks">
+  <header class="home-header">
+    <p class="eyebrow">Deck library</p>
+    <h1>Lists worth keeping.</h1>
+    <p>A small, Git-managed collection of Magic decks, built for quick reference now and deeper analysis later.</p>
+  </header>
+  <section class="deck-index" aria-label="Published decks">
+    {decks.map((deck) => (
+      <a href={`/decks/${deck.id}`}>
+        <span class="deck-index-title">{deck.data.title}</span>
+        <span class="deck-index-format">{deck.data.format}</span>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

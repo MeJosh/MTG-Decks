@@ -1,0 +1,45 @@
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+
+import preferredPrintings from '../../../config/preferred-printings.json';
+import { ScryfallCatalog } from '../cards/scryfall';
+import { groupMainboard } from './grouping';
+import { parseDeck } from './parser';
+import { resolveEntries } from './resolver';
+import type { PreferredPrintings } from './resolver';
+
+export async function loadPublishedDeck(decklist: string) {
+  if (
+    path.basename(decklist) !== decklist ||
+    path.extname(decklist).toLocaleLowerCase('en-US') !== '.dec'
+  ) {
+    throw new Error(`Decklist must name a .dec file inside /decks: ${decklist}`);
+  }
+
+  const deckPath = path.join(process.cwd(), 'decks', decklist);
+  let source: string;
+  try {
+    source = await readFile(deckPath, 'utf8');
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+      throw new Error(`Decklist does not exist: ${decklist}`);
+    }
+    throw error;
+  }
+
+  const parsed = parseDeck(source);
+  const catalog = new ScryfallCatalog();
+  const preferred = preferredPrintings as PreferredPrintings;
+  const mainboard = await resolveEntries(parsed.mainboard, catalog, preferred);
+  const sideboard = await resolveEntries(parsed.sideboard, catalog, preferred);
+
+  return {
+    groups: groupMainboard(mainboard),
+    sideboard,
+    mainboardCount: mainboard.reduce((total, entry) => total + entry.quantity, 0),
+    sideboardCount: sideboard.reduce((total, entry) => total + entry.quantity, 0),
+    warnings: [...mainboard, ...sideboard].flatMap((entry) =>
+      entry.warning ? [entry.warning] : [],
+    ),
+  };
+}
