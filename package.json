@@ -8,6 +8,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "import:moxfield": "node tools/import-moxfield/cli.ts",
+    "sync:moxfield": "node tools/import-moxfield/sync-cli.ts",
     "preview": "astro preview",
     "prepare": "husky",
     "test": "vitest run",
