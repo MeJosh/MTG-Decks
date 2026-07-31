@@ -2,7 +2,6 @@
 import Moon from '@primeicons/vue/moon';
 import Sun from '@primeicons/vue/sun';
 import { storeToRefs } from 'pinia';
-import ToggleSwitch from 'primevue/toggleswitch';
 
 import { useThemeStore } from '../stores/theme';
 
@@ -11,44 +10,92 @@ const { isDark } = storeToRefs(themeStore);
 </script>
 
 <template>
-  <ToggleSwitch
-    v-model="isDark"
-    class="theme-toggle"
-    :aria-label="isDark ? 'Use light theme' : 'Use dark theme'"
-  >
-    <template #handle="{ checked }">
-      <Moon v-if="checked" :size="12" aria-hidden="true" />
-      <Sun v-else :size="12" aria-hidden="true" />
-    </template>
-  </ToggleSwitch>
+  <label class="theme-toggle">
+    <input
+      v-model="isDark"
+      type="checkbox"
+      role="switch"
+      class="theme-toggle-input"
+      :aria-label="isDark ? 'Use light theme' : 'Use dark theme'"
+    />
+    <span class="theme-toggle-track" aria-hidden="true">
+      <span class="theme-toggle-handle">
+        <Moon class="theme-toggle-icon theme-toggle-icon-moon" :size="12" />
+        <Sun class="theme-toggle-icon theme-toggle-icon-sun" :size="12" />
+      </span>
+    </span>
+  </label>
 </template>
 
 <style scoped>
 .theme-toggle {
-  --p-toggleswitch-width: 2.875rem;
-  --p-toggleswitch-height: 1.75rem;
-  --p-toggleswitch-handle-size: 1.25rem;
-
+  position: relative;
+  display: block;
+  width: 2.875rem;
+  height: 1.75rem;
   cursor: pointer;
 }
 
-:deep(.p-toggleswitch-slider) {
+.theme-toggle-input {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.theme-toggle-track {
+  position: absolute;
+  inset: 0;
+  padding: .1875rem;
   border: 1px solid var(--line);
-  box-shadow: none;
+  border-radius: 999px;
+  background: var(--surface-raised);
+  transition: background .15s ease, border-color .15s ease;
 }
 
-:deep(.p-toggleswitch-handle) {
+.theme-toggle-input:checked + .theme-toggle-track {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.theme-toggle-handle {
   display: grid;
+  width: 1.25rem;
+  height: 1.25rem;
   place-items: center;
-  color: var(--muted);
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .24);
+  color: var(--ink);
+  transition: transform .15s ease;
 }
 
-:deep(.p-toggleswitch-input:focus-visible + .p-toggleswitch-slider) {
+.theme-toggle-icon-moon {
+  display: none;
+}
+
+.theme-toggle-input:checked + .theme-toggle-track .theme-toggle-icon-moon {
+  display: block;
+}
+
+.theme-toggle-input:checked + .theme-toggle-track .theme-toggle-icon-sun {
+  display: none;
+}
+
+.theme-toggle-input:checked + .theme-toggle-track .theme-toggle-handle {
+  transform: translateX(1.125rem);
+}
+
+.theme-toggle-input:focus-visible + .theme-toggle-track {
   outline: 2px solid var(--accent);
   outline-offset: .2rem;
 }
 
-:deep(.p-toggleswitch-input:hover + .p-toggleswitch-slider) {
+.theme-toggle:hover .theme-toggle-track {
   border-color: var(--line-strong);
 }
 </style>
