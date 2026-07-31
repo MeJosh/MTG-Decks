@@ -41,7 +41,7 @@ describe('DeckViewer', () => {
     );
   });
 
-  it('previews the first card initially and changes when a card row is pointed at', async () => {
+  it('previews the first card initially and changes when a card row is hovered', async () => {
     const wrapper = mount(DeckViewer, {
       props: { groups, sideboard: [], commanders: [], companion: [], deckCount: 8, sideboardCount: 0 },
       global: { plugins: [createPinia()] },
@@ -52,7 +52,7 @@ describe('DeckViewer', () => {
       '{2}',
       '{G}',
     ]);
-    await wrapper.get('[data-card-row="2"]').trigger('pointerenter');
+    await wrapper.get('[data-card-row="2"]').trigger('mouseover');
     expect(wrapper.get('[data-preview-image]').attributes('alt')).toContain('Second Elf');
   });
 

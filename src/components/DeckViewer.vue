@@ -91,7 +91,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
                 v-for="entry in group.entries"
                 :key="`${entry.card.id}-${entry.line}`"
                 :data-card-row="entry.card.id"
-                @pointerenter="previewStore.preview(entry.card)"
+                @mouseover="previewStore.preview(entry.card)"
               >
                 <span class="quantity">{{ entry.quantity }}</span>
                 <a
@@ -146,7 +146,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
               v-for="entry in section.entries"
               :key="`${section.key}-${entry.card.id}-${entry.line}`"
               :data-card-row="entry.card.id"
-              @pointerenter="previewStore.preview(entry.card)"
+              @mouseover="previewStore.preview(entry.card)"
             >
               <span class="quantity">{{ entry.quantity }}</span>
               <a
