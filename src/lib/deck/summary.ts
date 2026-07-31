@@ -8,6 +8,11 @@ export interface ManaProfileSegment {
   weight: number;
 }
 
+export interface FeaturedCardSelection {
+  card: CardPrinting;
+  warning?: string;
+}
+
 const MANA_COLORS: Exclude<ManaColor, 'C'>[] = ['W', 'U', 'B', 'R', 'G'];
 
 export function selectFeaturedCard(
@@ -16,8 +21,9 @@ export function selectFeaturedCard(
   sideboard: ResolvedDeckEntry[],
   companion: ResolvedDeckEntry[],
   featuredCardName?: string,
-): CardPrinting {
-  if (!featuredCardName) return mainboard[0]!.card;
+): FeaturedCardSelection {
+  const defaultCard = mainboard[0]!.card;
+  if (!featuredCardName) return { card: defaultCard };
 
   const normalizedName = normalizeCardName(featuredCardName);
   const entry = [...mainboard, ...commanders, ...sideboard, ...companion].find(
@@ -25,10 +31,13 @@ export function selectFeaturedCard(
   );
 
   if (!entry) {
-    throw new Error(`Featured Card "${featuredCardName}" is not in the Deck.`);
+    return {
+      card: defaultCard,
+      warning: `Featured Card "${featuredCardName}" is not in the Deck; using "${defaultCard.name}" instead.`,
+    };
   }
 
-  return entry.card;
+  return { card: entry.card };
 }
 
 export function calculateManaProfile(

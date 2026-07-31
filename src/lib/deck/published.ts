@@ -36,19 +36,22 @@ export async function loadPublishedDeck(decklist: string, featuredCardName?: str
   const commanders = await resolveEntries(parsed.commanders, catalog, preferred);
   const companion = await resolveEntries(parsed.companion, catalog, preferred);
 
+  const featuredCard = selectFeaturedCard(
+    mainboard,
+    commanders,
+    sideboard,
+    companion,
+    featuredCardName,
+  );
+
   return {
     source,
     groups: groupMainboard(mainboard),
     sideboard,
     commanders,
     companion,
-    featuredCard: selectFeaturedCard(
-      mainboard,
-      commanders,
-      sideboard,
-      companion,
-      featuredCardName,
-    ),
+    featuredCard: featuredCard.card,
+    featuredCardWarning: featuredCard.warning,
     manaProfile: calculateManaProfile(mainboard, commanders),
     deckCount: [...mainboard, ...commanders].reduce(
       (total, entry) => total + entry.quantity,

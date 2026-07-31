@@ -26,7 +26,7 @@ function entry(name: string, manaCost = '', quantity = 1): ResolvedDeckEntry {
 
 describe('selectFeaturedCard', () => {
   it('defaults to the first maindeck card', () => {
-    expect(selectFeaturedCard([entry('First'), entry('Second')], [], [], [])).toMatchObject({
+    expect(selectFeaturedCard([entry('First'), entry('Second')], [], [], []).card).toMatchObject({
       name: 'First',
     });
   });
@@ -34,13 +34,14 @@ describe('selectFeaturedCard', () => {
   it('selects a named card from any Deck section', () => {
     expect(
       selectFeaturedCard([entry('Main')], [], [entry('Sideboard Choice')], [], 'sideboard choice'),
-    ).toMatchObject({ name: 'Sideboard Choice' });
+    ).toMatchObject({ card: { name: 'Sideboard Choice' } });
   });
 
-  it('rejects a named card that is not in the Deck', () => {
-    expect(() => selectFeaturedCard([entry('First')], [], [], [], 'Missing')).toThrow(
-      'Featured Card "Missing" is not in the Deck.',
-    );
+  it('falls back to the first maindeck card and warns when the named card is absent', () => {
+    expect(selectFeaturedCard([entry('First')], [], [], [], 'Missing')).toMatchObject({
+      card: { name: 'First' },
+      warning: 'Featured Card "Missing" is not in the Deck; using "First" instead.',
+    });
   });
 });
 

@@ -7,7 +7,7 @@ A static Astro site for publishing Git-managed Magic: The Gathering decklists.
 - Put portable decklists in `decks/*.dec`.
 - Put deck pages in `src/content/decks/*.md`. The Markdown filename owns the URL slug.
 - Point the frontmatter `decklist` field at any filename in `decks/`.
-- Optionally set `featuredCard` to the name of a card in the Deck; otherwise the first maindeck card supplies the library tile artwork.
+- Optionally set `featuredCard` to the name of a card in the Deck; otherwise the first maindeck card supplies the library tile artwork. If a sync removes the named card, the library falls back to the first maindeck card and marks the deck with a warning.
 - Optionally add unique, free-form Deck Tags with `tags: [Aggro, Graveyard]`.
 - Source-backed deck pages may include a canonical external `source` URL.
 - Add preferred fallback printings to `config/preferred-printings.json`, keyed by lowercase card name.

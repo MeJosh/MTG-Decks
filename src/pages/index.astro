@@ -42,6 +42,15 @@ const manaColors = {
             loading="lazy"
           />
         </div>
+        {deck.featuredCardWarning && (
+          <span
+            class="deck-tile-warning"
+            title={deck.featuredCardWarning}
+            aria-label={deck.featuredCardWarning}
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.8 20h18.4L12 3Zm0 5.5v5m0 3.5h.01" /></svg>
+          </span>
+        )}
         <div
           class="mana-profile"
           aria-label={`Mana profile: ${deck.manaProfile.map(({ color }) => manaColors[color].name).join(', ')}`}
