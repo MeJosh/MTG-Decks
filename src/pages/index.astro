@@ -30,9 +30,60 @@ const manaColors = {
     <h1>Decks worth keeping.</h1>
     <p>A small, Git-managed collection of Magic decks, built for quick reference now and deeper analysis later.</p>
   </header>
-  <section class="deck-grid" aria-label="Published decks">
+  <details class="deck-filters" open>
+    <summary>
+      <span>Filters</span>
+      <span class="deck-filter-count" data-deck-filter-count>{decks.length} decks</span>
+      <svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4" /></svg>
+    </summary>
+    <div class="deck-filter-controls">
+      <label class="deck-search">
+        <span class="visually-hidden">Search decks</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
+        <input type="search" placeholder="Search decks" autocomplete="off" data-deck-search />
+      </label>
+      <div class="color-filters" aria-label="Filter by mana color">
+        {Object.entries(manaColors).filter(([color]) => color !== 'C').map(([color, { name, symbol }]) => (
+          <button
+            class={`color-filter mana-${color.toLocaleLowerCase('en-US')}`}
+            type="button"
+            aria-pressed="true"
+            aria-label={`Filter by ${name}`}
+            title={name}
+            data-color-filter={color}
+          >
+            {symbol}
+          </button>
+        ))}
+      </div>
+      <button
+        class="color-match-mode"
+        type="button"
+        aria-label="Color matching mode: any selected color"
+        title="Match decks with any selected color"
+        data-color-match-mode
+        data-mode="any"
+      >ANY</button>
+    </div>
+  </details>
+  <section class="deck-grid" aria-label="Published decks" data-deck-grid>
     {decks.map(({ entry, deck }) => (
-      <a class="deck-tile" href={`${import.meta.env.BASE_URL}/decks/${entry.id}`}>
+      <a
+        class="deck-tile"
+        href={`${import.meta.env.BASE_URL}/decks/${entry.id}`}
+        data-deck-card
+        data-deck-colors={deck.manaProfile.map(({ color }) => color).join(',')}
+        data-deck-searchable={[
+          entry.data.title,
+          entry.id,
+          entry.data.format,
+          ...entry.data.tags,
+          ...deck.groups.flatMap((group) => group.entries.map(({ card }) => card.name)),
+          ...deck.sideboard.map(({ card }) => card.name),
+          ...deck.commanders.map(({ card }) => card.name),
+          ...deck.companion.map(({ card }) => card.name),
+        ].join(' ').toLocaleLowerCase('en-US')}
+      >
         <div class="deck-tile-art">
           <img
             src={deck.featuredCard.artCrop}
@@ -77,4 +128,87 @@ const manaColors = {
       </a>
     ))}
   </section>
+  <div class="deck-filter-empty" data-deck-filter-empty hidden>
+    <p>No decks match those filters.</p>
+    <button type="button" data-reset-deck-filters>Reset filters</button>
+  </div>
 </BaseLayout>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>('[data-deck-search]');
+  const colorButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-color-filter]')];
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-deck-card]')];
+  const count = document.querySelector<HTMLElement>('[data-deck-filter-count]');
+  const empty = document.querySelector<HTMLElement>('[data-deck-filter-empty]');
+  const matchModeButton = document.querySelector<HTMLButtonElement>('[data-color-match-mode]');
+  const resetButton = document.querySelector<HTMLButtonElement>('[data-reset-deck-filters]');
+  const selectedColors = new Set(
+    colorButtons
+      .map((button) => button.dataset.colorFilter)
+      .filter((color): color is string => Boolean(color)),
+  );
+  let matchMode: 'any' | 'all' = 'any';
+
+  const filterDecks = () => {
+    const query = search?.value.trim().toLocaleLowerCase('en-US') ?? '';
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const cardColors = card.dataset.deckColors?.split(',') ?? [];
+      const matchesSearch = !query || card.dataset.deckSearchable?.includes(query);
+      const matchesColors = selectedColors.size > 0 && (matchMode === 'all'
+        ? [...selectedColors].every((color) => cardColors.includes(color))
+        : cardColors.some((color) => selectedColors.has(color)));
+      const matches = matchesSearch && matchesColors;
+
+      card.hidden = !matches;
+      if (matches) visible += 1;
+    });
+
+    if (count) count.textContent = `${visible} ${visible === 1 ? 'deck' : 'decks'}`;
+    if (empty) empty.hidden = visible !== 0;
+  };
+
+  search?.addEventListener('input', filterDecks);
+  colorButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const color = button.dataset.colorFilter;
+      if (!color) return;
+
+      if (selectedColors.has(color)) selectedColors.delete(color);
+      else selectedColors.add(color);
+      button.setAttribute('aria-pressed', String(selectedColors.has(color)));
+      filterDecks();
+    });
+  });
+  matchModeButton?.addEventListener('click', () => {
+    matchMode = matchMode === 'any' ? 'all' : 'any';
+    matchModeButton.textContent = matchMode.toUpperCase();
+    matchModeButton.dataset.mode = matchMode;
+    matchModeButton.setAttribute(
+      'aria-label',
+      `Color matching mode: ${matchMode} selected color${matchMode === 'all' ? 's' : ''}`,
+    );
+    matchModeButton.title = matchMode === 'all'
+      ? 'Match decks with all selected colors'
+      : 'Match decks with any selected color';
+    filterDecks();
+  });
+  resetButton?.addEventListener('click', () => {
+    if (search) search.value = '';
+    selectedColors.clear();
+    colorButtons.forEach((button) => {
+      const color = button.dataset.colorFilter;
+      if (color) selectedColors.add(color);
+      button.setAttribute('aria-pressed', 'true');
+    });
+    matchMode = 'any';
+    if (matchModeButton) {
+      matchModeButton.textContent = 'ANY';
+      matchModeButton.dataset.mode = 'any';
+      matchModeButton.setAttribute('aria-label', 'Color matching mode: any selected color');
+      matchModeButton.title = 'Match decks with any selected color';
+    }
+    filterDecks();
+  });
+</script>
