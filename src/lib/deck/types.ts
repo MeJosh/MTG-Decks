@@ -13,4 +13,6 @@ export interface DeckEntry {
 export interface ParsedDeck {
   mainboard: DeckEntry[];
   sideboard: DeckEntry[];
+  commanders: DeckEntry[];
+  companion: DeckEntry[];
 }

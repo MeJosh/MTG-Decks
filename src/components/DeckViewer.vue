@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { createPinia } from 'pinia';
-import { onMounted, onUnmounted } from 'vue';
+import { computed, onMounted, onUnmounted } from 'vue';
 
 import type { DeckGroup } from '../lib/deck/grouping';
 import type { ResolvedDeckEntry } from '../lib/deck/resolver';
@@ -9,14 +9,37 @@ import { usePreviewStore } from '../stores/preview';
 const props = defineProps<{
   groups: DeckGroup[];
   sideboard: ResolvedDeckEntry[];
-  mainboardCount: number;
+  commanders: ResolvedDeckEntry[];
+  companion: ResolvedDeckEntry[];
+  deckCount: number;
   sideboardCount: number;
 }>();
 
 const piniaRuntime = globalThis as Record<string, unknown>;
 piniaRuntime['__VUE_' + 'PROD_DEVTOOLS__'] ??= false;
 const previewStore = usePreviewStore(createPinia());
-const initialEntry = props.groups[0]?.entries[0] ?? props.sideboard[0];
+const initialEntry = props.groups[0]?.entries[0] ?? props.commanders[0] ?? props.companion[0] ?? props.sideboard[0];
+
+const supplementalSections = computed(() => [
+  {
+    key: 'commander',
+    label: props.commanders.length === 1 ? 'Commander' : 'Commanders',
+    entries: props.commanders,
+    count: props.commanders.reduce((total, entry) => total + entry.quantity, 0),
+  },
+  {
+    key: 'companion',
+    label: 'Companion',
+    entries: props.companion,
+    count: props.companion.reduce((total, entry) => total + entry.quantity, 0),
+  },
+  {
+    key: 'sideboard',
+    label: 'Sideboard',
+    entries: props.sideboard,
+    count: props.sideboardCount,
+  },
+].filter((section) => section.entries.length > 0));
 
 if (initialEntry) previewStore.preview(initialEntry.card);
 
@@ -54,10 +77,10 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
 <template>
   <div class="deck-shell">
     <div class="deck-columns">
-      <section aria-labelledby="mainboard-heading">
+      <section aria-labelledby="deck-heading">
         <div class="section-heading">
-          <h2 id="mainboard-heading">Maindeck</h2>
-          <span>{{ mainboardCount }}</span>
+          <h2 id="deck-heading">Deck</h2>
+          <span>{{ deckCount }}</span>
         </div>
 
         <div class="groups-grid">
@@ -106,48 +129,55 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
         </div>
       </section>
 
-      <section v-if="sideboard.length" aria-labelledby="sideboard-heading" class="sideboard">
-        <div class="section-heading">
-          <h2 id="sideboard-heading">Sideboard</h2>
-          <span>{{ sideboardCount }}</span>
-        </div>
-        <ul class="sideboard-list">
-          <li v-for="entry in sideboard" :key="`${entry.card.id}-${entry.line}`">
-            <span class="quantity">{{ entry.quantity }}</span>
-            <a
-              :href="entry.card.scryfallUri"
-              :data-card-id="entry.card.id"
-              target="_blank"
-              rel="noreferrer"
-              @mouseenter="previewStore.preview(entry.card)"
-              @focus="previewStore.preview(entry.card)"
-              @click="handleCardClick($event, entry)"
-            >{{ entry.name }}</a>
-            <span
-              v-if="entry.card.manaCost"
-              class="mana-cost"
-              :data-mana-for="entry.card.id"
-              :aria-label="`Mana cost ${displayedManaCost(entry.card.manaCost)}`"
-            >
-              <img
-                v-for="(symbol, symbolIndex) in manaSymbols(entry.card.manaCost)"
-                :key="`${symbol}-${symbolIndex}`"
-                class="mana-symbol"
-                :src="manaSymbolUrl(symbol)"
-                :alt="`{${symbol}}`"
-                width="18"
-                height="18"
-              />
-            </span>
-            <span
-              v-if="entry.warning"
-              class="warning"
-              :title="entry.warning"
-              :aria-label="entry.warning"
-            >!</span>
-          </li>
-        </ul>
-      </section>
+      <aside v-if="supplementalSections.length" class="supplemental">
+        <section
+          v-for="section in supplementalSections"
+          :key="section.key"
+          :aria-labelledby="`${section.key}-heading`"
+          class="supplemental-section"
+        >
+          <div class="section-heading">
+            <h2 :id="`${section.key}-heading`">{{ section.label }}</h2>
+            <span>{{ section.count }}</span>
+          </div>
+          <ul class="supplemental-list">
+            <li v-for="entry in section.entries" :key="`${section.key}-${entry.card.id}-${entry.line}`">
+              <span class="quantity">{{ entry.quantity }}</span>
+              <a
+                :href="entry.card.scryfallUri"
+                :data-card-id="entry.card.id"
+                target="_blank"
+                rel="noreferrer"
+                @mouseenter="previewStore.preview(entry.card)"
+                @focus="previewStore.preview(entry.card)"
+                @click="handleCardClick($event, entry)"
+              >{{ entry.name }}</a>
+              <span
+                v-if="entry.card.manaCost"
+                class="mana-cost"
+                :data-mana-for="entry.card.id"
+                :aria-label="`Mana cost ${displayedManaCost(entry.card.manaCost)}`"
+              >
+                <img
+                  v-for="(symbol, symbolIndex) in manaSymbols(entry.card.manaCost)"
+                  :key="`${symbol}-${symbolIndex}`"
+                  class="mana-symbol"
+                  :src="manaSymbolUrl(symbol)"
+                  :alt="`{${symbol}}`"
+                  width="18"
+                  height="18"
+                />
+              </span>
+              <span
+                v-if="entry.warning"
+                class="warning"
+                :title="entry.warning"
+                :aria-label="entry.warning"
+              >!</span>
+            </li>
+          </ul>
+        </section>
+      </aside>
     </div>
 
     <aside v-if="previewStore.current" class="preview-rail" aria-live="polite">
@@ -211,7 +241,8 @@ li a:hover, li a:focus-visible { color: var(--accent); text-decoration: underlin
 .mana-cost { display: inline-flex; align-items: center; justify-content: end; gap: .12rem; min-width: 1rem; margin-left: .65rem; }
 .mana-symbol { display: block; width: 1rem; height: 1rem; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .5)); }
 .warning { display: inline-grid; place-items: center; width: .9rem; height: .9rem; margin-left: .35rem; border-radius: 999px; background: var(--warning); color: #19150b; font-size: .65rem; font-weight: 900; cursor: help; }
-.sideboard-list { padding-top: 1.55rem; }
+.supplemental { display: grid; align-content: start; gap: 2.5rem; }
+.supplemental-list { padding-top: 1.55rem; }
 .preview-rail { display: none; }
 .eyebrow { margin: 0 0 .7rem; color: var(--muted); font-size: .7rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
 .preview-sticky img { display: block; width: 100%; border-radius: 4.5% / 3.2%; box-shadow: 0 1.5rem 4rem rgba(0,0,0,.28); background: #111; }

@@ -21,14 +21,21 @@ const deck = await loadPublishedDeck(entry.data.decklist);
       <p class="eyebrow">{entry.data.format}</p>
       <h1>{entry.data.title}</h1>
     </div>
-    <span class="deck-file">{entry.data.decklist}</span>
+    <div class="deck-meta">
+      {entry.data.source && (
+        <a href={entry.data.source} target="_blank" rel="noreferrer">View source on Moxfield ↗</a>
+      )}
+      <span class="deck-file">{entry.data.decklist}</span>
+    </div>
   </header>
 
   <DeckViewer
     client:load
     groups={deck.groups}
     sideboard={deck.sideboard}
-    mainboardCount={deck.mainboardCount}
+    commanders={deck.commanders}
+    companion={deck.companion}
+    deckCount={deck.deckCount}
     sideboardCount={deck.sideboardCount}
   />
 

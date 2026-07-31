@@ -41,7 +41,7 @@ describe('DeckViewer', () => {
 
   it('previews the first card initially and changes on hover', async () => {
     const wrapper = mount(DeckViewer, {
-      props: { groups, sideboard: [], mainboardCount: 8, sideboardCount: 0 },
+      props: { groups, sideboard: [], commanders: [], companion: [], deckCount: 8, sideboardCount: 0 },
     });
 
     expect(wrapper.get('[data-preview-image]').attributes('alt')).toContain('First Elf');
@@ -59,10 +59,30 @@ describe('DeckViewer', () => {
       vi.fn(() => ({ matches: true })),
     );
     const wrapper = mount(DeckViewer, {
-      props: { groups, sideboard: [], mainboardCount: 8, sideboardCount: 0 },
+      props: { groups, sideboard: [], commanders: [], companion: [], deckCount: 8, sideboardCount: 0 },
     });
 
     await wrapper.get('[data-card-id="2"]').trigger('click');
     expect(wrapper.get('[role="dialog"]').text()).toContain('Second Elf');
+  });
+
+  it('shows only populated supplemental sections and includes Commanders in the Deck count', () => {
+    const commander = entry('Lathril, Blade of the Elves', '3');
+    commander.quantity = 1;
+    const wrapper = mount(DeckViewer, {
+      props: {
+        groups,
+        sideboard: [],
+        commanders: [commander],
+        companion: [],
+        deckCount: 9,
+        sideboardCount: 0,
+      },
+    });
+
+    expect(wrapper.get('#deck-heading').element.parentElement?.textContent).toContain('9');
+    expect(wrapper.get('#commander-heading').text()).toBe('Commander');
+    expect(wrapper.text()).not.toContain('Companion');
+    expect(wrapper.text()).not.toContain('Sideboard');
   });
 });

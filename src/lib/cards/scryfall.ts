@@ -59,7 +59,9 @@ export class ScryfallCatalog implements CardCatalog {
   }
 
   async byPrinting(set: string, collectorNumber: string): Promise<CardPrinting | undefined> {
-    const key = `printing-${set.toLowerCase()}-${collectorNumber.toLowerCase()}`;
+    const normalizedSet = encodeURIComponent(set.toLowerCase());
+    const normalizedCollectorNumber = encodeURIComponent(collectorNumber.toLowerCase());
+    const key = `printing-${normalizedSet}-${normalizedCollectorNumber}`;
     return this.#cached(key, async () => {
       const response = await this.#request(
         `https://api.scryfall.com/cards/${encodeURIComponent(set.toLowerCase())}/${encodeURIComponent(collectorNumber)}`,

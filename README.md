@@ -7,8 +7,23 @@ A static Astro site for publishing Git-managed Magic: The Gathering decklists.
 - Put portable decklists in `decks/*.dec`.
 - Put deck pages in `src/content/decks/*.md`. The Markdown filename owns the URL slug.
 - Point the frontmatter `decklist` field at any filename in `decks/`.
+- Source-backed deck pages may include a canonical external `source` URL.
 - Add preferred fallback printings to `config/preferred-printings.json`, keyed by lowercase card name.
 - Scryfall metadata is generated under `.cache/card-data/`; this directory is ignored by Git and kept away from deck sources.
+
+Portable decklists may use optional `COMMANDER:`, `COMPANION:`, `MAINBOARD:`, and `SIDEBOARD:` sections. Existing files without a `MAINBOARD:` marker remain valid. Commanders contribute to the Deck count; a Companion does not.
+
+## Importing from Moxfield
+
+Import a public or unlisted Moxfield deck and warm its Scryfall cache:
+
+```sh
+pnpm import:moxfield https://www.moxfield.com/decks/<deck-id>
+```
+
+For a new source, the command creates matching files in `decks/` and `src/content/decks/`. Use `--slug <slug>` to override their generated name and `--title <title>` to override the initial local title. A later import of the same Moxfield deck replaces only the referenced `.dec` file and preserves the local title, format, slug, and Primer.
+
+Add `--build` to run a full site build after importing. If Moxfield's unsupported public endpoint is unavailable, save its raw deck JSON and pass it with `--file <path>`; the Moxfield URL is still required as the deck's stable source identity.
 
 ## Commands
 
@@ -19,6 +34,7 @@ pnpm test
 pnpm lint
 pnpm check
 pnpm build
+pnpm import:moxfield <moxfield-url>
 ```
 
 The first build requires network access to resolve uncached cards through Scryfall. Later builds reuse the local ignored cache.

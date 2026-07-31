@@ -8,6 +8,7 @@ const decks = defineCollection({
     title: z.string().min(1),
     format: z.string().min(1),
     decklist: z.string().regex(/^[^/\\]+\.dec$/i, 'Must name a .dec file inside /decks.'),
+    source: z.url().optional(),
   }),
 });
 

@@ -34,16 +34,50 @@ SIDEBOARD:
         line: 6,
       },
     ]);
+    expect(deck.commanders).toEqual([]);
+    expect(deck.companion).toEqual([]);
+  });
+
+  it('parses optional Commander, Companion, mainboard, and sideboard sections', () => {
+    const deck = parseDeck(`COMMANDER:
+1 Reyhan, Last of the Abzan (C16) 40
+1 Slurrk, All-Ingesting (CMR) 250
+
+COMPANION:
+1 Umori, the Collector (IKO) 231
+
+MAINBOARD:
+1 Forest
+
+SIDEBOARD:
+1 Naturalize`);
+
+    expect(deck.commanders.map((entry) => entry.name)).toEqual([
+      'Reyhan, Last of the Abzan',
+      'Slurrk, All-Ingesting',
+    ]);
+    expect(deck.companion.map((entry) => entry.name)).toEqual(['Umori, the Collector']);
+    expect(deck.mainboard.map((entry) => entry.name)).toEqual(['Forest']);
+    expect(deck.sideboard.map((entry) => entry.name)).toEqual(['Naturalize']);
   });
 
   it('ignores blank lines and a trailing newline', () => {
     expect(parseDeck('\n1 Island\n\n').mainboard).toHaveLength(1);
   });
 
+  it('preserves nonstandard collector numbers', () => {
+    expect(parseDeck('1 Example Card (TST) ★ 1').mainboard[0]?.printing).toEqual({
+      set: 'TST',
+      collectorNumber: '★ 1',
+    });
+  });
+
   it.each([
     ['zero quantity', '0 Island', 1],
     ['missing quantity', 'Island', 1],
     ['duplicate sideboard marker', '1 Island\nSIDEBOARD:\nSIDEBOARD:', 3],
+    ['multiple companions', 'COMPANION:\n1 Umori\n1 Yorion\nMAINBOARD:\n1 Island', 3],
+    ['multiple copies of a Commander', 'COMMANDER:\n2 Krark\nMAINBOARD:\n1 Island', 2],
   ])('rejects %s', (_, source, line) => {
     expect(() => parseDeck(source)).toThrow(DeckParseError);
     expect(() => parseDeck(source)).toThrow(`line ${line}`);

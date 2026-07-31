@@ -32,13 +32,20 @@ export async function loadPublishedDeck(decklist: string) {
   const preferred = preferredPrintings as PreferredPrintings;
   const mainboard = await resolveEntries(parsed.mainboard, catalog, preferred);
   const sideboard = await resolveEntries(parsed.sideboard, catalog, preferred);
+  const commanders = await resolveEntries(parsed.commanders, catalog, preferred);
+  const companion = await resolveEntries(parsed.companion, catalog, preferred);
 
   return {
     groups: groupMainboard(mainboard),
     sideboard,
-    mainboardCount: mainboard.reduce((total, entry) => total + entry.quantity, 0),
+    commanders,
+    companion,
+    deckCount: [...mainboard, ...commanders].reduce(
+      (total, entry) => total + entry.quantity,
+      0,
+    ),
     sideboardCount: sideboard.reduce((total, entry) => total + entry.quantity, 0),
-    warnings: [...mainboard, ...sideboard].flatMap((entry) =>
+    warnings: [...mainboard, ...sideboard, ...commanders, ...companion].flatMap((entry) =>
       entry.warning ? [entry.warning] : [],
     ),
   };
