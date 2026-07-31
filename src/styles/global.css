@@ -55,7 +55,7 @@ button, input, textarea { font: inherit; }
 .site-mark span { color: var(--accent); }
 .theme-control { display: flex; width: 2.875rem; align-self: stretch; align-items: center; }
 .page-main { padding-block: clamp(3rem, 7vw, 6.5rem); }
-.page-main:has(> .deck-header) { padding-top: clamp(1.5rem, 2.75vw, 2.5rem); }
+.page-main:has(> .deck-header, > .home-header) { padding-top: clamp(1.5rem, 2.75vw, 2.5rem); }
 .deck-header { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: clamp(1.5rem, 2.75vw, 2.5rem); }
 .deck-header .eyebrow { margin: 0 0 .7rem; color: var(--accent); font-size: .7rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
 .deck-header h1 { margin: 0; font-size: clamp(2.35rem, 5vw, 4.5rem); font-weight: 520; letter-spacing: -.045em; line-height: 1.02; }
@@ -73,7 +73,7 @@ button, input, textarea { font: inherit; }
 .primer h2 { margin: 0 0 1.25rem; color: var(--ink); font-size: 1.65rem; letter-spacing: -.03em; }
 .primer h3 { color: var(--ink); }
 .primer a { color: var(--accent); }
-.home-header { max-width: 48rem; margin-bottom: 4rem; }
+.home-header { max-width: 48rem; margin-bottom: clamp(1.5rem, 2.75vw, 2.5rem); }
 .home-header .eyebrow { color: var(--accent); font-size: .7rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
 .home-header h1 { margin: .7rem 0 1.25rem; font-size: clamp(2.5rem, 6vw, 4.75rem); font-weight: 500; letter-spacing: -.025em; line-height: .9; }
 .home-header p { max-width: 36rem; color: var(--muted); font-size: 1.05rem; line-height: 1.65; }
