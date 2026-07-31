@@ -90,14 +90,18 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
               <span class="group-count">{{ group.count }}</span>
             </h3>
             <ul>
-              <li v-for="entry in group.entries" :key="`${entry.card.id}-${entry.line}`">
+              <li
+                v-for="entry in group.entries"
+                :key="`${entry.card.id}-${entry.line}`"
+                :data-card-row="entry.card.id"
+                @pointerenter="previewStore.preview(entry.card)"
+              >
                 <span class="quantity">{{ entry.quantity }}</span>
                 <a
                   :href="entry.card.scryfallUri"
                   :data-card-id="entry.card.id"
                   target="_blank"
                   rel="noreferrer"
-                  @mouseenter="previewStore.preview(entry.card)"
                   @focus="previewStore.preview(entry.card)"
                   @click="handleCardClick($event, entry)"
                 >{{ entry.name }}</a>
@@ -141,14 +145,18 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
             <span>{{ section.count }}</span>
           </div>
           <ul class="supplemental-list">
-            <li v-for="entry in section.entries" :key="`${section.key}-${entry.card.id}-${entry.line}`">
+            <li
+              v-for="entry in section.entries"
+              :key="`${section.key}-${entry.card.id}-${entry.line}`"
+              :data-card-row="entry.card.id"
+              @pointerenter="previewStore.preview(entry.card)"
+            >
               <span class="quantity">{{ entry.quantity }}</span>
               <a
                 :href="entry.card.scryfallUri"
                 :data-card-id="entry.card.id"
                 target="_blank"
                 rel="noreferrer"
-                @mouseenter="previewStore.preview(entry.card)"
                 @focus="previewStore.preview(entry.card)"
                 @click="handleCardClick($event, entry)"
               >{{ entry.name }}</a>

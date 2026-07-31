@@ -40,7 +40,7 @@ describe('DeckViewer', () => {
     );
   });
 
-  it('previews the first card initially and changes on hover', async () => {
+  it('previews the first card initially and changes when a card row is pointed at', async () => {
     const wrapper = mount(DeckViewer, {
       props: { groups, sideboard: [], commanders: [], companion: [], deckCount: 8, sideboardCount: 0 },
     });
@@ -50,7 +50,7 @@ describe('DeckViewer', () => {
       '{2}',
       '{G}',
     ]);
-    await wrapper.get('[data-card-id="2"]').trigger('mouseenter');
+    await wrapper.get('[data-card-row="2"]').trigger('pointerenter');
     expect(wrapper.get('[data-preview-image]').attributes('alt')).toContain('Second Elf');
   });
 
