@@ -11,7 +11,7 @@ A static Astro site for publishing Git-managed Magic: The Gathering decklists.
 - Optionally add unique, free-form Deck Tags with `tags: [Aggro, Graveyard]`.
 - Source-backed deck pages may include a canonical external `source` URL.
 - Add preferred fallback printings to `config/preferred-printings.json`, keyed by lowercase card name.
-- Scryfall metadata is generated under `.cache/card-data/`; this directory is ignored by Git and kept away from deck sources.
+- Scryfall metadata is generated under `.cache/card-data/` and committed to Git so production builds do not depend on Scryfall availability.
 
 Portable decklists may use optional `COMMANDER:`, `COMPANION:`, `MAINBOARD:`, and `SIDEBOARD:` sections. Existing files without a `MAINBOARD:` marker remain valid. Commanders contribute to the Deck count; a Companion does not.
 
@@ -50,4 +50,4 @@ pnpm import:moxfield <moxfield-url>
 pnpm sync:moxfield
 ```
 
-The first build requires network access to resolve uncached cards through Scryfall. Later builds reuse the local ignored cache.
+New or changed cards require a one-time Scryfall lookup to refresh `.cache/card-data/`; commit the resulting cache files with the deck changes. Builds then resolve existing cards without network access.

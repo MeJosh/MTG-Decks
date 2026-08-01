@@ -1,0 +1,13 @@
+{
+  "id": "dacdd380-71cf-4832-bd02-3697501325f3",
+  "name": "Counterspell",
+  "typeLine": "Instant",
+  "manaCost": "{U}{U}",
+  "set": "TMP",
+  "setName": "Tempest",
+  "collectorNumber": "57",
+  "releasedAt": "1997-10-14",
+  "scryfallUri": "https://scryfall.com/card/tmp/57/counterspell?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/a/dacdd380-71cf-4832-bd02-3697501325f3.jpg?1783946657",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/a/dacdd380-71cf-4832-bd02-3697501325f3.jpg?1783946657"
+}

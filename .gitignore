@@ -1,7 +1,9 @@
 node_modules/
 dist/
 .astro/
-.cache/
+.cache/*
+!.cache/card-data/
+!.cache/card-data/**
 .pnpm-store/
 .DS_Store
 coverage/
