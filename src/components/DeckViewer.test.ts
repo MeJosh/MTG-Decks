@@ -15,7 +15,7 @@ function entry(name: string, id: string): ResolvedDeckEntry {
       id,
       name,
       typeLine: 'Creature — Elf',
-      manaCost: id === '1' ? '{2}{G}' : '{G}',
+      manaCost: id === '1' ? '{2}{G}{G/U}' : '{G}',
       set: 'TST',
       setName: 'Test Set',
       collectorNumber: id,
@@ -51,7 +51,11 @@ describe('DeckViewer', () => {
     expect(wrapper.findAll('[data-mana-for="1"] .mana-symbol').map((symbol) => symbol.attributes('alt'))).toEqual([
       '{2}',
       '{G}',
+      '{G/U}',
     ]);
+    expect(wrapper.findAll('[data-mana-for="1"] .mana-symbol')[2]?.attributes('src')).toBe(
+      'https://svgs.scryfall.io/card-symbols/GU.svg',
+    );
     await wrapper.get('[data-card-row="2"]').trigger('mouseover');
     expect(wrapper.get('[data-preview-image]').attributes('alt')).toContain('Second Elf');
   });

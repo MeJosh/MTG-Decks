@@ -63,7 +63,7 @@ function displayedManaCost(manaCost: string): string {
 }
 
 function manaSymbolUrl(symbol: string): string {
-  const fileName = encodeURIComponent(symbol.replaceAll('/', '-'));
+  const fileName = encodeURIComponent(symbol.replaceAll('/', ''));
   return `https://svgs.scryfall.io/card-symbols/${fileName}.svg`;
 }
 
