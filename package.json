@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "cache:clean": "node tools/cache/cli.ts clean",
+    "cache:prune": "node tools/cache/cli.ts prune",
     "import:moxfield": "node tools/import-moxfield/cli.ts",
     "sync:moxfield": "node tools/import-moxfield/sync-cli.ts",
     "preview": "astro preview",

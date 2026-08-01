@@ -51,3 +51,11 @@ pnpm sync:moxfield
 ```
 
 New or changed cards require a one-time Scryfall lookup to refresh `.cache/card-data/`; commit the resulting cache files with the deck changes. Builds then resolve existing cards without network access.
+
+To tidy the tracked cache without contacting Scryfall, remove entries no longer referenced by a deck or preferred printing:
+
+```sh
+pnpm cache:prune
+```
+
+To discard all cached card data before rebuilding it, use `pnpm cache:clean`.
