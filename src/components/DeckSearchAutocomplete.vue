@@ -107,6 +107,12 @@ function commitNativeFilter(event: KeyboardEvent) {
   (event.currentTarget as HTMLInputElement).blur();
 }
 
+function blurSearch(event: KeyboardEvent) {
+  event.preventDefault();
+  autocomplete.value?.hide();
+  root.value?.querySelector<HTMLInputElement>('[data-deck-search]')?.blur();
+}
+
 function selectSuggestion() {
   void syncFilter().then(() => window.setTimeout(() => {
     autocomplete.value?.hide();
@@ -117,7 +123,7 @@ function selectSuggestion() {
 </script>
 
 <template>
-  <span ref="root" class="deck-autocomplete">
+  <span ref="root" class="deck-autocomplete" @keydown.esc="blurSearch">
     <input
       v-if="!autocompleteEnabled"
       type="search"
