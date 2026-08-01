@@ -1,0 +1,481 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DeckSearchAutocomplete from '../components/DeckSearchAutocomplete.vue';
+import DeckGridSizeToggle from '../components/DeckGridSizeToggle.vue';
+import SearchHelp from '../components/SearchHelp.vue';
+import { loadPublishedDeck } from '../lib/deck/published';
+
+const entries = (await getCollection('decks')).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title),
+);
+const format = Astro.params.format?.toLocaleLowerCase('en-US');
+const selectedFormat = format === 'all' ? undefined : format;
+const filteredEntries = selectedFormat
+  ? entries.filter((entry) => entry.data.format.toLocaleLowerCase('en-US') === selectedFormat)
+  : entries;
+const decks = await Promise.all(
+  filteredEntries.map(async (entry) => ({
+    entry,
+    deck: await loadPublishedDeck(entry.data.decklist, entry.data.featuredCard),
+  })),
+);
+const autocompleteDecks = decks.map(({ entry }) => ({ title: entry.data.title, slug: entry.id }));
+const autocompleteCards = [...new Set(
+  decks.flatMap(({ deck }) => [
+    ...deck.groups.flatMap((group) => group.entries.map(({ card }) => card.name)),
+    ...deck.sideboard.map(({ card }) => card.name),
+    ...deck.commanders.map(({ card }) => card.name),
+    ...deck.companion.map(({ card }) => card.name),
+  ]),
+)].sort((a, b) => a.localeCompare(b));
+
+const manaColors = {
+  W: { name: 'White', symbol: 'W' },
+  U: { name: 'Blue', symbol: 'U' },
+  B: { name: 'Black', symbol: 'B' },
+  R: { name: 'Red', symbol: 'R' },
+  G: { name: 'Green', symbol: 'G' },
+  C: { name: 'Colorless', symbol: 'C' },
+} as const;
+
+export async function getStaticPaths() {
+  const formats = [...new Set(
+    (await getCollection('decks')).map((entry) => entry.data.format.toLocaleLowerCase('en-US')),
+  )];
+
+  return [...formats, 'all'].map((format) => ({ params: { format } }));
+}
+---
+
+<BaseLayout title={selectedFormat ? `${selectedFormat[0]?.toUpperCase()}${selectedFormat.slice(1)} Decks · MTG Decks` : 'All Decks · MTG Decks'}>
+  <header class="home-header">
+    <p class="eyebrow">Deck library</p>
+    <h1>Decks worth keeping.</h1>
+    <p>A small, Git-managed collection of Magic decks, built for quick reference now and deeper analysis later.</p>
+  </header>
+  <details class="deck-filters" open>
+    <summary>
+      <span>Filters</span>
+      <span class="deck-filter-count" data-deck-filter-count>{decks.length} decks</span>
+      <svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4" /></svg>
+    </summary>
+    <div class="deck-filter-controls">
+      <div class="deck-search-tools">
+        <label class="deck-search">
+          <span class="visually-hidden">Search decks</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
+          <DeckSearchAutocomplete
+            decks={autocompleteDecks}
+            cards={autocompleteCards}
+            client:load
+          />
+        </label>
+        <SearchHelp client:load />
+      </div>
+      <div class="deck-filter-options">
+        <div class="color-filters" aria-label="Filter by mana color">
+          {Object.entries(manaColors).filter(([color]) => color !== 'C').map(([color, { name, symbol }]) => (
+            <button
+              class={`color-filter mana-${color.toLocaleLowerCase('en-US')}`}
+              type="button"
+              aria-pressed="true"
+              aria-label={`Filter by ${name}`}
+              title={name}
+              data-color-filter={color}
+            >
+              {symbol}
+            </button>
+          ))}
+        </div>
+        <button
+          class="color-match-mode"
+          type="button"
+          aria-label="Color matching mode: any selected color"
+          title="Match decks with any selected color"
+          data-color-match-mode
+          data-mode="any"
+        >ANY</button>
+      </div>
+    </div>
+  </details>
+  <div class="deck-grid-toolbar">
+    <DeckGridSizeToggle client:load />
+  </div>
+  <section class="deck-grid" aria-label="Published decks" data-deck-grid>
+    {decks.map(({ entry, deck }) => (
+      <a
+        class="deck-tile"
+        href={`${import.meta.env.BASE_URL}/decks/${entry.id}`}
+        data-deck-card
+        data-deck-colors={deck.manaProfile.map(({ color }) => color).join(',')}
+        data-deck-title={entry.data.title.toLocaleLowerCase('en-US')}
+        data-deck-slug={entry.id.toLocaleLowerCase('en-US')}
+        data-deck-cards={[
+          ...deck.groups.flatMap((group) => group.entries.map(({ card }) => card.name)),
+          ...deck.sideboard.map(({ card }) => card.name),
+          ...deck.commanders.map(({ card }) => card.name),
+          ...deck.companion.map(({ card }) => card.name),
+        ].join(' ').toLocaleLowerCase('en-US')}
+        data-deck-searchable={[
+          entry.data.title,
+          entry.id,
+          entry.data.format,
+          ...entry.data.tags,
+          ...deck.groups.flatMap((group) => group.entries.map(({ card }) => card.name)),
+          ...deck.sideboard.map(({ card }) => card.name),
+          ...deck.commanders.map(({ card }) => card.name),
+          ...deck.companion.map(({ card }) => card.name),
+        ].join(' ').toLocaleLowerCase('en-US')}
+      >
+        <div class="deck-tile-art">
+          <img
+            src={deck.featuredCard.artCrop}
+            alt=""
+            width="488"
+            height="680"
+            loading="lazy"
+          />
+        </div>
+        {deck.featuredCardWarning && (
+          <span
+            class="deck-tile-warning"
+            title={deck.featuredCardWarning}
+            aria-label={deck.featuredCardWarning}
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.8 20h18.4L12 3Zm0 5.5v5m0 3.5h.01" /></svg>
+          </span>
+        )}
+        <div
+          class="mana-profile"
+          aria-label={`Mana profile: ${deck.manaProfile.map(({ color }) => manaColors[color].name).join(', ')}`}
+        >
+          {deck.manaProfile.map(({ color, weight }) => (
+            <span
+              class={`mana-profile-segment mana-${color.toLocaleLowerCase('en-US')}`}
+              style={`flex-grow: ${weight}`}
+              title={manaColors[color].name}
+            >
+              <span aria-hidden="true">{manaColors[color].symbol}</span>
+            </span>
+          ))}
+        </div>
+        <div class="deck-tile-body">
+          <h2>{entry.data.title}</h2>
+          <p>{entry.data.format}</p>
+        </div>
+        {entry.data.tags.length > 0 && (
+          <div class="deck-tags" aria-label="Deck tags">
+            {entry.data.tags.map((tag) => <span>{tag}</span>)}
+          </div>
+        )}
+      </a>
+    ))}
+  </section>
+  <div class="deck-filter-empty" data-deck-filter-empty hidden>
+    <p>No decks match those filters.</p>
+    <button type="button" data-reset-deck-filters>Reset filters</button>
+  </div>
+</BaseLayout>
+
+<script>
+  const getSearch = () => document.querySelector<HTMLInputElement>('[data-deck-search]');
+  const colorButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-color-filter]')];
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-deck-card]')];
+  const count = document.querySelector<HTMLElement>('[data-deck-filter-count]');
+  const empty = document.querySelector<HTMLElement>('[data-deck-filter-empty]');
+  const matchModeButton = document.querySelector<HTMLButtonElement>('[data-color-match-mode]');
+  const resetButton = document.querySelector<HTMLButtonElement>('[data-reset-deck-filters]');
+  const selectedColors = new Set(
+    colorButtons
+      .map((button) => button.dataset.colorFilter)
+      .filter((color): color is string => Boolean(color)),
+  );
+  let matchMode: 'any' | 'all' = 'any';
+  let isFiltering = false;
+  let needsFilterUpdate = false;
+
+  const FADE_DURATION = 140;
+  const MOVE_DURATION = 300;
+  const SPECIFIER_PATTERN = /\b(deck|d|slug|s|card|c|color|cl):([^\s,]*)/g;
+  const SPECIFIER_ALIASES: Record<string, 'deck' | 'slug' | 'card' | 'color'> = {
+    deck: 'deck',
+    d: 'deck',
+    slug: 'slug',
+    s: 'slug',
+    card: 'card',
+    c: 'card',
+    color: 'color',
+    cl: 'color',
+  };
+  const COLOR_SEARCH_VALUES: Record<string, string> = {
+    w: 'W',
+    white: 'W',
+    u: 'U',
+    blue: 'U',
+    b: 'B',
+    black: 'B',
+    r: 'R',
+    red: 'R',
+    g: 'G',
+    green: 'G',
+  };
+  const wait = (duration: number) => new Promise<void>((resolve) => {
+    window.setTimeout(resolve, duration);
+  });
+  const nextFrame = () => new Promise<void>((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+  });
+  const parseSearchGroup = (query: string) => {
+    const specifiers = [...query.matchAll(SPECIFIER_PATTERN)].map(([, type, value]) => ({
+      type: SPECIFIER_ALIASES[type!],
+      value,
+    }));
+    const unscopedQueries = query
+      .replace(SPECIFIER_PATTERN, '')
+      .split(',')
+      .map((value) => value.trim())
+      .filter(Boolean);
+
+    return { specifiers, unscopedQueries };
+  };
+  const matchingCards = () => {
+    const query = (getSearch()?.value.trim().toLocaleLowerCase('en-US') ?? '').replaceAll('+', ',');
+    const searchGroups = query
+      .split('|')
+      .map(parseSearchGroup)
+      .filter(({ specifiers, unscopedQueries }) => specifiers.length || unscopedQueries.length);
+
+    return cards.filter((card) => {
+      const cardColors = card.dataset.deckColors?.split(',') ?? [];
+      const matchesSearch = !searchGroups.length || searchGroups.some(({ specifiers, unscopedQueries }) => {
+        const matchesUnscopedSearch = unscopedQueries.every((value) =>
+          card.dataset.deckSearchable?.includes(value),
+        );
+        const matchesSpecifiers = specifiers.every(({ type, value }) => {
+          if (type === 'color') {
+            const color = COLOR_SEARCH_VALUES[value];
+            return !value || (color !== undefined && cardColors.includes(color));
+          }
+          const searchable = type === 'deck'
+            ? card.dataset.deckTitle
+            : type === 'slug'
+              ? card.dataset.deckSlug
+              : card.dataset.deckCards;
+          return searchable?.includes(value);
+        });
+        return matchesUnscopedSearch && matchesSpecifiers;
+      });
+      const matchesColors = selectedColors.size > 0 && (matchMode === 'all'
+        ? [...selectedColors].every((color) => cardColors.includes(color))
+        : cardColors.some((color) => selectedColors.has(color)));
+
+      return matchesSearch && matchesColors;
+    });
+  };
+  const clearTransitionStyles = (elements: HTMLElement[]) => {
+    elements.forEach((element) => {
+      element.style.opacity = '';
+      element.style.pointerEvents = '';
+      element.style.transform = '';
+      element.style.transition = '';
+    });
+  };
+  const animateReflow = async (elements: HTMLElement[], previousPositions: Map<HTMLElement, DOMRect>) => {
+    const movingElements = elements.flatMap((element) => {
+      const previous = previousPositions.get(element);
+      if (!previous) return [];
+      const next = element.getBoundingClientRect();
+      const x = previous.left - next.left;
+      const y = previous.top - next.top;
+      return x || y ? [{ element, x, y }] : [];
+    });
+
+    if (!movingElements.length) return;
+
+    movingElements.forEach(({ element, x, y }) => {
+      element.style.transition = 'none';
+      element.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    await nextFrame();
+    movingElements.forEach(({ element }) => {
+      element.style.transition = `transform ${MOVE_DURATION}ms cubic-bezier(.42, 0, .58, 1)`;
+      element.style.transform = '';
+    });
+    await wait(MOVE_DURATION);
+    movingElements.forEach(({ element }) => {
+      element.style.transition = '';
+    });
+  };
+  const scrollCardIntoView = (card: HTMLElement) => {
+    const bounds = card.getBoundingClientRect();
+    const safeTop = window.innerHeight * .25;
+    const safeBottom = window.innerHeight * .75;
+    if (bounds.top >= safeTop && bounds.bottom <= safeBottom) return;
+
+    const target = window.scrollY + bounds.top - (window.innerHeight - bounds.height) / 2;
+    const maximumScroll = document.documentElement.scrollHeight - window.innerHeight;
+    window.scrollTo({
+      top: Math.max(0, Math.min(target, maximumScroll)),
+      behavior: 'smooth',
+    });
+  };
+
+  const filterDecks = async () => {
+    if (isFiltering) {
+      needsFilterUpdate = true;
+      return;
+    }
+    isFiltering = true;
+
+    do {
+      needsFilterUpdate = false;
+      const shownCards = cards.filter((card) => !card.hidden);
+      const nextCards = matchingCards();
+      const nextCardSet = new Set(nextCards);
+      const previousPositions = new Map(
+        shownCards.map((card) => [card, card.getBoundingClientRect()]),
+      );
+      const removedCards = shownCards.filter((card) => !nextCardSet.has(card));
+      const addedCards = nextCards.filter((card) => card.hidden);
+      const retainedCards = shownCards.filter((card) => nextCardSet.has(card));
+
+      if (removedCards.length) {
+        removedCards.forEach((card) => {
+          card.style.opacity = '1';
+          card.style.pointerEvents = 'none';
+          card.style.transition = `opacity ${FADE_DURATION}ms ease`;
+        });
+        await nextFrame();
+        removedCards.forEach((card) => {
+          card.style.opacity = '0';
+        });
+        await wait(FADE_DURATION);
+        removedCards.forEach((card) => {
+          card.hidden = true;
+        });
+        clearTransitionStyles(removedCards);
+      }
+
+      addedCards.forEach((card) => {
+        card.hidden = false;
+        card.style.opacity = '0';
+        card.style.pointerEvents = 'none';
+      });
+
+      await animateReflow(retainedCards, previousPositions);
+
+      if (addedCards.length) {
+        addedCards.forEach((card) => {
+          card.style.transition = `opacity ${FADE_DURATION}ms ease`;
+        });
+        await nextFrame();
+        addedCards.forEach((card) => {
+          card.style.opacity = '1';
+        });
+        await wait(FADE_DURATION);
+        clearTransitionStyles(addedCards);
+      }
+
+      if (count) count.textContent = `${nextCards.length} ${nextCards.length === 1 ? 'deck' : 'decks'}`;
+      if (empty) empty.hidden = nextCards.length !== 0;
+    } while (needsFilterUpdate);
+
+    isFiltering = false;
+  };
+
+  document.addEventListener('input', (event) => {
+    if (event.target instanceof HTMLInputElement && event.target.matches('[data-deck-search]')) {
+      filterDecks();
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    const search = getSearch();
+    const activeElement = document.activeElement;
+    const isTypingElsewhere = activeElement instanceof HTMLInputElement
+      || activeElement instanceof HTMLTextAreaElement
+      || activeElement instanceof HTMLSelectElement
+      || (activeElement instanceof HTMLElement && activeElement.isContentEditable);
+
+    if (
+      event.key !== '/'
+      || event.metaKey
+      || event.ctrlKey
+      || event.altKey
+      || activeElement === search
+      || isTypingElsewhere
+    ) return;
+
+    event.preventDefault();
+    search?.focus();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'n' && event.key !== 'p') return;
+    if (event.metaKey || event.ctrlKey || event.altKey) return;
+
+    const activeElement = document.activeElement;
+    const isTyping = activeElement instanceof HTMLInputElement
+      || activeElement instanceof HTMLTextAreaElement
+      || activeElement instanceof HTMLSelectElement
+      || (activeElement instanceof HTMLElement && activeElement.isContentEditable);
+    if (isTyping) return;
+
+    const visibleCards = cards.filter((card) => !card.hidden);
+    if (!visibleCards.length) return;
+
+    const currentIndex = visibleCards.indexOf(activeElement as HTMLElement);
+    const nextIndex = currentIndex === -1
+      ? event.key === 'n' ? 0 : visibleCards.length - 1
+      : event.key === 'n'
+        ? (currentIndex + 1) % visibleCards.length
+        : (currentIndex - 1 + visibleCards.length) % visibleCards.length;
+
+    event.preventDefault();
+    const nextCard = visibleCards[nextIndex];
+    nextCard?.focus({ preventScroll: true });
+    if (nextCard) scrollCardIntoView(nextCard);
+  });
+  colorButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const color = button.dataset.colorFilter;
+      if (!color) return;
+
+      if (selectedColors.has(color)) selectedColors.delete(color);
+      else selectedColors.add(color);
+      button.setAttribute('aria-pressed', String(selectedColors.has(color)));
+      filterDecks();
+    });
+  });
+  matchModeButton?.addEventListener('click', () => {
+    matchMode = matchMode === 'any' ? 'all' : 'any';
+    matchModeButton.textContent = matchMode.toUpperCase();
+    matchModeButton.dataset.mode = matchMode;
+    matchModeButton.setAttribute(
+      'aria-label',
+      `Color matching mode: ${matchMode} selected color${matchMode === 'all' ? 's' : ''}`,
+    );
+    matchModeButton.title = matchMode === 'all'
+      ? 'Match decks with all selected colors'
+      : 'Match decks with any selected color';
+    filterDecks();
+  });
+  resetButton?.addEventListener('click', () => {
+    const search = getSearch();
+    if (search) search.value = '';
+    selectedColors.clear();
+    colorButtons.forEach((button) => {
+      const color = button.dataset.colorFilter;
+      if (color) selectedColors.add(color);
+      button.setAttribute('aria-pressed', 'true');
+    });
+    matchMode = 'any';
+    if (matchModeButton) {
+      matchModeButton.textContent = 'ANY';
+      matchModeButton.dataset.mode = 'any';
+      matchModeButton.setAttribute('aria-label', 'Color matching mode: any selected color');
+      matchModeButton.title = 'Match decks with any selected color';
+    }
+    filterDecks();
+  });
+</script>

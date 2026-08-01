@@ -138,10 +138,13 @@ function validatedTitle(title: string): string {
 }
 
 function newDeckMarkdown(deck: MoxfieldDeck, decklist: string, title?: string): string {
+  const featuredCard = deck.commanders[0]?.name;
+  const featuredCardLine = featuredCard ? `featuredCard: ${JSON.stringify(featuredCard)}\n` : '';
+
   return `---
 title: ${JSON.stringify(validatedTitle(title ?? deck.name))}
 format: ${JSON.stringify(displayFormat(deck.format))}
-decklist: ${decklist}
+${featuredCardLine}decklist: ${decklist}
 source: ${deck.sourceUrl}
 ---
 

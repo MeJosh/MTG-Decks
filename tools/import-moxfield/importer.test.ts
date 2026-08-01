@@ -116,6 +116,9 @@ source: https://www.moxfield.com/decks/abc123
     expect(path.basename(result.markdownPath)).toBe('joshs-commander-deck.md');
     expect(path.basename(result.deckPath)).toBe('joshs-commander-deck.dec');
     expect(await readFile(result.markdownPath, 'utf8')).toContain('source: https://www.moxfield.com/decks/abc123');
+    expect(await readFile(result.markdownPath, 'utf8')).toContain(
+      'featuredCard: "Lathril, Blade of the Elves"',
+    );
   });
 
   it('uses a custom title without changing the generated slug', async () => {

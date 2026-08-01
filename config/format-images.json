@@ -1,0 +1,21 @@
+{
+  "default": {
+    "card": "Expedition Map",
+    "set": "2XM",
+    "collectorNumber": "255"
+  },
+  "formats": [
+    {
+      "format": "Pauper",
+      "card": "Writhing Chrysalis",
+      "set": "MH3",
+      "collectorNumber": "208"
+    },
+    {
+      "format": "Commander",
+      "card": "Rhystic Study",
+      "set": "PCY",
+      "collectorNumber": "45"
+    }
+  ]
+}
