@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+
+import CardCountChart from '../components/CardCountChart.vue';
+import { loadPublishedDeck } from '../lib/deck/published';
+import { countCardEntries } from '../lib/stats/card-counts';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const entries = await getCollection('decks');
+const decks = await Promise.all(entries.map((entry) =>
+  loadPublishedDeck(entry.data.decklist, entry.data.featuredCard),
+));
+const cards = countCardEntries(decks.flatMap((deck) => [
+  ...deck.groups.flatMap((group) => group.entries),
+  ...deck.sideboard,
+  ...deck.commanders,
+  ...deck.companion,
+].map((entry) => ({
+  name: entry.name,
+  quantity: entry.quantity,
+  colorIdentity: entry.card.colorIdentity,
+}))));
+---
+
+<BaseLayout title="Stats · MTG Decks" description="Statistics across the MTG Decks library.">
+  <header class="stats-header">
+    <p class="eyebrow">Deck library</p>
+    <h1>Card counts</h1>
+    <p>Every card quantity across {entries.length} decks, including supplemental sections.</p>
+  </header>
+
+  <section class="stats-chart" aria-labelledby="card-counts-heading">
+    <div class="stats-chart-heading">
+      <h2 id="card-counts-heading">Cards by total copies</h2>
+      <span>{cards.length} unique cards</span>
+    </div>
+    <CardCountChart cards={cards} client:load />
+  </section>
+</BaseLayout>

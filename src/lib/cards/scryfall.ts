@@ -26,6 +26,7 @@ interface ScryfallCard {
   scryfall_uri: string;
   image_uris?: ScryfallImageUris;
   card_faces?: ScryfallCardFace[];
+  color_identity?: string[];
 }
 
 interface ScryfallList {
@@ -50,7 +51,25 @@ function toCardPrinting(card: ScryfallCard): CardPrinting | undefined {
     image,
     artCrop,
     backImage: card.card_faces?.[1]?.image_uris?.normal,
+    colorIdentity: card.color_identity ?? [],
   };
+}
+
+function fallbackColorIdentity(card: Partial<CardPrinting>): string[] {
+  const identity = new Set(['W', 'U', 'B', 'R', 'G'].filter((color) => card.manaCost?.includes(color)));
+  const landColors = {
+    Plains: 'W',
+    Island: 'U',
+    Swamp: 'B',
+    Mountain: 'R',
+    Forest: 'G',
+  } as const;
+
+  for (const [landType, color] of Object.entries(landColors)) {
+    if (card.typeLine?.includes(landType)) identity.add(color);
+  }
+
+  return [...identity];
 }
 
 export class ScryfallCatalog implements CardCatalog {
@@ -100,7 +119,12 @@ export class ScryfallCatalog implements CardCatalog {
     try {
       const cached = JSON.parse(await readFile(cacheFile, 'utf8')) as Partial<CardPrinting>;
       if (typeof cached.manaCost === 'string' && typeof cached.artCrop === 'string') {
-        return cached as CardPrinting;
+        return {
+          ...cached,
+          colorIdentity: Array.isArray(cached.colorIdentity)
+            ? cached.colorIdentity
+            : fallbackColorIdentity(cached),
+        } as CardPrinting;
       }
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;

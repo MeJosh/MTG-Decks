@@ -24,6 +24,7 @@
     "@primeicons/vue": "^8.0.0",
     "@primeuix/themes": "^1.2.5",
     "astro": "^7.1.6",
+    "d3": "^7.9.0",
     "pinia": "^4.0.2",
     "primevue": "^4.5.5",
     "vue": "^3.5.40"
@@ -33,6 +34,7 @@
     "@commitlint/cli": "^21.2.1",
     "@commitlint/config-conventional": "^21.2.0",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/d3": "^7.4.3",
     "@types/node": "^26.1.2",
     "@vue/test-utils": "^2.4.11",
     "husky": "^9.1.7",

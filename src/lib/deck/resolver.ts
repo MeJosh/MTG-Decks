@@ -13,6 +13,7 @@ export interface CardPrinting {
   image: string;
   artCrop: string;
   backImage?: string;
+  colorIdentity?: string[];
 }
 
 export interface CardCatalog {
