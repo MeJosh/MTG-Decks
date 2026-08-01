@@ -33,7 +33,8 @@ function togglePopover(event: Event) {
         <div><dt><code>slug: / s:</code></dt><dd>Deck slug</dd></div>
         <div><dt><code>card: / c:</code></dt><dd>Any deck or sideboard card</dd></div>
         <div><dt><code>color: / cl:</code></dt><dd>Color name or mana letter</dd></div>
-        <div><dt><code>, / +</code></dt><dd>Joins multiple terms</dd></div>
+        <div><dt><code>+ / ,</code></dt><dd>Joins terms (AND)</dd></div>
+        <div><dt><code>|</code></dt><dd>Matches either term (OR)</dd></div>
       </dl>
     </div>
   </Popover>

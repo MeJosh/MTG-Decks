@@ -46,7 +46,7 @@ const manaColors = {
             type="search"
             placeholder="Search decks"
             autocomplete="off"
-            title="Use deck: / d:, slug: / s:, card: / c:, or color: / cl:; separate terms with commas or +"
+            title="Use deck: / d:, slug: / s:, card: / c:, or color: / cl:; use , or + for AND and | for OR"
             data-deck-search
           />
         </label>
@@ -203,8 +203,7 @@ const manaColors = {
   const nextFrame = () => new Promise<void>((resolve) => {
     requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
   });
-  const matchingCards = () => {
-    const query = (search?.value.trim().toLocaleLowerCase('en-US') ?? '').replaceAll('+', ',');
+  const parseSearchGroup = (query: string) => {
     const specifiers = [...query.matchAll(SPECIFIER_PATTERN)].map(([, type, value]) => ({
       type: SPECIFIER_ALIASES[type!],
       value,
@@ -215,28 +214,40 @@ const manaColors = {
       .map((value) => value.trim())
       .filter(Boolean);
 
+    return { specifiers, unscopedQueries };
+  };
+  const matchingCards = () => {
+    const query = (search?.value.trim().toLocaleLowerCase('en-US') ?? '').replaceAll('+', ',');
+    const searchGroups = query
+      .split('|')
+      .map(parseSearchGroup)
+      .filter(({ specifiers, unscopedQueries }) => specifiers.length || unscopedQueries.length);
+
     return cards.filter((card) => {
       const cardColors = card.dataset.deckColors?.split(',') ?? [];
-      const matchesUnscopedSearch = unscopedQueries.every((value) =>
-        card.dataset.deckSearchable?.includes(value),
-      );
-      const matchesSpecifiers = specifiers.every(({ type, value }) => {
-        if (type === 'color') {
-          const color = COLOR_SEARCH_VALUES[value];
-          return !value || (color !== undefined && cardColors.includes(color));
-        }
-        const searchable = type === 'deck'
-          ? card.dataset.deckTitle
-          : type === 'slug'
-            ? card.dataset.deckSlug
-            : card.dataset.deckCards;
-        return searchable?.includes(value);
+      const matchesSearch = !searchGroups.length || searchGroups.some(({ specifiers, unscopedQueries }) => {
+        const matchesUnscopedSearch = unscopedQueries.every((value) =>
+          card.dataset.deckSearchable?.includes(value),
+        );
+        const matchesSpecifiers = specifiers.every(({ type, value }) => {
+          if (type === 'color') {
+            const color = COLOR_SEARCH_VALUES[value];
+            return !value || (color !== undefined && cardColors.includes(color));
+          }
+          const searchable = type === 'deck'
+            ? card.dataset.deckTitle
+            : type === 'slug'
+              ? card.dataset.deckSlug
+              : card.dataset.deckCards;
+          return searchable?.includes(value);
+        });
+        return matchesUnscopedSearch && matchesSpecifiers;
       });
       const matchesColors = selectedColors.size > 0 && (matchMode === 'all'
         ? [...selectedColors].every((color) => cardColors.includes(color))
         : cardColors.some((color) => selectedColors.has(color)));
 
-      return matchesUnscopedSearch && matchesSpecifiers && matchesColors;
+      return matchesSearch && matchesColors;
     });
   };
   const clearTransitionStyles = (elements: HTMLElement[]) => {
