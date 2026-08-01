@@ -120,8 +120,11 @@ button, input, textarea { font: inherit; }
 .deck-tile:hover .deck-tile-art img { filter: saturate(1) contrast(1); transform: scale(1.025); }
 .deck-tile-warning { position: absolute; z-index: 1; top: .65rem; right: .65rem; display: grid; width: 1.65rem; height: 1.65rem; place-items: center; border-radius: 999px; background: color-mix(in srgb, var(--surface) 88%, transparent); color: var(--warning); box-shadow: 0 .1rem .35rem rgba(0, 0, 0, .18); }
 .deck-tile-warning svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
-.mana-profile { display: flex; gap: .22rem; min-height: 2rem; margin: .75rem .85rem 0; overflow: hidden; border-radius: .25rem; }
-.mana-profile-segment { display: grid; min-width: 2.25rem; place-items: center; color: #171917; font-size: .68rem; font-weight: 850; line-height: 1; }
+.mana-profile { --mana-divider: .353rem; --mana-separator: .18rem; display: flex; min-height: 2rem; margin: 0; overflow: hidden; }
+.mana-profile-segment { position: relative; display: grid; min-width: calc(2.25rem + var(--mana-divider)); place-items: center; color: #171917; font-size: .68rem; font-weight: 850; line-height: 1; }
+.mana-profile-segment + .mana-profile-segment { margin-left: calc(-1 * var(--mana-divider)); padding-left: var(--mana-divider); clip-path: polygon(var(--mana-divider) 0, 100% 0, 100% 100%, 0 100%); }
+.mana-profile-segment + .mana-profile-segment::before { position: absolute; inset: 0; background: var(--canvas); clip-path: polygon(var(--mana-divider) 0, calc(var(--mana-divider) + var(--mana-separator)) 0, var(--mana-separator) 100%, 0 100%); content: ""; }
+.mana-profile-segment > span { position: relative; }
 .mana-w { background: #eee8c7; }
 .mana-u { background: #8ec5d5; }
 .mana-b { background: #aaa4a1; }
