@@ -292,6 +292,19 @@ const manaColors = {
       element.style.transition = '';
     });
   };
+  const scrollCardIntoView = (card: HTMLElement) => {
+    const bounds = card.getBoundingClientRect();
+    const safeTop = window.innerHeight * .25;
+    const safeBottom = window.innerHeight * .75;
+    if (bounds.top >= safeTop && bounds.bottom <= safeBottom) return;
+
+    const target = window.scrollY + bounds.top - (window.innerHeight - bounds.height) / 2;
+    const maximumScroll = document.documentElement.scrollHeight - window.innerHeight;
+    window.scrollTo({
+      top: Math.max(0, Math.min(target, maximumScroll)),
+      behavior: 'smooth',
+    });
+  };
 
   const filterDecks = async () => {
     if (isFiltering) {
@@ -380,6 +393,32 @@ const manaColors = {
 
     event.preventDefault();
     search?.focus();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'n' && event.key !== 'p') return;
+    if (event.metaKey || event.ctrlKey || event.altKey) return;
+
+    const activeElement = document.activeElement;
+    const isTyping = activeElement instanceof HTMLInputElement
+      || activeElement instanceof HTMLTextAreaElement
+      || activeElement instanceof HTMLSelectElement
+      || (activeElement instanceof HTMLElement && activeElement.isContentEditable);
+    if (isTyping) return;
+
+    const visibleCards = cards.filter((card) => !card.hidden);
+    if (!visibleCards.length) return;
+
+    const currentIndex = visibleCards.indexOf(activeElement as HTMLElement);
+    const nextIndex = currentIndex === -1
+      ? event.key === 'n' ? 0 : visibleCards.length - 1
+      : event.key === 'n'
+        ? (currentIndex + 1) % visibleCards.length
+        : (currentIndex - 1 + visibleCards.length) % visibleCards.length;
+
+    event.preventDefault();
+    const nextCard = visibleCards[nextIndex];
+    nextCard?.focus({ preventScroll: true });
+    if (nextCard) scrollCardIntoView(nextCard);
   });
   colorButtons.forEach((button) => {
     button.addEventListener('click', () => {

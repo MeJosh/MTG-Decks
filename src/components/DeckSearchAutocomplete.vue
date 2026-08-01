@@ -102,6 +102,11 @@ function commitTypedFilter(event: KeyboardEvent) {
   void commitFilter(event);
 }
 
+function commitNativeFilter(event: KeyboardEvent) {
+  if (event.isComposing) return;
+  (event.currentTarget as HTMLInputElement).blur();
+}
+
 function selectSuggestion() {
   void syncFilter().then(() => window.setTimeout(() => {
     autocomplete.value?.hide();
@@ -120,6 +125,7 @@ function selectSuggestion() {
       autocomplete="off"
       title="Use deck: / d:, slug: / s:, card: / c:, or color: / cl:; use , or + for AND and | for OR"
       data-deck-search
+      @keydown.enter="commitNativeFilter"
     />
     <AutoComplete
       v-else
