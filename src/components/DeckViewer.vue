@@ -15,21 +15,34 @@ const props = defineProps<{
 }>();
 
 const previewStore = usePreviewStore();
-const initialEntry = props.groups[0]?.entries[0] ?? props.commanders[0] ?? props.companion[0] ?? props.sideboard[0];
+const initialEntry = props.commanders[0] ?? props.groups[0]?.entries[0] ?? props.companion[0] ?? props.sideboard[0];
+
+const deckSections = computed(() => [
+  ...(props.commanders.length
+    ? [{
+      key: 'commander',
+      label: props.commanders.length === 1 ? 'Commander' : 'Commanders',
+      entries: props.commanders,
+      count: props.commanders.reduce((total, entry) => total + entry.quantity, 0),
+    }]
+    : []),
+  ...(props.companion.length
+    ? [{
+      key: 'companion',
+      label: 'Companion',
+      entries: props.companion,
+      count: props.companion.reduce((total, entry) => total + entry.quantity, 0),
+    }]
+    : []),
+  ...props.groups.map((group) => ({
+    key: group.label,
+    label: group.label,
+    entries: group.entries,
+    count: group.count,
+  })),
+]);
 
 const supplementalSections = computed(() => [
-  {
-    key: 'commander',
-    label: props.commanders.length === 1 ? 'Commander' : 'Commanders',
-    entries: props.commanders,
-    count: props.commanders.reduce((total, entry) => total + entry.quantity, 0),
-  },
-  {
-    key: 'companion',
-    label: 'Companion',
-    entries: props.companion,
-    count: props.companion.reduce((total, entry) => total + entry.quantity, 0),
-  },
   {
     key: 'sideboard',
     label: 'Sideboard',
@@ -73,7 +86,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
 
 <template>
   <div class="deck-shell">
-    <div class="deck-columns">
+    <div class="deck-columns" :class="{ 'deck-columns--full-width': !supplementalSections.length }">
       <section aria-labelledby="deck-heading">
         <div class="section-heading">
           <h2 id="deck-heading">Deck</h2>
@@ -81,7 +94,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape));
         </div>
 
         <div class="groups-grid">
-          <section v-for="group in groups" :key="group.label" class="card-group">
+          <section v-for="group in deckSections" :key="group.key" class="card-group">
             <h3>
               <span>{{ group.label }}</span>
               <span class="group-count">{{ group.count }}</span>
@@ -261,9 +274,11 @@ li a:hover, li a:focus-visible { color: var(--accent); text-decoration: underlin
 .dialog-card a { color: var(--accent); }
 @media (min-width: 48rem) {
   .deck-columns { grid-template-columns: minmax(0, 1.5fr) minmax(14rem, .75fr); }
+  .deck-columns--full-width { grid-template-columns: minmax(0, 1fr); }
   .groups-grid { columns: 2; }
 }
 @media (min-width: 64rem) {
+  .deck-columns--full-width .groups-grid { columns: 3; }
   .deck-shell { grid-template-columns: minmax(0, 1fr) minmax(16rem, 20rem); }
   .preview-rail { display: block; }
   .preview-sticky { position: sticky; top: 2rem; }

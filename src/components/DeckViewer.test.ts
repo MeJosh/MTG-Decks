@@ -74,7 +74,7 @@ describe('DeckViewer', () => {
     expect(wrapper.get('[role="dialog"]').text()).toContain('Second Elf');
   });
 
-  it('shows only populated supplemental sections and includes Commanders in the Deck count', () => {
+  it('shows Commander above the main deck sections and includes it in the Deck count', () => {
     const commander = entry('Lathril, Blade of the Elves', '3');
     commander.quantity = 1;
     const wrapper = mount(DeckViewer, {
@@ -90,8 +90,34 @@ describe('DeckViewer', () => {
     });
 
     expect(wrapper.get('#deck-heading').element.parentElement?.textContent).toContain('9');
-    expect(wrapper.get('#commander-heading').text()).toBe('Commander');
+    expect(wrapper.findAll('.card-group h3').map((heading) => heading.text())).toEqual([
+      'Commander1',
+      'Creature8',
+    ]);
     expect(wrapper.text()).not.toContain('Companion');
     expect(wrapper.text()).not.toContain('Sideboard');
+  });
+
+  it('keeps a companion in the main deck flow when there is no sideboard', () => {
+    const companion = entry('Kaheera, the Orphanguard', '4');
+    companion.quantity = 1;
+    const wrapper = mount(DeckViewer, {
+      props: {
+        groups,
+        sideboard: [],
+        commanders: [],
+        companion: [companion],
+        deckCount: 8,
+        sideboardCount: 0,
+      },
+      global: { plugins: [createPinia()] },
+    });
+
+    expect(wrapper.findAll('.card-group h3').map((heading) => heading.text())).toEqual([
+      'Companion1',
+      'Creature8',
+    ]);
+    expect(wrapper.find('.supplemental').exists()).toBe(false);
+    expect(wrapper.get('.deck-columns').classes()).toContain('deck-columns--full-width');
   });
 });
