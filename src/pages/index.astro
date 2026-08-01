@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchHelp from '../components/SearchHelp.vue';
 import { loadPublishedDeck } from '../lib/deck/published';
 
 const entries = (await getCollection('decks')).sort((a, b) =>
@@ -37,33 +38,44 @@ const manaColors = {
       <svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4" /></svg>
     </summary>
     <div class="deck-filter-controls">
-      <label class="deck-search">
-        <span class="visually-hidden">Search decks</span>
-        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
-        <input type="search" placeholder="Search decks" autocomplete="off" data-deck-search />
-      </label>
-      <div class="color-filters" aria-label="Filter by mana color">
-        {Object.entries(manaColors).filter(([color]) => color !== 'C').map(([color, { name, symbol }]) => (
-          <button
-            class={`color-filter mana-${color.toLocaleLowerCase('en-US')}`}
-            type="button"
-            aria-pressed="true"
-            aria-label={`Filter by ${name}`}
-            title={name}
-            data-color-filter={color}
-          >
-            {symbol}
-          </button>
-        ))}
+      <div class="deck-search-tools">
+        <label class="deck-search">
+          <span class="visually-hidden">Search decks</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
+          <input
+            type="search"
+            placeholder="Search decks"
+            autocomplete="off"
+            title="Use deck: / d:, slug: / s:, card: / c:, or color: / cl:; separate terms with commas or +"
+            data-deck-search
+          />
+        </label>
+        <SearchHelp client:load />
       </div>
-      <button
-        class="color-match-mode"
-        type="button"
-        aria-label="Color matching mode: any selected color"
-        title="Match decks with any selected color"
-        data-color-match-mode
-        data-mode="any"
-      >ANY</button>
+      <div class="deck-filter-options">
+        <div class="color-filters" aria-label="Filter by mana color">
+          {Object.entries(manaColors).filter(([color]) => color !== 'C').map(([color, { name, symbol }]) => (
+            <button
+              class={`color-filter mana-${color.toLocaleLowerCase('en-US')}`}
+              type="button"
+              aria-pressed="true"
+              aria-label={`Filter by ${name}`}
+              title={name}
+              data-color-filter={color}
+            >
+              {symbol}
+            </button>
+          ))}
+        </div>
+        <button
+          class="color-match-mode"
+          type="button"
+          aria-label="Color matching mode: any selected color"
+          title="Match decks with any selected color"
+          data-color-match-mode
+          data-mode="any"
+        >ANY</button>
+      </div>
     </div>
   </details>
   <section class="deck-grid" aria-label="Published decks" data-deck-grid>
@@ -73,6 +85,14 @@ const manaColors = {
         href={`${import.meta.env.BASE_URL}/decks/${entry.id}`}
         data-deck-card
         data-deck-colors={deck.manaProfile.map(({ color }) => color).join(',')}
+        data-deck-title={entry.data.title.toLocaleLowerCase('en-US')}
+        data-deck-slug={entry.id.toLocaleLowerCase('en-US')}
+        data-deck-cards={[
+          ...deck.groups.flatMap((group) => group.entries.map(({ card }) => card.name)),
+          ...deck.sideboard.map(({ card }) => card.name),
+          ...deck.commanders.map(({ card }) => card.name),
+          ...deck.companion.map(({ card }) => card.name),
+        ].join(' ').toLocaleLowerCase('en-US')}
         data-deck-searchable={[
           entry.data.title,
           entry.id,
@@ -153,6 +173,29 @@ const manaColors = {
 
   const FADE_DURATION = 140;
   const MOVE_DURATION = 300;
+  const SPECIFIER_PATTERN = /\b(deck|d|slug|s|card|c|color|cl):([^\s,]*)/g;
+  const SPECIFIER_ALIASES: Record<string, 'deck' | 'slug' | 'card' | 'color'> = {
+    deck: 'deck',
+    d: 'deck',
+    slug: 'slug',
+    s: 'slug',
+    card: 'card',
+    c: 'card',
+    color: 'color',
+    cl: 'color',
+  };
+  const COLOR_SEARCH_VALUES: Record<string, string> = {
+    w: 'W',
+    white: 'W',
+    u: 'U',
+    blue: 'U',
+    b: 'B',
+    black: 'B',
+    r: 'R',
+    red: 'R',
+    g: 'G',
+    green: 'G',
+  };
 
   const wait = (duration: number) => new Promise<void>((resolve) => {
     window.setTimeout(resolve, duration);
@@ -161,16 +204,39 @@ const manaColors = {
     requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
   });
   const matchingCards = () => {
-    const query = search?.value.trim().toLocaleLowerCase('en-US') ?? '';
+    const query = (search?.value.trim().toLocaleLowerCase('en-US') ?? '').replaceAll('+', ',');
+    const specifiers = [...query.matchAll(SPECIFIER_PATTERN)].map(([, type, value]) => ({
+      type: SPECIFIER_ALIASES[type!],
+      value,
+    }));
+    const unscopedQueries = query
+      .replace(SPECIFIER_PATTERN, '')
+      .split(',')
+      .map((value) => value.trim())
+      .filter(Boolean);
 
     return cards.filter((card) => {
       const cardColors = card.dataset.deckColors?.split(',') ?? [];
-      const matchesSearch = !query || card.dataset.deckSearchable?.includes(query);
+      const matchesUnscopedSearch = unscopedQueries.every((value) =>
+        card.dataset.deckSearchable?.includes(value),
+      );
+      const matchesSpecifiers = specifiers.every(({ type, value }) => {
+        if (type === 'color') {
+          const color = COLOR_SEARCH_VALUES[value];
+          return !value || (color !== undefined && cardColors.includes(color));
+        }
+        const searchable = type === 'deck'
+          ? card.dataset.deckTitle
+          : type === 'slug'
+            ? card.dataset.deckSlug
+            : card.dataset.deckCards;
+        return searchable?.includes(value);
+      });
       const matchesColors = selectedColors.size > 0 && (matchMode === 'all'
         ? [...selectedColors].every((color) => cardColors.includes(color))
         : cardColors.some((color) => selectedColors.has(color)));
 
-      return matchesSearch && matchesColors;
+      return matchesUnscopedSearch && matchesSpecifiers && matchesColors;
     });
   };
   const clearTransitionStyles = (elements: HTMLElement[]) => {

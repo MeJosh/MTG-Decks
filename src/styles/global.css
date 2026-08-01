@@ -84,12 +84,14 @@ button, input, textarea { font: inherit; }
 .deck-filters summary svg { width: 1rem; height: 1rem; margin-left: auto; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; transition: transform .18s ease; }
 .deck-filters[open] summary svg { transform: rotate(180deg); }
 .deck-filter-count { color: var(--muted); font-size: .68rem; font-weight: 600; letter-spacing: .04em; text-transform: none; }
-.deck-filter-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; padding: .15rem 0 1rem; }
-.deck-search { display: flex; flex: 1 1 14rem; align-items: center; gap: .5rem; min-height: 2.35rem; padding: 0 .7rem; border: 1px solid var(--line); border-radius: .45rem; background: var(--surface); color: var(--muted); }
+.deck-filter-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem .625rem; padding: .15rem 0 1rem; }
+.deck-search-tools { display: flex; min-width: 0; flex: 0 1 31.975rem; align-items: center; gap: .625rem; }
+.deck-search { display: flex; min-width: 0; flex: 1 1 auto; align-items: center; gap: .5rem; min-height: 2.35rem; padding: 0 .7rem; border: 1px solid var(--line); border-radius: .45rem; background: var(--surface); color: var(--muted); }
 .deck-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 .18rem var(--selection); color: var(--accent); }
 .deck-search svg { width: 1rem; height: 1rem; flex: none; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.8; }
 .deck-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: .88rem; }
 .deck-search input::placeholder { color: var(--muted); }
+.deck-filter-options { display: flex; align-items: center; gap: .9rem; margin-left: auto; }
 .color-filters { display: flex; align-items: center; gap: .55rem; }
 .color-filter { display: grid; width: 2rem; height: 2rem; padding: 0; place-items: center; border: 1px solid transparent; border-radius: 999px; color: #171917; cursor: pointer; filter: grayscale(1) brightness(.72); font-size: .72rem; font-weight: 850; line-height: 1; opacity: .62; transition: filter .16s ease, opacity .16s ease, transform .16s ease, box-shadow .16s ease; }
 .color-filter:hover { filter: grayscale(.35) brightness(.92); opacity: .88; transform: translateY(-1px); }
@@ -134,4 +136,10 @@ button, input, textarea { font: inherit; }
 @media (min-width: 48rem) {
   .site-width { width: min(100% - 4rem, 82rem); }
   .deck-file-actions { display: flex; }
+}
+
+@media (max-width: 64rem) {
+  .deck-search-tools { width: 100%; flex: 1 1 100%; }
+  .deck-filter-options { width: 100%; justify-content: center; gap: .55rem; margin-left: 0; }
+  .color-filters { gap: .45rem; }
 }
