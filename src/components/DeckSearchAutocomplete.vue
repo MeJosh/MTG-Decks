@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import AutoComplete from 'primevue/autocomplete';
 import Chip from 'primevue/chip';
+import { storeToRefs } from 'pinia';
 import { nextTick, ref } from 'vue';
+
+import { useSettingsStore } from '../stores/settings';
 
 interface DeckOption {
   title: string;
@@ -24,6 +27,8 @@ const value = ref<string | Suggestion>('');
 const suggestions = ref<Suggestion[]>([]);
 const root = ref<HTMLElement>();
 const autocomplete = ref<InstanceType<typeof AutoComplete>>();
+const settingsStore = useSettingsStore();
+const { autocompleteEnabled } = storeToRefs(settingsStore);
 
 const PREFIX_PATTERN = /^(deck|d|slug|s|card|c|color|cl):([^\s,|+]*)$/i;
 const colors = ['White', 'Blue', 'Black', 'Red', 'Green'];
@@ -107,8 +112,17 @@ function selectSuggestion() {
 </script>
 
 <template>
-  <span ref="root" class="deck-autocomplete" @keydown.enter="commitTypedFilter">
+  <span ref="root" class="deck-autocomplete">
+    <input
+      v-if="!autocompleteEnabled"
+      type="search"
+      placeholder="Search decks"
+      autocomplete="off"
+      title="Use deck: / d:, slug: / s:, card: / c:, or color: / cl:; use , or + for AND and | for OR"
+      data-deck-search
+    />
     <AutoComplete
+      v-else
       ref="autocomplete"
       v-model="value"
       :suggestions="suggestions"
@@ -125,6 +139,7 @@ function selectSuggestion() {
       }"
       @complete="complete"
       @option-select="selectSuggestion"
+      @keydown.enter="commitTypedFilter"
     >
       <template #option="{ option }">
         <div class="deck-autocomplete-option">

@@ -1,9 +1,13 @@
 import { createPinia, setActivePinia } from 'pinia';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { THEME_STORAGE_KEY, useThemeStore } from './theme';
+import {
+  AUTOCOMPLETE_STORAGE_KEY,
+  THEME_STORAGE_KEY,
+  useSettingsStore,
+} from './settings';
 
-describe('theme store', () => {
+describe('settings store', () => {
   beforeEach(() => {
     const values = new Map<string, string>();
     const storage = {
@@ -21,7 +25,7 @@ describe('theme store', () => {
   });
 
   it('uses the device preference when no preference has been saved', () => {
-    const store = useThemeStore();
+    const store = useSettingsStore();
 
     expect(store.theme).toBe('dark');
     expect(document.documentElement.classList.contains('dark')).toBe(true);
@@ -29,11 +33,20 @@ describe('theme store', () => {
 
   it('prefers a saved theme and persists changes', () => {
     window.localStorage.setItem(THEME_STORAGE_KEY, 'light');
-    const store = useThemeStore();
+    const store = useSettingsStore();
 
     expect(store.theme).toBe('light');
     store.toggleTheme();
     expect(store.theme).toBe('dark');
     expect(window.localStorage.getItem(THEME_STORAGE_KEY)).toBe('dark');
+  });
+
+  it('defaults autocomplete to off and persists changes', () => {
+    const store = useSettingsStore();
+
+    expect(store.autocompleteEnabled).toBe(false);
+    store.setAutocompleteEnabled(true);
+    expect(store.autocompleteEnabled).toBe(true);
+    expect(window.localStorage.getItem(AUTOCOMPLETE_STORAGE_KEY)).toBe('true');
   });
 });

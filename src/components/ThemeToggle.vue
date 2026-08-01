@@ -3,10 +3,10 @@ import Moon from '@primeicons/vue/moon';
 import Sun from '@primeicons/vue/sun';
 import { storeToRefs } from 'pinia';
 
-import { useThemeStore } from '../stores/theme';
+import { useSettingsStore } from '../stores/settings';
 
-const themeStore = useThemeStore();
-const { isDark } = storeToRefs(themeStore);
+const settingsStore = useSettingsStore();
+const { isDark } = storeToRefs(settingsStore);
 </script>
 
 <template>
