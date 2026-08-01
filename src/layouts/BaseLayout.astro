@@ -32,6 +32,17 @@ const { title, description = 'A Git-managed library of Magic: The Gathering deck
         }
       })();
     </script>
+    <script is:inline>
+      (() => {
+        try {
+          document.documentElement.dataset.deckGridSize = localStorage.getItem('mtg-decks-grid-size') === 'small'
+            ? 'small'
+            : 'large';
+        } catch {
+          document.documentElement.dataset.deckGridSize = 'large';
+        }
+      })();
+    </script>
     <title>{title}</title>
   </head>
   <body>

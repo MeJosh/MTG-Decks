@@ -3,6 +3,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import {
   AUTOCOMPLETE_STORAGE_KEY,
+  GRID_SIZE_STORAGE_KEY,
   THEME_STORAGE_KEY,
   useSettingsStore,
 } from './settings';
@@ -48,5 +49,14 @@ describe('settings store', () => {
     store.setAutocompleteEnabled(true);
     expect(store.autocompleteEnabled).toBe(true);
     expect(window.localStorage.getItem(AUTOCOMPLETE_STORAGE_KEY)).toBe('true');
+  });
+
+  it('defaults the grid size to large and persists changes', () => {
+    const store = useSettingsStore();
+
+    expect(store.gridSize).toBe('large');
+    store.setGridSize('small');
+    expect(store.gridSize).toBe('small');
+    expect(window.localStorage.getItem(GRID_SIZE_STORAGE_KEY)).toBe('small');
   });
 });

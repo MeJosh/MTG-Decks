@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DeckSearchAutocomplete from '../components/DeckSearchAutocomplete.vue';
+import DeckGridSizeToggle from '../components/DeckGridSizeToggle.vue';
 import SearchHelp from '../components/SearchHelp.vue';
 import { loadPublishedDeck } from '../lib/deck/published';
 
@@ -86,6 +87,9 @@ const manaColors = {
       </div>
     </div>
   </details>
+  <div class="deck-grid-toolbar">
+    <DeckGridSizeToggle client:load />
+  </div>
   <section class="deck-grid" aria-label="Published decks" data-deck-grid>
     {decks.map(({ entry, deck }) => (
       <a
@@ -204,7 +208,6 @@ const manaColors = {
     g: 'G',
     green: 'G',
   };
-
   const wait = (duration: number) => new Promise<void>((resolve) => {
     window.setTimeout(resolve, duration);
   });
