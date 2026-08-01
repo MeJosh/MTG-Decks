@@ -1,0 +1,16 @@
+{
+  "id": "3e4e6787-af32-44f2-ac56-6f348254aa6d",
+  "name": "Brainstorm",
+  "typeLine": "Instant",
+  "manaCost": "{U}",
+  "set": "EMA",
+  "setName": "Eternal Masters",
+  "collectorNumber": "40",
+  "releasedAt": "2016-06-10",
+  "scryfallUri": "https://scryfall.com/card/ema/40/brainstorm?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/e/3e4e6787-af32-44f2-ac56-6f348254aa6d.jpg?1783937620",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/e/3e4e6787-af32-44f2-ac56-6f348254aa6d.jpg?1783937620",
+  "colorIdentity": [
+    "U"
+  ]
+}

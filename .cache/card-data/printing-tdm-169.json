@@ -1,0 +1,17 @@
+{
+  "id": "672f94ad-65d6-4c7d-925d-165ef264626f",
+  "name": "Auroral Procession",
+  "typeLine": "Instant",
+  "manaCost": "{G}{U}",
+  "set": "TDM",
+  "setName": "Tarkir: Dragonstorm",
+  "collectorNumber": "169",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdm/169/auroral-procession?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/7/672f94ad-65d6-4c7d-925d-165ef264626f.jpg?1783907327",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/7/672f94ad-65d6-4c7d-925d-165ef264626f.jpg?1783907327",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

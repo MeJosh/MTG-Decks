@@ -1,0 +1,18 @@
+{
+  "id": "2a717b98-cdac-416d-bf6c-f6b6638e65d1",
+  "name": "Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar",
+  "typeLine": "Legendary Creature — Moonfolk Wizard // Legendary Planeswalker — Tamiyo",
+  "manaCost": "{U}",
+  "set": "MH3",
+  "setName": "Modern Horizons 3",
+  "collectorNumber": "242",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh3/242/tamiyo-inquisitive-student-tamiyo-seasoned-scholar?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/a/2a717b98-cdac-416d-bf6c-f6b6638e65d1.jpg?1783911236",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/a/2a717b98-cdac-416d-bf6c-f6b6638e65d1.jpg?1783911236",
+  "backImage": "https://cards.scryfall.io/normal/back/2/a/2a717b98-cdac-416d-bf6c-f6b6638e65d1.jpg?1783911236",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "6eab6765-eba3-4844-81ca-ae37a6e903df",
+  "name": "Transmute Artifact",
+  "typeLine": "Sorcery",
+  "manaCost": "{U}{U}",
+  "set": "ATQ",
+  "setName": "Antiquities",
+  "collectorNumber": "14",
+  "releasedAt": "1994-03-04",
+  "scryfallUri": "https://scryfall.com/card/atq/14/transmute-artifact?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/e/6eab6765-eba3-4844-81ca-ae37a6e903df.jpg?1783948370",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/e/6eab6765-eba3-4844-81ca-ae37a6e903df.jpg?1783948370",
+  "colorIdentity": [
+    "U"
+  ]
+}

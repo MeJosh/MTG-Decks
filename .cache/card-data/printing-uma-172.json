@@ -1,0 +1,16 @@
+{
+  "id": "d7447c11-05a1-44e4-831a-0bacf97d447d",
+  "name": "Life from the Loam",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "UMA",
+  "setName": "Ultimate Masters",
+  "collectorNumber": "172",
+  "releasedAt": "2018-12-07",
+  "scryfallUri": "https://scryfall.com/card/uma/172/life-from-the-loam?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/7/d7447c11-05a1-44e4-831a-0bacf97d447d.jpg?1783933789",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/7/d7447c11-05a1-44e4-831a-0bacf97d447d.jpg?1783933789",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fd52688a-39fd-430f-b950-cb56e0004396",
+  "name": "Talisman of Curiosity",
+  "typeLine": "Artifact",
+  "manaCost": "{2}",
+  "set": "MH1",
+  "setName": "Modern Horizons",
+  "collectorNumber": "232",
+  "releasedAt": "2019-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh1/232/talisman-of-curiosity?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/d/fd52688a-39fd-430f-b950-cb56e0004396.jpg?1783933071",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/d/fd52688a-39fd-430f-b950-cb56e0004396.jpg?1783933071",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ad7ac9a5-340f-4509-826c-7b9416d47887",
+  "name": "Tolarian Academy",
+  "typeLine": "Legendary Land",
+  "manaCost": "",
+  "set": "USG",
+  "setName": "Urza's Saga",
+  "collectorNumber": "330",
+  "releasedAt": "1998-10-12",
+  "scryfallUri": "https://scryfall.com/card/usg/330/tolarian-academy?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/d/ad7ac9a5-340f-4509-826c-7b9416d47887.jpg?1783946296",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/d/ad7ac9a5-340f-4509-826c-7b9416d47887.jpg?1783946296",
+  "colorIdentity": [
+    "U"
+  ]
+}

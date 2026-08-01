@@ -1,0 +1,16 @@
+{
+  "id": "daf43523-558c-4701-9fa3-5d1ceb82a006",
+  "name": "Fastbond",
+  "typeLine": "Enchantment",
+  "manaCost": "{G}",
+  "set": "VMA",
+  "setName": "Vintage Masters",
+  "collectorNumber": "209",
+  "releasedAt": "2014-06-16",
+  "scryfallUri": "https://scryfall.com/card/vma/209/fastbond?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/a/daf43523-558c-4701-9fa3-5d1ceb82a006.jpg?1783939257",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/a/daf43523-558c-4701-9fa3-5d1ceb82a006.jpg?1783939257",
+  "colorIdentity": [
+    "G"
+  ]
+}

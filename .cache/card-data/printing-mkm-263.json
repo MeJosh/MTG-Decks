@@ -1,0 +1,17 @@
+{
+  "id": "c17816e8-28b1-4295-a637-efb0e5c18873",
+  "name": "Lush Portico",
+  "typeLine": "Land — Forest Plains",
+  "manaCost": "",
+  "set": "MKM",
+  "setName": "Murders at Karlov Manor",
+  "collectorNumber": "263",
+  "releasedAt": "2024-02-09",
+  "scryfallUri": "https://scryfall.com/card/mkm/263/lush-portico?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/1/c17816e8-28b1-4295-a637-efb0e5c18873.jpg?1783912824",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/1/c17816e8-28b1-4295-a637-efb0e5c18873.jpg?1783912824",
+  "colorIdentity": [
+    "G",
+    "W"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "a0b6a71e-56cb-4d25-8f2b-7a4f1b60900d",
+  "name": "Uro, Titan of Nature's Wrath",
+  "typeLine": "Legendary Creature — Elder Giant",
+  "manaCost": "{1}{G}{U}",
+  "set": "THB",
+  "setName": "Theros Beyond Death",
+  "collectorNumber": "229",
+  "releasedAt": "2020-01-24",
+  "scryfallUri": "https://scryfall.com/card/thb/229/uro-titan-of-natures-wrath?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/0/a0b6a71e-56cb-4d25-8f2b-7a4f1b60900d.jpg?1783931516",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/0/a0b6a71e-56cb-4d25-8f2b-7a4f1b60900d.jpg?1783931516",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

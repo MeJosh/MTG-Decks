@@ -1,0 +1,16 @@
+{
+  "id": "e0139f60-d48e-46fb-9f5a-1e3d7558c834",
+  "name": "Time Walk",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{U}",
+  "set": "LEA",
+  "setName": "Limited Edition Alpha",
+  "collectorNumber": "83",
+  "releasedAt": "1993-08-05",
+  "scryfallUri": "https://scryfall.com/card/lea/83/time-walk?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/0/e0139f60-d48e-46fb-9f5a-1e3d7558c834.jpg?1783948701",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/0/e0139f60-d48e-46fb-9f5a-1e3d7558c834.jpg?1783948701",
+  "colorIdentity": [
+    "U"
+  ]
+}

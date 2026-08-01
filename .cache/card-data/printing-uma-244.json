@@ -1,0 +1,16 @@
+{
+  "id": "e52214e1-404a-405a-b08e-20e13c087338",
+  "name": "Karakas",
+  "typeLine": "Legendary Land",
+  "manaCost": "",
+  "set": "UMA",
+  "setName": "Ultimate Masters",
+  "collectorNumber": "244",
+  "releasedAt": "2018-12-07",
+  "scryfallUri": "https://scryfall.com/card/uma/244/karakas?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/5/e52214e1-404a-405a-b08e-20e13c087338.jpg?1783933757",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/5/e52214e1-404a-405a-b08e-20e13c087338.jpg?1783933757",
+  "colorIdentity": [
+    "W"
+  ]
+}

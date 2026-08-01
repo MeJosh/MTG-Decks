@@ -1,0 +1,16 @@
+{
+  "id": "825969b9-3c70-4fca-8cab-696e9ca7cdb2",
+  "name": "Prismatic Ending",
+  "typeLine": "Sorcery",
+  "manaCost": "{X}{W}",
+  "set": "MH2",
+  "setName": "Modern Horizons 2",
+  "collectorNumber": "25",
+  "releasedAt": "2021-06-18",
+  "scryfallUri": "https://scryfall.com/card/mh2/25/prismatic-ending?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/2/825969b9-3c70-4fca-8cab-696e9ca7cdb2.jpg?1783926888",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/2/825969b9-3c70-4fca-8cab-696e9ca7cdb2.jpg?1783926888",
+  "colorIdentity": [
+    "W"
+  ]
+}

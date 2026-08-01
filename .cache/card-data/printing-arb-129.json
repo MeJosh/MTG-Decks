@@ -1,0 +1,18 @@
+{
+  "id": "8f4fe11d-c404-489a-b17f-34f33b1597e8",
+  "name": "Wargate",
+  "typeLine": "Sorcery",
+  "manaCost": "{X}{G}{W}{U}",
+  "set": "ARB",
+  "setName": "Alara Reborn",
+  "collectorNumber": "129",
+  "releasedAt": "2009-04-30",
+  "scryfallUri": "https://scryfall.com/card/arb/129/wargate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/f/8f4fe11d-c404-489a-b17f-34f33b1597e8.jpg?1783942412",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/f/8f4fe11d-c404-489a-b17f-34f33b1597e8.jpg?1783942412",
+  "colorIdentity": [
+    "G",
+    "U",
+    "W"
+  ]
+}

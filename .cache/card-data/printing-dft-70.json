@@ -1,0 +1,16 @@
+{
+  "id": "6727169f-c33a-4ca5-889d-a63bcfc5a3f0",
+  "name": "Transit Mage",
+  "typeLine": "Creature — Human Wizard",
+  "manaCost": "{2}{U}",
+  "set": "DFT",
+  "setName": "Aetherdrift",
+  "collectorNumber": "70",
+  "releasedAt": "2025-02-14",
+  "scryfallUri": "https://scryfall.com/card/dft/70/transit-mage?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/7/6727169f-c33a-4ca5-889d-a63bcfc5a3f0.jpg?1783907900",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/7/6727169f-c33a-4ca5-889d-a63bcfc5a3f0.jpg?1783907900",
+  "colorIdentity": [
+    "U"
+  ]
+}

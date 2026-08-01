@@ -94,6 +94,19 @@ export class ScryfallCatalog implements CardCatalog {
     });
   }
 
+  async byNameAndSet(name: string, set: string): Promise<CardPrinting | undefined> {
+    const hash = createHash('sha256')
+      .update(`${set.toLocaleLowerCase('en-US')}\0${name.toLocaleLowerCase('en-US')}`)
+      .digest('hex');
+    return this.#cached(`named-printing-${hash}`, async () => {
+      const parameters = new URLSearchParams({ exact: name, set });
+      const response = await this.#request(`https://api.scryfall.com/cards/named?${parameters}`);
+      if (response.status === 404) return undefined;
+      if (!response.ok) throw new Error(`Scryfall returned ${response.status} for ${name} in ${set}.`);
+      return toCardPrinting((await response.json()) as ScryfallCard);
+    });
+  }
+
   async latestByName(name: string): Promise<CardPrinting | undefined> {
     const hash = createHash('sha256').update(name.toLocaleLowerCase('en-US')).digest('hex');
     return this.#cached(`latest-${hash}`, async () => {

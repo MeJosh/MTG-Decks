@@ -1,0 +1,16 @@
+{
+  "id": "29b7a8b1-b98e-483a-87a4-73bd831c03d4",
+  "name": "Path to Exile",
+  "typeLine": "Instant",
+  "manaCost": "{W}",
+  "set": "CON",
+  "setName": "Conflux",
+  "collectorNumber": "15",
+  "releasedAt": "2009-02-06",
+  "scryfallUri": "https://scryfall.com/card/con/15/path-to-exile?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/9/29b7a8b1-b98e-483a-87a4-73bd831c03d4.jpg?1783942491",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/9/29b7a8b1-b98e-483a-87a4-73bd831c03d4.jpg?1783942491",
+  "colorIdentity": [
+    "W"
+  ]
+}

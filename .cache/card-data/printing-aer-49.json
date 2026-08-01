@@ -1,0 +1,16 @@
+{
+  "id": "0279fd3c-9252-4958-9d7a-5f33aa25907e",
+  "name": "Whir of Invention",
+  "typeLine": "Instant",
+  "manaCost": "{X}{U}{U}{U}",
+  "set": "AER",
+  "setName": "Aether Revolt",
+  "collectorNumber": "49",
+  "releasedAt": "2017-01-20",
+  "scryfallUri": "https://scryfall.com/card/aer/49/whir-of-invention?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/2/0279fd3c-9252-4958-9d7a-5f33aa25907e.jpg?1783936767",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/2/0279fd3c-9252-4958-9d7a-5f33aa25907e.jpg?1783936767",
+  "colorIdentity": [
+    "U"
+  ]
+}

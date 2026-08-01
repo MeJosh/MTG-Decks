@@ -1,0 +1,16 @@
+{
+  "id": "1f882c71-dd90-4eac-9756-0bf487cba625",
+  "name": "Sylvan Scrying",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "TSR",
+  "setName": "Time Spiral Remastered",
+  "collectorNumber": "367",
+  "releasedAt": "2021-03-19",
+  "scryfallUri": "https://scryfall.com/card/tsr/367/sylvan-scrying?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/f/1f882c71-dd90-4eac-9756-0bf487cba625.jpg?1783927717",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/f/1f882c71-dd90-4eac-9756-0bf487cba625.jpg?1783927717",
+  "colorIdentity": [
+    "G"
+  ]
+}

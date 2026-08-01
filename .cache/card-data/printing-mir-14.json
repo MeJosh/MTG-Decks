@@ -1,0 +1,16 @@
+{
+  "id": "cbac1d27-15e2-4e2f-82ab-625a16e096cb",
+  "name": "Enlightened Tutor",
+  "typeLine": "Instant",
+  "manaCost": "{W}",
+  "set": "MIR",
+  "setName": "Mirage",
+  "collectorNumber": "14",
+  "releasedAt": "1996-10-08",
+  "scryfallUri": "https://scryfall.com/card/mir/14/enlightened-tutor?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/b/cbac1d27-15e2-4e2f-82ab-625a16e096cb.jpg?1783947123",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/b/cbac1d27-15e2-4e2f-82ab-625a16e096cb.jpg?1783947123",
+  "colorIdentity": [
+    "W"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "e9be371c-c688-44ad-ab71-bd4c9f242d58",
+  "name": "Force of Negation",
+  "typeLine": "Instant",
+  "manaCost": "{1}{U}{U}",
+  "set": "MH1",
+  "setName": "Modern Horizons",
+  "collectorNumber": "52",
+  "releasedAt": "2019-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh1/52/force-of-negation?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/9/e9be371c-c688-44ad-ab71-bd4c9f242d58.jpg?1783933144",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/9/e9be371c-c688-44ad-ab71-bd4c9f242d58.jpg?1783933144",
+  "colorIdentity": [
+    "U"
+  ]
+}

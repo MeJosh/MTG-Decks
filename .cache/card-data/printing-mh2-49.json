@@ -1,0 +1,16 @@
+{
+  "id": "985bdb0c-ce6c-4506-8163-76f3b2fdf5fb",
+  "name": "Lose Focus",
+  "typeLine": "Instant",
+  "manaCost": "{1}{U}",
+  "set": "MH2",
+  "setName": "Modern Horizons 2",
+  "collectorNumber": "49",
+  "releasedAt": "2021-06-18",
+  "scryfallUri": "https://scryfall.com/card/mh2/49/lose-focus?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/8/985bdb0c-ce6c-4506-8163-76f3b2fdf5fb.jpg?1783926877",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/8/985bdb0c-ce6c-4506-8163-76f3b2fdf5fb.jpg?1783926877",
+  "colorIdentity": [
+    "U"
+  ]
+}

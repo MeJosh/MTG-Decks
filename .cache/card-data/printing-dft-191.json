@@ -1,0 +1,17 @@
+{
+  "id": "3dea5b45-925c-4732-8e9d-fa8232792736",
+  "name": "Brightglass Gearhulk",
+  "typeLine": "Artifact Creature — Construct",
+  "manaCost": "{G}{G}{W}{W}",
+  "set": "DFT",
+  "setName": "Aetherdrift",
+  "collectorNumber": "191",
+  "releasedAt": "2025-02-14",
+  "scryfallUri": "https://scryfall.com/card/dft/191/brightglass-gearhulk?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/d/3dea5b45-925c-4732-8e9d-fa8232792736.jpg?1783907862",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/d/3dea5b45-925c-4732-8e9d-fa8232792736.jpg?1783907862",
+  "colorIdentity": [
+    "G",
+    "W"
+  ]
+}

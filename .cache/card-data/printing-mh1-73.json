@@ -1,0 +1,16 @@
+{
+  "id": "6c180888-6acd-401b-815a-6ed434482681",
+  "name": "Tribute Mage",
+  "typeLine": "Creature — Human Wizard",
+  "manaCost": "{2}{U}",
+  "set": "MH1",
+  "setName": "Modern Horizons",
+  "collectorNumber": "73",
+  "releasedAt": "2019-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh1/73/tribute-mage?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/c/6c180888-6acd-401b-815a-6ed434482681.jpg?1783933136",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/c/6c180888-6acd-401b-815a-6ed434482681.jpg?1783933136",
+  "colorIdentity": [
+    "U"
+  ]
+}

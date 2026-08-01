@@ -1,0 +1,16 @@
+{
+  "id": "3b3134b3-1bad-4b41-9e56-700125ff31fa",
+  "name": "Tree of Tales",
+  "typeLine": "Artifact Land",
+  "manaCost": "",
+  "set": "DSC",
+  "setName": "Duskmourn: House of Horror Commander",
+  "collectorNumber": "319",
+  "releasedAt": "2024-09-27",
+  "scryfallUri": "https://scryfall.com/card/dsc/319/tree-of-tales?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/b/3b3134b3-1bad-4b41-9e56-700125ff31fa.jpg?1783909556",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/b/3b3134b3-1bad-4b41-9e56-700125ff31fa.jpg?1783909556",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "181edf62-34ca-4a55-a2f6-f15940a5b43a",
+  "name": "Island",
+  "typeLine": "Basic Land — Island",
+  "manaCost": "",
+  "set": "CED",
+  "setName": "Collectors' Edition",
+  "collectorNumber": "291",
+  "releasedAt": "1993-12-10",
+  "scryfallUri": "https://scryfall.com/card/ced/291/island?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/8/181edf62-34ca-4a55-a2f6-f15940a5b43a.jpg?1783948461",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/8/181edf62-34ca-4a55-a2f6-f15940a5b43a.jpg?1783948461",
+  "colorIdentity": [
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "5da5587d-6b6c-4645-8cc9-2866d1e6911b",
+  "name": "Seat of the Synod",
+  "typeLine": "Artifact Land",
+  "manaCost": "",
+  "set": "MRD",
+  "setName": "Mirrodin",
+  "collectorNumber": "283",
+  "releasedAt": "2003-10-02",
+  "scryfallUri": "https://scryfall.com/card/mrd/283/seat-of-the-synod?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/d/5da5587d-6b6c-4645-8cc9-2866d1e6911b.jpg?1783944493",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/d/5da5587d-6b6c-4645-8cc9-2866d1e6911b.jpg?1783944493",
+  "colorIdentity": [
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "0a786855-6eb4-42c0-a528-4842db46809d",
+  "name": "Stock Up",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{U}",
+  "set": "DFT",
+  "setName": "Aetherdrift",
+  "collectorNumber": "67",
+  "releasedAt": "2025-02-14",
+  "scryfallUri": "https://scryfall.com/card/dft/67/stock-up?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/a/0a786855-6eb4-42c0-a528-4842db46809d.jpg?1783907902",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/a/0a786855-6eb4-42c0-a528-4842db46809d.jpg?1783907902",
+  "colorIdentity": [
+    "U"
+  ]
+}

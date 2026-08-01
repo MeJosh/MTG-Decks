@@ -8,11 +8,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 interface FormatImage {
   card: string;
   set: string;
-  collectorNumber: string;
+  collectorNumber?: string;
 }
 
-interface FormatImageConfiguration extends FormatImage {
+interface FormatImageConfiguration {
   format: string;
+  displayName?: string;
+  card?: string;
+  set?: string;
+  collectorNumber?: string;
 }
 
 const formatNamesByKey = new Map(
@@ -39,24 +43,32 @@ const catalog = new ScryfallCatalog();
 
 async function resolveImage(image: FormatImage) {
   try {
-    return await catalog.byPrinting(image.set, image.collectorNumber);
+    return image.collectorNumber
+      ? await catalog.byPrinting(image.set, image.collectorNumber)
+      : await catalog.byNameAndSet(image.card, image.set);
   } catch {
     return undefined;
   }
+}
+
+function hasImage(image: FormatImageConfiguration): image is FormatImageConfiguration & FormatImage {
+  return Boolean(image.card && image.set);
 }
 
 const defaultImage = await resolveImage(formatImages.default);
 const formats = await Promise.all([
   Promise.resolve({ name: 'All', href: '/all', image: defaultImage }),
   ...formatNames.map(async (name) => {
-    const image = configuredFormats.find(({ format }) =>
+    const configuration = configuredFormats.find(({ format }) =>
       format.toLocaleLowerCase('en-US') === name.toLocaleLowerCase('en-US'),
-    ) ?? formatImages.default;
+    );
 
     return {
-      name,
+      name: configuration?.displayName ?? name,
       href: `/${name.toLocaleLowerCase('en-US')}`,
-      image: await resolveImage(image) ?? defaultImage,
+      image: configuration && hasImage(configuration)
+        ? await resolveImage(configuration) ?? defaultImage
+        : defaultImage,
     };
   }),
 ]);

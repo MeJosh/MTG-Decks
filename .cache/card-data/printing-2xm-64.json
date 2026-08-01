@@ -1,0 +1,16 @@
+{
+  "id": "8f8a8f14-bced-4388-b263-5e70431b191f",
+  "name": "Reshape",
+  "typeLine": "Sorcery",
+  "manaCost": "{X}{U}{U}",
+  "set": "2XM",
+  "setName": "Double Masters",
+  "collectorNumber": "64",
+  "releasedAt": "2020-08-07",
+  "scryfallUri": "https://scryfall.com/card/2xm/64/reshape?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/f/8f8a8f14-bced-4388-b263-5e70431b191f.jpg?1783930192",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/f/8f8a8f14-bced-4388-b263-5e70431b191f.jpg?1783930192",
+  "colorIdentity": [
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ade32396-8841-4ba4-8852-d11146607f21",
+  "name": "Mockingbird",
+  "typeLine": "Creature — Bird Bard",
+  "manaCost": "{X}{U}",
+  "set": "BLB",
+  "setName": "Bloomburrow",
+  "collectorNumber": "61",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blb/61/mockingbird?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/d/ade32396-8841-4ba4-8852-d11146607f21.jpg?1783910846",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/d/ade32396-8841-4ba4-8852-d11146607f21.jpg?1783910846",
+  "colorIdentity": [
+    "U"
+  ]
+}

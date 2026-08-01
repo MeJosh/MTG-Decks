@@ -1,0 +1,16 @@
+{
+  "id": "78d22ece-0cb1-4faf-a871-995449c1a41f",
+  "name": "Preordain",
+  "typeLine": "Sorcery",
+  "manaCost": "{U}",
+  "set": "C15",
+  "setName": "Commander 2015",
+  "collectorNumber": "101",
+  "releasedAt": "2015-11-13",
+  "scryfallUri": "https://scryfall.com/card/c15/101/preordain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/8/78d22ece-0cb1-4faf-a871-995449c1a41f.jpg?1783938091",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/8/78d22ece-0cb1-4faf-a871-995449c1a41f.jpg?1783938091",
+  "colorIdentity": [
+    "U"
+  ]
+}

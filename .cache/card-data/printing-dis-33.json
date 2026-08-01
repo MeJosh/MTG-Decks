@@ -1,0 +1,16 @@
+{
+  "id": "35554fdf-c70a-4baa-a35a-414caa9978be",
+  "name": "Spell Snare",
+  "typeLine": "Instant",
+  "manaCost": "{U}",
+  "set": "DIS",
+  "setName": "Dissension",
+  "collectorNumber": "33",
+  "releasedAt": "2006-05-05",
+  "scryfallUri": "https://scryfall.com/card/dis/33/spell-snare?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/5/35554fdf-c70a-4baa-a35a-414caa9978be.jpg?1783943435",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/5/35554fdf-c70a-4baa-a35a-414caa9978be.jpg?1783943435",
+  "colorIdentity": [
+    "U"
+  ]
+}

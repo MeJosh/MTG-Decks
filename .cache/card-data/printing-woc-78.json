@@ -1,0 +1,16 @@
+{
+  "id": "9443c31e-9f36-44ef-bc59-6d1d3a5499bb",
+  "name": "Swords to Plowshares",
+  "typeLine": "Instant",
+  "manaCost": "{W}",
+  "set": "WOC",
+  "setName": "Wilds of Eldraine Commander",
+  "collectorNumber": "78",
+  "releasedAt": "2023-09-08",
+  "scryfallUri": "https://scryfall.com/card/woc/78/swords-to-plowshares?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/4/9443c31e-9f36-44ef-bc59-6d1d3a5499bb.jpg?1783914964",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/4/9443c31e-9f36-44ef-bc59-6d1d3a5499bb.jpg?1783914964",
+  "colorIdentity": [
+    "W"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "1920dae4-fb92-4f19-ae4b-eb3276b8dac7",
+  "name": "Counterspell",
+  "typeLine": "Instant",
+  "manaCost": "{U}{U}",
+  "set": "MH2",
+  "setName": "Modern Horizons 2",
+  "collectorNumber": "267",
+  "releasedAt": "2021-06-18",
+  "scryfallUri": "https://scryfall.com/card/mh2/267/counterspell?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/9/1920dae4-fb92-4f19-ae4b-eb3276b8dac7.jpg?1783926788",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/9/1920dae4-fb92-4f19-ae4b-eb3276b8dac7.jpg?1783926788",
+  "colorIdentity": [
+    "U"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ad2e18d4-986c-4a44-8f26-1b8689339cfb",
+  "name": "Teferi, Who Slows the Sunset",
+  "typeLine": "Legendary Planeswalker — Teferi",
+  "manaCost": "{2}{W}{U}",
+  "set": "MID",
+  "setName": "Innistrad: Midnight Hunt",
+  "collectorNumber": "245",
+  "releasedAt": "2021-09-24",
+  "scryfallUri": "https://scryfall.com/card/mid/245/teferi-who-slows-the-sunset?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/d/ad2e18d4-986c-4a44-8f26-1b8689339cfb.jpg?1783925552",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/d/ad2e18d4-986c-4a44-8f26-1b8689339cfb.jpg?1783925552",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

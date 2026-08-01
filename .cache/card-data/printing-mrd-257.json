@@ -1,0 +1,17 @@
+{
+  "id": "d6cc8a5a-b98b-4758-a168-bf2ef738fb05",
+  "name": "Talisman of Unity",
+  "typeLine": "Artifact",
+  "manaCost": "{2}",
+  "set": "MRD",
+  "setName": "Mirrodin",
+  "collectorNumber": "257",
+  "releasedAt": "2003-10-02",
+  "scryfallUri": "https://scryfall.com/card/mrd/257/talisman-of-unity?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/6/d6cc8a5a-b98b-4758-a168-bf2ef738fb05.jpg?1783944501",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/6/d6cc8a5a-b98b-4758-a168-bf2ef738fb05.jpg?1783944501",
+  "colorIdentity": [
+    "G",
+    "W"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "9e7fb3c0-5159-4d1f-8490-ce4c9a60f567",
+  "name": "Urza, Lord High Artificer",
+  "typeLine": "Legendary Creature — Human Artificer",
+  "manaCost": "{2}{U}{U}",
+  "set": "MH1",
+  "setName": "Modern Horizons",
+  "collectorNumber": "75",
+  "releasedAt": "2019-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh1/75/urza-lord-high-artificer?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/e/9e7fb3c0-5159-4d1f-8490-ce4c9a60f567.jpg?1783933135",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/e/9e7fb3c0-5159-4d1f-8490-ce4c9a60f567.jpg?1783933135",
+  "colorIdentity": [
+    "U"
+  ]
+}

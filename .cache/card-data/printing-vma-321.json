@@ -1,0 +1,17 @@
+{
+  "id": "47033ba4-8f26-4a6b-97bd-5b366327325e",
+  "name": "Tropical Island",
+  "typeLine": "Land — Forest Island",
+  "manaCost": "",
+  "set": "VMA",
+  "setName": "Vintage Masters",
+  "collectorNumber": "321",
+  "releasedAt": "2014-06-16",
+  "scryfallUri": "https://scryfall.com/card/vma/321/tropical-island?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/7/47033ba4-8f26-4a6b-97bd-5b366327325e.jpg?1783939216",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/7/47033ba4-8f26-4a6b-97bd-5b366327325e.jpg?1783939216",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

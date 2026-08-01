@@ -1,0 +1,16 @@
+{
+  "id": "61e9c6df-1c84-4eab-9076-a4feb6347c10",
+  "name": "Mental Misstep",
+  "typeLine": "Instant",
+  "manaCost": "{U/P}",
+  "set": "NPH",
+  "setName": "New Phyrexia",
+  "collectorNumber": "38",
+  "releasedAt": "2011-05-13",
+  "scryfallUri": "https://scryfall.com/card/nph/38/mental-misstep?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/1/61e9c6df-1c84-4eab-9076-a4feb6347c10.jpg?1783941319",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/1/61e9c6df-1c84-4eab-9076-a4feb6347c10.jpg?1783941319",
+  "colorIdentity": [
+    "U"
+  ]
+}

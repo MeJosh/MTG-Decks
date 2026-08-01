@@ -1,0 +1,17 @@
+{
+  "id": "af7091c9-5f98-4078-a42b-c9e057346d9b",
+  "name": "Hallowed Fountain",
+  "typeLine": "Land — Plains Island",
+  "manaCost": "",
+  "set": "RTR",
+  "setName": "Return to Ravnica",
+  "collectorNumber": "241",
+  "releasedAt": "2012-10-05",
+  "scryfallUri": "https://scryfall.com/card/rtr/241/hallowed-fountain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/f/af7091c9-5f98-4078-a42b-c9e057346d9b.jpg?1783940321",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/f/af7091c9-5f98-4078-a42b-c9e057346d9b.jpg?1783940321",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

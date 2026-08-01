@@ -1,0 +1,16 @@
+{
+  "id": "3b214b6f-4734-4200-8467-92d7e3469b5d",
+  "name": "Tezzeret the Seeker",
+  "typeLine": "Legendary Planeswalker — Tezzeret",
+  "manaCost": "{3}{U}{U}",
+  "set": "ALA",
+  "setName": "Shards of Alara",
+  "collectorNumber": "60",
+  "releasedAt": "2008-10-03",
+  "scryfallUri": "https://scryfall.com/card/ala/60/tezzeret-the-seeker?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/b/3b214b6f-4734-4200-8467-92d7e3469b5d.jpg?1783942571",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/b/3b214b6f-4734-4200-8467-92d7e3469b5d.jpg?1783942571",
+  "colorIdentity": [
+    "U"
+  ]
+}

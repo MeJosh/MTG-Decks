@@ -1,0 +1,17 @@
+{
+  "id": "b0d161fc-4a2a-4f1d-82b4-a746552552df",
+  "name": "Savannah",
+  "typeLine": "Land — Forest Plains",
+  "manaCost": "",
+  "set": "VMA",
+  "setName": "Vintage Masters",
+  "collectorNumber": "311",
+  "releasedAt": "2014-06-16",
+  "scryfallUri": "https://scryfall.com/card/vma/311/savannah?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.jpg?1783939219",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.jpg?1783939219",
+  "colorIdentity": [
+    "G",
+    "W"
+  ]
+}

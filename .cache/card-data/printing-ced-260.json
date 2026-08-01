@@ -1,0 +1,14 @@
+{
+  "id": "0b12280a-f11d-4308-8b57-0460ae4bbe5c",
+  "name": "Mana Vault",
+  "typeLine": "Artifact",
+  "manaCost": "{1}",
+  "set": "CED",
+  "setName": "Collectors' Edition",
+  "collectorNumber": "260",
+  "releasedAt": "1993-12-10",
+  "scryfallUri": "https://scryfall.com/card/ced/260/mana-vault?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/b/0b12280a-f11d-4308-8b57-0460ae4bbe5c.jpg?1783948467",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/b/0b12280a-f11d-4308-8b57-0460ae4bbe5c.jpg?1783948467",
+  "colorIdentity": []
+}

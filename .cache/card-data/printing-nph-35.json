@@ -1,0 +1,16 @@
+{
+  "id": "995486ce-58bb-4753-a812-0ca73ef1a235",
+  "name": "Gitaxian Probe",
+  "typeLine": "Sorcery",
+  "manaCost": "{U/P}",
+  "set": "NPH",
+  "setName": "New Phyrexia",
+  "collectorNumber": "35",
+  "releasedAt": "2011-05-13",
+  "scryfallUri": "https://scryfall.com/card/nph/35/gitaxian-probe?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/9/995486ce-58bb-4753-a812-0ca73ef1a235.jpg?1783941320",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/9/995486ce-58bb-4753-a812-0ca73ef1a235.jpg?1783941320",
+  "colorIdentity": [
+    "U"
+  ]
+}

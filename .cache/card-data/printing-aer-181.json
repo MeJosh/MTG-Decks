@@ -1,0 +1,14 @@
+{
+  "id": "329a8738-3e17-403a-857a-0ba529ce8cd1",
+  "name": "Walking Ballista",
+  "typeLine": "Artifact Creature — Construct",
+  "manaCost": "{X}{X}",
+  "set": "AER",
+  "setName": "Aether Revolt",
+  "collectorNumber": "181",
+  "releasedAt": "2017-01-20",
+  "scryfallUri": "https://scryfall.com/card/aer/181/walking-ballista?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.jpg?1783936718",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.jpg?1783936718",
+  "colorIdentity": []
+}

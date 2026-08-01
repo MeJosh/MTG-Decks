@@ -1,0 +1,16 @@
+{
+  "id": "d6afeb07-ed44-4e15-99b6-436f8365326f",
+  "name": "Phyrexian Metamorph",
+  "typeLine": "Artifact Creature — Phyrexian Shapeshifter",
+  "manaCost": "{3}{U/P}",
+  "set": "2XM",
+  "setName": "Double Masters",
+  "collectorNumber": "61",
+  "releasedAt": "2020-08-07",
+  "scryfallUri": "https://scryfall.com/card/2xm/61/phyrexian-metamorph?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/6/d6afeb07-ed44-4e15-99b6-436f8365326f.jpg?1783930196",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/6/d6afeb07-ed44-4e15-99b6-436f8365326f.jpg?1783930196",
+  "colorIdentity": [
+    "U"
+  ]
+}

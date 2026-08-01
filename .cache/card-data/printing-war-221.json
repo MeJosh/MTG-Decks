@@ -1,0 +1,17 @@
+{
+  "id": "5cb76266-ae50-4bbc-8f96-d98f309b02d3",
+  "name": "Teferi, Time Raveler",
+  "typeLine": "Legendary Planeswalker — Teferi",
+  "manaCost": "{1}{W}{U}",
+  "set": "WAR",
+  "setName": "War of the Spark",
+  "collectorNumber": "221",
+  "releasedAt": "2019-05-03",
+  "scryfallUri": "https://scryfall.com/card/war/221/teferi-time-raveler?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/c/5cb76266-ae50-4bbc-8f96-d98f309b02d3.jpg?1783933384",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/c/5cb76266-ae50-4bbc-8f96-d98f309b02d3.jpg?1783933384",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

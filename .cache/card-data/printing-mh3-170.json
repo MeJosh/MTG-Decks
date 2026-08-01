@@ -1,0 +1,16 @@
+{
+  "id": "cdfadb17-76ad-4d4d-9fa7-33c4b88b4c0a",
+  "name": "Sowing Mycospawn",
+  "typeLine": "Creature — Eldrazi Fungus",
+  "manaCost": "{3}{G}",
+  "set": "MH3",
+  "setName": "Modern Horizons 3",
+  "collectorNumber": "170",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh3/170/sowing-mycospawn?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/d/cdfadb17-76ad-4d4d-9fa7-33c4b88b4c0a.jpg?1783911255",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/d/cdfadb17-76ad-4d4d-9fa7-33c4b88b4c0a.jpg?1783911255",
+  "colorIdentity": [
+    "G"
+  ]
+}

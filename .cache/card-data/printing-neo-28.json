@@ -1,0 +1,16 @@
+{
+  "id": "553fb946-2706-475b-89f9-e4355ec9ea2b",
+  "name": "March of Otherworldly Light",
+  "typeLine": "Instant",
+  "manaCost": "{X}{W}",
+  "set": "NEO",
+  "setName": "Kamigawa: Neon Dynasty",
+  "collectorNumber": "28",
+  "releasedAt": "2022-02-18",
+  "scryfallUri": "https://scryfall.com/card/neo/28/march-of-otherworldly-light?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/5/553fb946-2706-475b-89f9-e4355ec9ea2b.jpg?1783923916",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/5/553fb946-2706-475b-89f9-e4355ec9ea2b.jpg?1783923916",
+  "colorIdentity": [
+    "W"
+  ]
+}

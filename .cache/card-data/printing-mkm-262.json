@@ -1,0 +1,17 @@
+{
+  "id": "5260f8ae-805b-4eae-badf-62de0f768867",
+  "name": "Hedge Maze",
+  "typeLine": "Land — Forest Island",
+  "manaCost": "",
+  "set": "MKM",
+  "setName": "Murders at Karlov Manor",
+  "collectorNumber": "262",
+  "releasedAt": "2024-02-09",
+  "scryfallUri": "https://scryfall.com/card/mkm/262/hedge-maze?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/2/5260f8ae-805b-4eae-badf-62de0f768867.jpg?1783912824",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/2/5260f8ae-805b-4eae-badf-62de0f768867.jpg?1783912824",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

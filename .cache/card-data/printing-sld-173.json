@@ -1,0 +1,16 @@
+{
+  "id": "a8619034-173c-4950-a0b4-1ae1dcfd0bc5",
+  "name": "Balance",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{W}",
+  "set": "SLD",
+  "setName": "Secret Lair Drop",
+  "collectorNumber": "173",
+  "releasedAt": "2021-06-21",
+  "scryfallUri": "https://scryfall.com/card/sld/173/balance?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/8/a8619034-173c-4950-a0b4-1ae1dcfd0bc5.jpg?1783926564",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/8/a8619034-173c-4950-a0b4-1ae1dcfd0bc5.jpg?1783926564",
+  "colorIdentity": [
+    "W"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "efd35cb4-862d-4699-a197-b744989b3ceb",
+  "name": "Tundra",
+  "typeLine": "Land — Plains Island",
+  "manaCost": "",
+  "set": "VMA",
+  "setName": "Vintage Masters",
+  "collectorNumber": "322",
+  "releasedAt": "2014-06-16",
+  "scryfallUri": "https://scryfall.com/card/vma/322/tundra?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.jpg?1783939215",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.jpg?1783939215",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

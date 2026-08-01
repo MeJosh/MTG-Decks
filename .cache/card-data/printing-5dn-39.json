@@ -1,0 +1,16 @@
+{
+  "id": "4c5a41ab-1840-4abb-a8bb-f0b1e7d1b450",
+  "name": "Trinket Mage",
+  "typeLine": "Creature — Human Wizard",
+  "manaCost": "{2}{U}",
+  "set": "5DN",
+  "setName": "Fifth Dawn",
+  "collectorNumber": "39",
+  "releasedAt": "2004-06-04",
+  "scryfallUri": "https://scryfall.com/card/5dn/39/trinket-mage?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/c/4c5a41ab-1840-4abb-a8bb-f0b1e7d1b450.jpg?1783944402",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/c/4c5a41ab-1840-4abb-a8bb-f0b1e7d1b450.jpg?1783944402",
+  "colorIdentity": [
+    "U"
+  ]
+}

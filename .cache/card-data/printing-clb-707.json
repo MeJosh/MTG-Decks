@@ -1,0 +1,16 @@
+{
+  "id": "458db878-07ba-42cc-9bee-910957685596",
+  "name": "Sevinne's Reclamation",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{W}",
+  "set": "CLB",
+  "setName": "Commander Legends: Battle for Baldur's Gate",
+  "collectorNumber": "707",
+  "releasedAt": "2022-06-10",
+  "scryfallUri": "https://scryfall.com/card/clb/707/sevinnes-reclamation?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/5/458db878-07ba-42cc-9bee-910957685596.jpg?1783922481",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/5/458db878-07ba-42cc-9bee-910957685596.jpg?1783922481",
+  "colorIdentity": [
+    "W"
+  ]
+}

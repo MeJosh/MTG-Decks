@@ -1,0 +1,16 @@
+{
+  "id": "581f3780-c480-48c6-b15c-1618f2feccb9",
+  "name": "Remand",
+  "typeLine": "Instant",
+  "manaCost": "{1}{U}",
+  "set": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "collectorNumber": "63",
+  "releasedAt": "2005-10-07",
+  "scryfallUri": "https://scryfall.com/card/rav/63/remand?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/8/581f3780-c480-48c6-b15c-1618f2feccb9.jpg?1783943680",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/8/581f3780-c480-48c6-b15c-1618f2feccb9.jpg?1783943680",
+  "colorIdentity": [
+    "U"
+  ]
+}
