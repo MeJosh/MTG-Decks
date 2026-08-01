@@ -1,0 +1,16 @@
+{
+  "id": "668d2969-b6b7-4507-bdd4-20bbaa68035a",
+  "name": "Nature's Lore",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "ICE",
+  "setName": "Ice Age",
+  "collectorNumber": "255",
+  "releasedAt": "1995-06-03",
+  "scryfallUri": "https://scryfall.com/card/ice/255/natures-lore?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/6/668d2969-b6b7-4507-bdd4-20bbaa68035a.jpg?1783947474",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/6/668d2969-b6b7-4507-bdd4-20bbaa68035a.jpg?1783947474",
+  "colorIdentity": [
+    "G"
+  ]
+}

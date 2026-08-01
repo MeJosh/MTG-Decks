@@ -1,0 +1,16 @@
+{
+  "id": "3c3ac3dd-35db-447f-8674-37b4680a1ef7",
+  "name": "Leyline Binding",
+  "typeLine": "Enchantment",
+  "manaCost": "{5}{W}",
+  "set": "DMU",
+  "setName": "Dominaria United",
+  "collectorNumber": "24",
+  "releasedAt": "2022-09-09",
+  "scryfallUri": "https://scryfall.com/card/dmu/24/leyline-binding?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/c/3c3ac3dd-35db-447f-8674-37b4680a1ef7.jpg?1783921363",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/c/3c3ac3dd-35db-447f-8674-37b4680a1ef7.jpg?1783921363",
+  "colorIdentity": [
+    "W"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "357cf802-2d66-49a4-bf43-ab3bc30ab825",
+  "name": "Windfall",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{U}",
+  "set": "IMA",
+  "setName": "Iconic Masters",
+  "collectorNumber": "77",
+  "releasedAt": "2017-11-17",
+  "scryfallUri": "https://scryfall.com/card/ima/77/windfall?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/5/357cf802-2d66-49a4-bf43-ab3bc30ab825.jpg?1783935542",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/5/357cf802-2d66-49a4-bf43-ab3bc30ab825.jpg?1783935542",
+  "colorIdentity": [
+    "U"
+  ]
+}

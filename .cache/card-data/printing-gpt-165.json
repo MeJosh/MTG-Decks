@@ -1,0 +1,17 @@
+{
+  "id": "a2773d8f-f906-475d-aaff-b7ca3b01f188",
+  "name": "Stomping Ground",
+  "typeLine": "Land — Mountain Forest",
+  "manaCost": "",
+  "set": "GPT",
+  "setName": "Guildpact",
+  "collectorNumber": "165",
+  "releasedAt": "2006-02-03",
+  "scryfallUri": "https://scryfall.com/card/gpt/165/stomping-ground?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/2/a2773d8f-f906-475d-aaff-b7ca3b01f188.jpg?1783943453",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/2/a2773d8f-f906-475d-aaff-b7ca3b01f188.jpg?1783943453",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

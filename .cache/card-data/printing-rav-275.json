@@ -1,0 +1,17 @@
+{
+  "id": "7dfe3f03-078f-44fb-89cd-efa3ebfaf637",
+  "name": "Boros Garrison",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "collectorNumber": "275",
+  "releasedAt": "2005-10-07",
+  "scryfallUri": "https://scryfall.com/card/rav/275/boros-garrison?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/d/7dfe3f03-078f-44fb-89cd-efa3ebfaf637.jpg?1783943593",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/d/7dfe3f03-078f-44fb-89cd-efa3ebfaf637.jpg?1783943593",
+  "colorIdentity": [
+    "R",
+    "W"
+  ]
+}

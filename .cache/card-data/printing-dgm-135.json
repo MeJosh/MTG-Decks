@@ -1,0 +1,17 @@
+{
+  "id": "d169a3b2-18ae-4414-98ef-d879676fdcc0",
+  "name": "Wear // Tear",
+  "typeLine": "Instant // Instant",
+  "manaCost": "{1}{R} // {W}",
+  "set": "DGM",
+  "setName": "Dragon's Maze",
+  "collectorNumber": "135",
+  "releasedAt": "2013-05-03",
+  "scryfallUri": "https://scryfall.com/card/dgm/135/wear-tear?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/1/d169a3b2-18ae-4414-98ef-d879676fdcc0.jpg?1783940014",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/1/d169a3b2-18ae-4414-98ef-d879676fdcc0.jpg?1783940014",
+  "colorIdentity": [
+    "R",
+    "W"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "794a2b79-8c55-4423-8843-7e6e96f84071",
+  "name": "Temple Garden",
+  "typeLine": "Land — Forest Plains",
+  "manaCost": "",
+  "set": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "collectorNumber": "284",
+  "releasedAt": "2005-10-07",
+  "scryfallUri": "https://scryfall.com/card/rav/284/temple-garden?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/9/794a2b79-8c55-4423-8843-7e6e96f84071.jpg?1783943589",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/9/794a2b79-8c55-4423-8843-7e6e96f84071.jpg?1783943589",
+  "colorIdentity": [
+    "G",
+    "W"
+  ]
+}

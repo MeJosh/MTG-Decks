@@ -1,0 +1,16 @@
+{
+  "id": "60b9db96-a6ab-454b-99a7-910ef77560d7",
+  "name": "Meloku the Clouded Mirror",
+  "typeLine": "Legendary Creature — Moonfolk Wizard",
+  "manaCost": "{4}{U}",
+  "set": "CMR",
+  "setName": "Commander Legends",
+  "collectorNumber": "399",
+  "releasedAt": "2020-11-20",
+  "scryfallUri": "https://scryfall.com/card/cmr/399/meloku-the-clouded-mirror?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/0/60b9db96-a6ab-454b-99a7-910ef77560d7.jpg?1783928719",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/0/60b9db96-a6ab-454b-99a7-910ef77560d7.jpg?1783928719",
+  "colorIdentity": [
+    "U"
+  ]
+}

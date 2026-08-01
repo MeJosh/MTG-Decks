@@ -1,0 +1,16 @@
+{
+  "id": "35d78f4e-d95d-49bc-9971-06a68a4e35fd",
+  "name": "Summer Bloom",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "VIS",
+  "setName": "Visions",
+  "collectorNumber": "122",
+  "releasedAt": "1997-02-03",
+  "scryfallUri": "https://scryfall.com/card/vis/122/summer-bloom?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/5/35d78f4e-d95d-49bc-9971-06a68a4e35fd.jpg?1783946980",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/5/35d78f4e-d95d-49bc-9971-06a68a4e35fd.jpg?1783946980",
+  "colorIdentity": [
+    "G"
+  ]
+}

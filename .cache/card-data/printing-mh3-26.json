@@ -1,0 +1,16 @@
+{
+  "id": "37b41b59-0296-443b-8a62-8d5c4641ef66",
+  "name": "Flare of Fortitude",
+  "typeLine": "Instant",
+  "manaCost": "{2}{W}{W}",
+  "set": "MH3",
+  "setName": "Modern Horizons 3",
+  "collectorNumber": "26",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh3/26/flare-of-fortitude?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/7/37b41b59-0296-443b-8a62-8d5c4641ef66.jpg?1783911302",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/7/37b41b59-0296-443b-8a62-8d5c4641ef66.jpg?1783911302",
+  "colorIdentity": [
+    "W"
+  ]
+}

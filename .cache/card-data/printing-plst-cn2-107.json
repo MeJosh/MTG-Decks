@@ -1,0 +1,16 @@
+{
+  "id": "8cebc7c6-48dc-4c05-9356-78eae0188884",
+  "name": "Desertion",
+  "typeLine": "Instant",
+  "manaCost": "{3}{U}{U}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "CN2-107",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/CN2-107/desertion?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/c/8cebc7c6-48dc-4c05-9356-78eae0188884.jpg?1783909971",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/c/8cebc7c6-48dc-4c05-9356-78eae0188884.jpg?1783909971",
+  "colorIdentity": [
+    "U"
+  ]
+}

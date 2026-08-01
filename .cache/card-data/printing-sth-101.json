@@ -1,0 +1,16 @@
+{
+  "id": "59612c02-6028-4953-ac4d-aca94b0ce4b9",
+  "name": "Awakening",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{G}{G}",
+  "set": "STH",
+  "setName": "Stronghold",
+  "collectorNumber": "101",
+  "releasedAt": "1998-03-02",
+  "scryfallUri": "https://scryfall.com/card/sth/101/awakening?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/9/59612c02-6028-4953-ac4d-aca94b0ce4b9.jpg?1783946552",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/9/59612c02-6028-4953-ac4d-aca94b0ce4b9.jpg?1783946552",
+  "colorIdentity": [
+    "G"
+  ]
+}

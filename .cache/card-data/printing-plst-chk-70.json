@@ -1,0 +1,16 @@
+{
+  "id": "940509ec-8f58-4593-a598-142a827f55b0",
+  "name": "Jushi Apprentice // Tomoya the Revealer",
+  "typeLine": "Creature — Human Wizard // Legendary Creature — Human Wizard",
+  "manaCost": "{1}{U}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "CHK-70",
+  "releasedAt": "2019-11-07",
+  "scryfallUri": "https://scryfall.com/card/plst/CHK-70/jushi-apprentice-tomoya-the-revealer?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/4/940509ec-8f58-4593-a598-142a827f55b0.jpg?1783932258",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/4/940509ec-8f58-4593-a598-142a827f55b0.jpg?1783932258",
+  "colorIdentity": [
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "d109b70e-862f-4d8a-8b40-ef6dc904868f",
+  "name": "Hedron Crab",
+  "typeLine": "Creature — Crab",
+  "manaCost": "{U}",
+  "set": "TDC",
+  "setName": "Tarkir: Dragonstorm Commander",
+  "collectorNumber": "155",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdc/155/hedron-crab?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/1/d109b70e-862f-4d8a-8b40-ef6dc904868f.jpg?1783907106",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/1/d109b70e-862f-4d8a-8b40-ef6dc904868f.jpg?1783907106",
+  "colorIdentity": [
+    "U"
+  ]
+}

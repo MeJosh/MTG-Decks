@@ -1,0 +1,16 @@
+{
+  "id": "d8db2b8e-dce9-49b7-833f-381ee55288cb",
+  "name": "Sun Titan",
+  "typeLine": "Creature — Giant",
+  "manaCost": "{4}{W}{W}",
+  "set": "M11",
+  "setName": "Magic 2011",
+  "collectorNumber": "35",
+  "releasedAt": "2010-07-16",
+  "scryfallUri": "https://scryfall.com/card/m11/35/sun-titan?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/8/d8db2b8e-dce9-49b7-833f-381ee55288cb.jpg?1783941831",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/8/d8db2b8e-dce9-49b7-833f-381ee55288cb.jpg?1783941831",
+  "colorIdentity": [
+    "W"
+  ]
+}

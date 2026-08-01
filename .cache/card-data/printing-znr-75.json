@@ -1,0 +1,16 @@
+{
+  "id": "738ce273-c938-42d2-83b2-c4f5f4000b0b",
+  "name": "Ruin Crab",
+  "typeLine": "Creature — Crab",
+  "manaCost": "{U}",
+  "set": "ZNR",
+  "setName": "Zendikar Rising",
+  "collectorNumber": "75",
+  "releasedAt": "2020-09-25",
+  "scryfallUri": "https://scryfall.com/card/znr/75/ruin-crab?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/3/738ce273-c938-42d2-83b2-c4f5f4000b0b.jpg?1783929390",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/3/738ce273-c938-42d2-83b2-c4f5f4000b0b.jpg?1783929390",
+  "colorIdentity": [
+    "U"
+  ]
+}

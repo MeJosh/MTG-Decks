@@ -1,0 +1,16 @@
+{
+  "id": "7ac16d09-8bc7-407c-a757-666f4707bc90",
+  "name": "Life from the Loam",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "collectorNumber": "172",
+  "releasedAt": "2005-10-07",
+  "scryfallUri": "https://scryfall.com/card/rav/172/life-from-the-loam?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/a/7ac16d09-8bc7-407c-a757-666f4707bc90.jpg?1783943634",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/a/7ac16d09-8bc7-407c-a757-666f4707bc90.jpg?1783943634",
+  "colorIdentity": [
+    "G"
+  ]
+}

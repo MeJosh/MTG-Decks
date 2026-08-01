@@ -1,0 +1,16 @@
+{
+  "id": "811458c7-dcdc-43ef-8c3e-a90e21ce315e",
+  "name": "Rites of Flourishing",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{G}",
+  "set": "FUT",
+  "setName": "Future Sight",
+  "collectorNumber": "137",
+  "releasedAt": "2007-05-04",
+  "scryfallUri": "https://scryfall.com/card/fut/137/rites-of-flourishing?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/1/811458c7-dcdc-43ef-8c3e-a90e21ce315e.jpg?1783943097",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/1/811458c7-dcdc-43ef-8c3e-a90e21ce315e.jpg?1783943097",
+  "colorIdentity": [
+    "G"
+  ]
+}

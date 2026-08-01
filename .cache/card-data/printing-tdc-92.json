@@ -1,0 +1,16 @@
+{
+  "id": "4ede8d68-6870-445c-b140-da98adbc246a",
+  "name": "Narset's Reversal",
+  "typeLine": "Instant",
+  "manaCost": "{U}{U}",
+  "set": "TDC",
+  "setName": "Tarkir: Dragonstorm Commander",
+  "collectorNumber": "92",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdc/92/narsets-reversal?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/e/4ede8d68-6870-445c-b140-da98adbc246a.jpg?1783907140",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/e/4ede8d68-6870-445c-b140-da98adbc246a.jpg?1783907140",
+  "colorIdentity": [
+    "U"
+  ]
+}

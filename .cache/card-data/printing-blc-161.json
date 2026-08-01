@@ -1,0 +1,16 @@
+{
+  "id": "468aeb4d-d970-4332-8e8b-a3d57cb661a9",
+  "name": "Aetherize",
+  "typeLine": "Instant",
+  "manaCost": "{3}{U}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "161",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/161/aetherize?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/6/468aeb4d-d970-4332-8e8b-a3d57cb661a9.jpg?1783910686",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/6/468aeb4d-d970-4332-8e8b-a3d57cb661a9.jpg?1783910686",
+  "colorIdentity": [
+    "U"
+  ]
+}

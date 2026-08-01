@@ -1,0 +1,18 @@
+{
+  "id": "26d40e03-6de4-4373-9fbf-04c1dd79e995",
+  "name": "Jetmir's Garden",
+  "typeLine": "Land — Mountain Forest Plains",
+  "manaCost": "",
+  "set": "SNC",
+  "setName": "Streets of New Capenna",
+  "collectorNumber": "250",
+  "releasedAt": "2022-04-29",
+  "scryfallUri": "https://scryfall.com/card/snc/250/jetmirs-garden?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/6/26d40e03-6de4-4373-9fbf-04c1dd79e995.jpg?1783923058",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/6/26d40e03-6de4-4373-9fbf-04c1dd79e995.jpg?1783923058",
+  "colorIdentity": [
+    "G",
+    "R",
+    "W"
+  ]
+}

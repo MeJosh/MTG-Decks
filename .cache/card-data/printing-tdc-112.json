@@ -1,0 +1,16 @@
+{
+  "id": "a06bc946-8625-4a87-8695-ecf236df95bc",
+  "name": "Dismantling Wave",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{W}",
+  "set": "TDC",
+  "setName": "Tarkir: Dragonstorm Commander",
+  "collectorNumber": "112",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdc/112/dismantling-wave?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/0/a06bc946-8625-4a87-8695-ecf236df95bc.jpg?1783907128",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/0/a06bc946-8625-4a87-8695-ecf236df95bc.jpg?1783907128",
+  "colorIdentity": [
+    "W"
+  ]
+}

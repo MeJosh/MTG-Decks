@@ -1,0 +1,16 @@
+{
+  "id": "6215a5d9-d6d2-4f9f-8a0c-a65d1afd956a",
+  "name": "Stronghold Biologist",
+  "typeLine": "Creature — Human Spellshaper",
+  "manaCost": "{2}{U}",
+  "set": "NEM",
+  "setName": "Nemesis",
+  "collectorNumber": "45",
+  "releasedAt": "2000-02-14",
+  "scryfallUri": "https://scryfall.com/card/nem/45/stronghold-biologist?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/2/6215a5d9-d6d2-4f9f-8a0c-a65d1afd956a.jpg?1783945832",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/2/6215a5d9-d6d2-4f9f-8a0c-a65d1afd956a.jpg?1783945832",
+  "colorIdentity": [
+    "U"
+  ]
+}

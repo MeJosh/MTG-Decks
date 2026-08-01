@@ -1,0 +1,16 @@
+{
+  "id": "1c29991d-82f2-479d-95ca-5c88e9f3f219",
+  "name": "Nullmage Advocate",
+  "typeLine": "Creature — Insect Druid",
+  "manaCost": "{2}{G}",
+  "set": "JUD",
+  "setName": "Judgment",
+  "collectorNumber": "126",
+  "releasedAt": "2002-05-27",
+  "scryfallUri": "https://scryfall.com/card/jud/126/nullmage-advocate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/c/1c29991d-82f2-479d-95ca-5c88e9f3f219.jpg?1783945109",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/c/1c29991d-82f2-479d-95ca-5c88e9f3f219.jpg?1783945109",
+  "colorIdentity": [
+    "G"
+  ]
+}

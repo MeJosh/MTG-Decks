@@ -1,0 +1,16 @@
+{
+  "id": "649da7c7-51bc-4518-a363-3c4862d9446b",
+  "name": "Devout Witness",
+  "typeLine": "Creature — Human Spellshaper",
+  "manaCost": "{2}{W}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "MMQ-17",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/MMQ-17/devout-witness?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/4/649da7c7-51bc-4518-a363-3c4862d9446b.jpg?1783910447",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/4/649da7c7-51bc-4518-a363-3c4862d9446b.jpg?1783910447",
+  "colorIdentity": [
+    "W"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "f8fa7566-6f7d-4c01-a442-ff7b38684de5",
+  "name": "Privileged Position",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{G/W}{G/W}{G/W}",
+  "set": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "collectorNumber": "251",
+  "releasedAt": "2005-10-07",
+  "scryfallUri": "https://scryfall.com/card/rav/251/privileged-position?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/8/f8fa7566-6f7d-4c01-a442-ff7b38684de5.jpg?1783943602",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/8/f8fa7566-6f7d-4c01-a442-ff7b38684de5.jpg?1783943602",
+  "colorIdentity": [
+    "G",
+    "W"
+  ]
+}

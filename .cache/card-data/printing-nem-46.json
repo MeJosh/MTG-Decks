@@ -1,0 +1,16 @@
+{
+  "id": "d3567b4e-6e31-40b0-83ea-4a2a58bd637c",
+  "name": "Stronghold Machinist",
+  "typeLine": "Creature — Human Spellshaper",
+  "manaCost": "{2}{U}",
+  "set": "NEM",
+  "setName": "Nemesis",
+  "collectorNumber": "46",
+  "releasedAt": "2000-02-14",
+  "scryfallUri": "https://scryfall.com/card/nem/46/stronghold-machinist?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/3/d3567b4e-6e31-40b0-83ea-4a2a58bd637c.jpg?1783945832",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/3/d3567b4e-6e31-40b0-83ea-4a2a58bd637c.jpg?1783945832",
+  "colorIdentity": [
+    "U"
+  ]
+}

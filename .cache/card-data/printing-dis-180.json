@@ -1,0 +1,17 @@
+{
+  "id": "407d0a0c-a6be-4bd5-8355-1715698c6bde",
+  "name": "Simic Growth Chamber",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "DIS",
+  "setName": "Dissension",
+  "collectorNumber": "180",
+  "releasedAt": "2006-05-05",
+  "scryfallUri": "https://scryfall.com/card/dis/180/simic-growth-chamber?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/0/407d0a0c-a6be-4bd5-8355-1715698c6bde.jpg?1783943376",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/0/407d0a0c-a6be-4bd5-8355-1715698c6bde.jpg?1783943376",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

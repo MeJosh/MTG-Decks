@@ -1,0 +1,16 @@
+{
+  "id": "008c8d72-097e-472d-88c8-78bf29e42e32",
+  "name": "Spurnmage Advocate",
+  "typeLine": "Creature — Human Nomad",
+  "manaCost": "{W}",
+  "set": "JUD",
+  "setName": "Judgment",
+  "collectorNumber": "27",
+  "releasedAt": "2002-05-27",
+  "scryfallUri": "https://scryfall.com/card/jud/27/spurnmage-advocate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/0/008c8d72-097e-472d-88c8-78bf29e42e32.jpg?1783945132",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/0/008c8d72-097e-472d-88c8-78bf29e42e32.jpg?1783945132",
+  "colorIdentity": [
+    "W"
+  ]
+}

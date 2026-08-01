@@ -1,0 +1,17 @@
+{
+  "id": "8dbcf08f-dcc1-4a6a-9af6-6fadb89f2f96",
+  "name": "Wall of Denial",
+  "typeLine": "Creature — Wall",
+  "manaCost": "{1}{W}{U}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "ARB-16",
+  "releasedAt": "2022-09-09",
+  "scryfallUri": "https://scryfall.com/card/plst/ARB-16/wall-of-denial?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/d/8dbcf08f-dcc1-4a6a-9af6-6fadb89f2f96.jpg?1783921167",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/d/8dbcf08f-dcc1-4a6a-9af6-6fadb89f2f96.jpg?1783921167",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

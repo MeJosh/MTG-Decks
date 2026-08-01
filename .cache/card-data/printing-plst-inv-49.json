@@ -1,0 +1,16 @@
+{
+  "id": "a7e60999-8d45-468d-ad6e-de8826afad1a",
+  "name": "Collective Restraint",
+  "typeLine": "Enchantment",
+  "manaCost": "{3}{U}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "INV-49",
+  "releasedAt": "2022-09-09",
+  "scryfallUri": "https://scryfall.com/card/plst/INV-49/collective-restraint?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/7/a7e60999-8d45-468d-ad6e-de8826afad1a.jpg?1783921163",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/7/a7e60999-8d45-468d-ad6e-de8826afad1a.jpg?1783921163",
+  "colorIdentity": [
+    "U"
+  ]
+}

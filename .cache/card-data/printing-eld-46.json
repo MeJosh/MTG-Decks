@@ -1,0 +1,16 @@
+{
+  "id": "6afc67d1-1018-4a15-ab5f-377fd11dcd3d",
+  "name": "Folio of Fancies",
+  "typeLine": "Artifact — Book",
+  "manaCost": "{1}{U}",
+  "set": "ELD",
+  "setName": "Throne of Eldraine",
+  "collectorNumber": "46",
+  "releasedAt": "2019-10-04",
+  "scryfallUri": "https://scryfall.com/card/eld/46/folio-of-fancies?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/a/6afc67d1-1018-4a15-ab5f-377fd11dcd3d.jpg?1783932658",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/a/6afc67d1-1018-4a15-ab5f-377fd11dcd3d.jpg?1783932658",
+  "colorIdentity": [
+    "U"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "a1fc8d86-b118-46e3-92a5-8cbf2ca282f7",
+  "name": "Glacial Fortress",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "EOC",
+  "setName": "Edge of Eternities Commander",
+  "collectorNumber": "160",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoc/160/glacial-fortress?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/1/a1fc8d86-b118-46e3-92a5-8cbf2ca282f7.jpg?1783906012",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/1/a1fc8d86-b118-46e3-92a5-8cbf2ca282f7.jpg?1783906012",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

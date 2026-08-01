@@ -1,0 +1,16 @@
+{
+  "id": "247694c5-5813-4256-9fd8-478d4be52081",
+  "name": "Dissipation Field",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{U}{U}",
+  "set": "SOM",
+  "setName": "Scars of Mirrodin",
+  "collectorNumber": "32",
+  "releasedAt": "2010-10-01",
+  "scryfallUri": "https://scryfall.com/card/som/32/dissipation-field?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/4/247694c5-5813-4256-9fd8-478d4be52081.jpg?1783941739",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/4/247694c5-5813-4256-9fd8-478d4be52081.jpg?1783941739",
+  "colorIdentity": [
+    "U"
+  ]
+}

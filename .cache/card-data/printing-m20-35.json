@@ -1,0 +1,16 @@
+{
+  "id": "a1f4e79b-b103-4380-afa0-61a2b1773c9e",
+  "name": "Rule of Law",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{W}",
+  "set": "M20",
+  "setName": "Core Set 2020",
+  "collectorNumber": "35",
+  "releasedAt": "2019-07-12",
+  "scryfallUri": "https://scryfall.com/card/m20/35/rule-of-law?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/1/a1f4e79b-b103-4380-afa0-61a2b1773c9e.jpg?1783933020",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/1/a1f4e79b-b103-4380-afa0-61a2b1773c9e.jpg?1783933020",
+  "colorIdentity": [
+    "W"
+  ]
+}

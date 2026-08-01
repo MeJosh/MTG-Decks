@@ -1,0 +1,16 @@
+{
+  "id": "d486a546-04eb-46b9-8982-79e930a31abf",
+  "name": "Teferi, Mage of Zhalfir",
+  "typeLine": "Legendary Creature — Human Wizard",
+  "manaCost": "{2}{U}{U}{U}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "IMA-75",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/IMA-75/teferi-mage-of-zhalfir?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/4/d486a546-04eb-46b9-8982-79e930a31abf.jpg?1783910295",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/4/d486a546-04eb-46b9-8982-79e930a31abf.jpg?1783910295",
+  "colorIdentity": [
+    "U"
+  ]
+}

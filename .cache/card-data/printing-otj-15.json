@@ -1,0 +1,17 @@
+{
+  "id": "9995e0e6-7c9c-4fef-8fd2-8fb1622e6ec8",
+  "name": "High Noon",
+  "typeLine": "Enchantment",
+  "manaCost": "{1}{W}",
+  "set": "OTJ",
+  "setName": "Outlaws of Thunder Junction",
+  "collectorNumber": "15",
+  "releasedAt": "2024-04-19",
+  "scryfallUri": "https://scryfall.com/card/otj/15/high-noon?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/9/9995e0e6-7c9c-4fef-8fd2-8fb1622e6ec8.jpg?1783911857",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/9/9995e0e6-7c9c-4fef-8fd2-8fb1622e6ec8.jpg?1783911857",
+  "colorIdentity": [
+    "R",
+    "W"
+  ]
+}

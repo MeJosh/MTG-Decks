@@ -1,0 +1,16 @@
+{
+  "id": "860b8633-1bfc-426a-8666-5e6a584d4525",
+  "name": "Retribution of the Meek",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{W}",
+  "set": "VIS",
+  "setName": "Visions",
+  "collectorNumber": "19",
+  "releasedAt": "1997-02-03",
+  "scryfallUri": "https://scryfall.com/card/vis/19/retribution-of-the-meek?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/6/860b8633-1bfc-426a-8666-5e6a584d4525.jpg?1783947003",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/6/860b8633-1bfc-426a-8666-5e6a584d4525.jpg?1783947003",
+  "colorIdentity": [
+    "W"
+  ]
+}

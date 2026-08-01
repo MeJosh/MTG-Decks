@@ -1,0 +1,16 @@
+{
+  "id": "a720f867-eb3e-4b42-835a-1bdc19de8f7c",
+  "name": "Submerge",
+  "typeLine": "Instant",
+  "manaCost": "{4}{U}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "NEM-48",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/NEM-48/submerge?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/7/a720f867-eb3e-4b42-835a-1bdc19de8f7c.jpg?1783910356",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/7/a720f867-eb3e-4b42-835a-1bdc19de8f7c.jpg?1783910356",
+  "colorIdentity": [
+    "U"
+  ]
+}

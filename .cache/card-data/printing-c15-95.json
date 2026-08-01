@@ -1,0 +1,16 @@
+{
+  "id": "3c21df8e-a24f-4ce1-aa8a-1467f9f9423a",
+  "name": "Jace's Archivist",
+  "typeLine": "Creature — Vedalken Wizard",
+  "manaCost": "{1}{U}{U}",
+  "set": "C15",
+  "setName": "Commander 2015",
+  "collectorNumber": "95",
+  "releasedAt": "2015-11-13",
+  "scryfallUri": "https://scryfall.com/card/c15/95/jaces-archivist?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/c/3c21df8e-a24f-4ce1-aa8a-1467f9f9423a.jpg?1783938093",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/c/3c21df8e-a24f-4ce1-aa8a-1467f9f9423a.jpg?1783938093",
+  "colorIdentity": [
+    "U"
+  ]
+}

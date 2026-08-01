@@ -1,0 +1,16 @@
+{
+  "id": "7e68f4df-88ce-4e09-a03c-7edf40bff167",
+  "name": "Sevinne's Reclamation",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{W}",
+  "set": "C19",
+  "setName": "Commander 2019",
+  "collectorNumber": "5",
+  "releasedAt": "2019-08-23",
+  "scryfallUri": "https://scryfall.com/card/c19/5/sevinnes-reclamation?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/e/7e68f4df-88ce-4e09-a03c-7edf40bff167.jpg?1783932814",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/e/7e68f4df-88ce-4e09-a03c-7edf40bff167.jpg?1783932814",
+  "colorIdentity": [
+    "W"
+  ]
+}

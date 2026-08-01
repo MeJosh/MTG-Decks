@@ -1,0 +1,16 @@
+{
+  "id": "7e6cf6b6-b4c1-4742-9be4-b3b15fbb0202",
+  "name": "Overburden",
+  "typeLine": "Enchantment",
+  "manaCost": "{1}{U}",
+  "set": "PCY",
+  "setName": "Prophecy",
+  "collectorNumber": "39",
+  "releasedAt": "2000-06-05",
+  "scryfallUri": "https://scryfall.com/card/pcy/39/overburden?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/e/7e6cf6b6-b4c1-4742-9be4-b3b15fbb0202.jpg?1783945791",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/e/7e6cf6b6-b4c1-4742-9be4-b3b15fbb0202.jpg?1783945791",
+  "colorIdentity": [
+    "U"
+  ]
+}

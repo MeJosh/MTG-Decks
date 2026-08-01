@@ -1,0 +1,18 @@
+{
+  "id": "02138fbb-3962-4348-8d31-faaefba0b8b2",
+  "name": "Raugrin Triome",
+  "typeLine": "Land — Island Mountain Plains",
+  "manaCost": "",
+  "set": "IKO",
+  "setName": "Ikoria: Lair of Behemoths",
+  "collectorNumber": "251",
+  "releasedAt": "2020-04-24",
+  "scryfallUri": "https://scryfall.com/card/iko/251/raugrin-triome?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/2/02138fbb-3962-4348-8d31-faaefba0b8b2.jpg?1783931001",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/2/02138fbb-3962-4348-8d31-faaefba0b8b2.jpg?1783931001",
+  "colorIdentity": [
+    "R",
+    "U",
+    "W"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "228c1650-da3c-4099-91b6-18e3873c9cdb",
+  "name": "Archon of Emeria",
+  "typeLine": "Creature — Archon",
+  "manaCost": "{2}{W}",
+  "set": "ZNR",
+  "setName": "Zendikar Rising",
+  "collectorNumber": "4",
+  "releasedAt": "2020-09-25",
+  "scryfallUri": "https://scryfall.com/card/znr/4/archon-of-emeria?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/2/228c1650-da3c-4099-91b6-18e3873c9cdb.jpg?1783929424",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/2/228c1650-da3c-4099-91b6-18e3873c9cdb.jpg?1783929424",
+  "colorIdentity": [
+    "W"
+  ]
+}

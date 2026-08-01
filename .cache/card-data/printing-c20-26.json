@@ -1,0 +1,16 @@
+{
+  "id": "c972abe6-c732-4745-bde4-8b51698f05be",
+  "name": "Flawless Maneuver",
+  "typeLine": "Instant",
+  "manaCost": "{2}{W}",
+  "set": "C20",
+  "setName": "Commander 2020",
+  "collectorNumber": "26",
+  "releasedAt": "2020-04-17",
+  "scryfallUri": "https://scryfall.com/card/c20/26/flawless-maneuver?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/9/c972abe6-c732-4745-bde4-8b51698f05be.jpg?1783931225",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/9/c972abe6-c732-4745-bde4-8b51698f05be.jpg?1783931225",
+  "colorIdentity": [
+    "W"
+  ]
+}

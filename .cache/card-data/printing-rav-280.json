@@ -1,0 +1,17 @@
+{
+  "id": "168ef687-5797-4b45-b75b-393d8117cebd",
+  "name": "Sacred Foundry",
+  "typeLine": "Land — Mountain Plains",
+  "manaCost": "",
+  "set": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "collectorNumber": "280",
+  "releasedAt": "2005-10-07",
+  "scryfallUri": "https://scryfall.com/card/rav/280/sacred-foundry?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/6/168ef687-5797-4b45-b75b-393d8117cebd.jpg?1783943590",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/6/168ef687-5797-4b45-b75b-393d8117cebd.jpg?1783943590",
+  "colorIdentity": [
+    "R",
+    "W"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "69195842-c7ce-477b-a04f-06412aff382a",
+  "name": "Selvala, Explorer Returned",
+  "typeLine": "Legendary Creature — Elf Scout",
+  "manaCost": "{1}{G}{W}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "259",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/259/selvala-explorer-returned?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/9/69195842-c7ce-477b-a04f-06412aff382a.jpg?1783910653",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/9/69195842-c7ce-477b-a04f-06412aff382a.jpg?1783910653",
+  "colorIdentity": [
+    "G",
+    "W"
+  ]
+}

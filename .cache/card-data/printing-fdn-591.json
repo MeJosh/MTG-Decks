@@ -1,0 +1,16 @@
+{
+  "id": "18748b1d-4161-482c-a726-8762b4c1819c",
+  "name": "Fog Bank",
+  "typeLine": "Creature — Wall",
+  "manaCost": "{1}{U}",
+  "set": "FDN",
+  "setName": "Foundations",
+  "collectorNumber": "591",
+  "releasedAt": "2024-11-15",
+  "scryfallUri": "https://scryfall.com/card/fdn/591/fog-bank?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/8/18748b1d-4161-482c-a726-8762b4c1819c.jpg?1783908934",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/8/18748b1d-4161-482c-a726-8762b4c1819c.jpg?1783908934",
+  "colorIdentity": [
+    "U"
+  ]
+}

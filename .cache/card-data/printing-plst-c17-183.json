@@ -1,0 +1,17 @@
+{
+  "id": "e27825cf-30f4-418a-b0fa-9de76fa46450",
+  "name": "Nin, the Pain Artist",
+  "typeLine": "Legendary Creature — Vedalken Wizard",
+  "manaCost": "{U}{R}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "C17-183",
+  "releasedAt": "2019-11-07",
+  "scryfallUri": "https://scryfall.com/card/plst/C17-183/nin-the-pain-artist?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/2/e27825cf-30f4-418a-b0fa-9de76fa46450.jpg?1783931776",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/2/e27825cf-30f4-418a-b0fa-9de76fa46450.jpg?1783931776",
+  "colorIdentity": [
+    "R",
+    "U"
+  ]
+}

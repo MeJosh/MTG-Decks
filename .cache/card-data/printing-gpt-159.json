@@ -1,0 +1,17 @@
+{
+  "id": "666f455e-3a3d-475d-b67a-a1fdd74820eb",
+  "name": "Izzet Boilerworks",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "GPT",
+  "setName": "Guildpact",
+  "collectorNumber": "159",
+  "releasedAt": "2006-02-03",
+  "scryfallUri": "https://scryfall.com/card/gpt/159/izzet-boilerworks?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/6/666f455e-3a3d-475d-b67a-a1fdd74820eb.jpg?1783943456",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/6/666f455e-3a3d-475d-b67a-a1fdd74820eb.jpg?1783943456",
+  "colorIdentity": [
+    "R",
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "0dce0e8f-9ad6-42b6-af61-c883613efc97",
+  "name": "Pulsemage Advocate",
+  "typeLine": "Creature — Human Cleric",
+  "manaCost": "{2}{W}",
+  "set": "JUD",
+  "setName": "Judgment",
+  "collectorNumber": "19",
+  "releasedAt": "2002-05-27",
+  "scryfallUri": "https://scryfall.com/card/jud/19/pulsemage-advocate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/d/0dce0e8f-9ad6-42b6-af61-c883613efc97.jpg?1783945133",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/d/0dce0e8f-9ad6-42b6-af61-c883613efc97.jpg?1783945133",
+  "colorIdentity": [
+    "W"
+  ]
+}

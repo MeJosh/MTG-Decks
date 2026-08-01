@@ -1,0 +1,16 @@
+{
+  "id": "e18b6f32-f9c3-4264-bc7e-1ba126eb1a1d",
+  "name": "Mistveil Plains",
+  "typeLine": "Land — Plains",
+  "manaCost": "",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "UMA-247",
+  "releasedAt": "2024-02-09",
+  "scryfallUri": "https://scryfall.com/card/plst/UMA-247/mistveil-plains?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/1/e18b6f32-f9c3-4264-bc7e-1ba126eb1a1d.jpg?1783912591",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/1/e18b6f32-f9c3-4264-bc7e-1ba126eb1a1d.jpg?1783912591",
+  "colorIdentity": [
+    "W"
+  ]
+}

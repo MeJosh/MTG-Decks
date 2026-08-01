@@ -1,0 +1,16 @@
+{
+  "id": "5ad012f6-b37f-4365-98de-71c84807ef74",
+  "name": "Mana Breach",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{U}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "EXO-38",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/EXO-38/mana-breach?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/a/5ad012f6-b37f-4365-98de-71c84807ef74.jpg?1783910382",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/a/5ad012f6-b37f-4365-98de-71c84807ef74.jpg?1783910382",
+  "colorIdentity": [
+    "U"
+  ]
+}

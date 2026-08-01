@@ -1,0 +1,16 @@
+{
+  "id": "05087bc1-ac45-4405-9074-8272a321ab86",
+  "name": "Moment's Peace",
+  "typeLine": "Instant",
+  "manaCost": "{1}{G}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "TD0-A80",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/TD0-A80/moments-peace?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/5/05087bc1-ac45-4405-9074-8272a321ab86.jpg?1783910273",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/5/05087bc1-ac45-4405-9074-8272a321ab86.jpg?1783910273",
+  "colorIdentity": [
+    "G"
+  ]
+}

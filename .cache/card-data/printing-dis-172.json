@@ -1,0 +1,17 @@
+{
+  "id": "b98b2a35-ec2b-47fe-903d-dd292e469a3c",
+  "name": "Breeding Pool",
+  "typeLine": "Land — Forest Island",
+  "manaCost": "",
+  "set": "DIS",
+  "setName": "Dissension",
+  "collectorNumber": "172",
+  "releasedAt": "2006-05-05",
+  "scryfallUri": "https://scryfall.com/card/dis/172/breeding-pool?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/9/b98b2a35-ec2b-47fe-903d-dd292e469a3c.jpg?1783943378",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/9/b98b2a35-ec2b-47fe-903d-dd292e469a3c.jpg?1783943378",
+  "colorIdentity": [
+    "G",
+    "U"
+  ]
+}

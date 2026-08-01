@@ -1,0 +1,17 @@
+{
+  "id": "e58365d2-e4db-444b-b1a9-795668ad3038",
+  "name": "Azorius Chancery",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "DIS",
+  "setName": "Dissension",
+  "collectorNumber": "170",
+  "releasedAt": "2006-05-05",
+  "scryfallUri": "https://scryfall.com/card/dis/170/azorius-chancery?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/5/e58365d2-e4db-444b-b1a9-795668ad3038.jpg?1783943379",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/5/e58365d2-e4db-444b-b1a9-795668ad3038.jpg?1783943379",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

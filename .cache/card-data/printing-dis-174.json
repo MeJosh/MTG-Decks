@@ -1,0 +1,17 @@
+{
+  "id": "c28aea19-2a39-4934-afda-909e234fa3ba",
+  "name": "Hallowed Fountain",
+  "typeLine": "Land — Plains Island",
+  "manaCost": "",
+  "set": "DIS",
+  "setName": "Dissension",
+  "collectorNumber": "174",
+  "releasedAt": "2006-05-05",
+  "scryfallUri": "https://scryfall.com/card/dis/174/hallowed-fountain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/2/c28aea19-2a39-4934-afda-909e234fa3ba.jpg?1783943377",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/2/c28aea19-2a39-4934-afda-909e234fa3ba.jpg?1783943377",
+  "colorIdentity": [
+    "U",
+    "W"
+  ]
+}

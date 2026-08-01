@@ -1,0 +1,19 @@
+{
+  "id": "97fa8615-2b6c-445a-bcaf-44a7e847bf65",
+  "name": "Kynaios and Tiro of Meletis",
+  "typeLine": "Legendary Creature — Human Soldier",
+  "manaCost": "{R}{G}{W}{U}",
+  "set": "C16",
+  "setName": "Commander 2016",
+  "collectorNumber": "36",
+  "releasedAt": "2016-11-11",
+  "scryfallUri": "https://scryfall.com/card/c16/36/kynaios-and-tiro-of-meletis?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/7/97fa8615-2b6c-445a-bcaf-44a7e847bf65.jpg?1783937085",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/7/97fa8615-2b6c-445a-bcaf-44a7e847bf65.jpg?1783937085",
+  "colorIdentity": [
+    "G",
+    "R",
+    "U",
+    "W"
+  ]
+}

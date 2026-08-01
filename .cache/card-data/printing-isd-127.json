@@ -1,0 +1,17 @@
+{
+  "id": "e5e7b966-7c5b-44e6-a6df-4bd7af4edaa9",
+  "name": "Ancient Grudge",
+  "typeLine": "Instant",
+  "manaCost": "{1}{R}",
+  "set": "ISD",
+  "setName": "Innistrad",
+  "collectorNumber": "127",
+  "releasedAt": "2011-09-30",
+  "scryfallUri": "https://scryfall.com/card/isd/127/ancient-grudge?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/5/e5e7b966-7c5b-44e6-a6df-4bd7af4edaa9.jpg?1783940944",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/5/e5e7b966-7c5b-44e6-a6df-4bd7af4edaa9.jpg?1783940944",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

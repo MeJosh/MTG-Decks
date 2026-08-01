@@ -1,0 +1,16 @@
+{
+  "id": "2f09e451-0246-45a2-8bfd-07d3c65ddfe6",
+  "name": "Exploration",
+  "typeLine": "Enchantment",
+  "manaCost": "{G}",
+  "set": "USG",
+  "setName": "Urza's Saga",
+  "collectorNumber": "250",
+  "releasedAt": "1998-10-12",
+  "scryfallUri": "https://scryfall.com/card/usg/250/exploration?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/f/2f09e451-0246-45a2-8bfd-07d3c65ddfe6.jpg?1783946316",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/f/2f09e451-0246-45a2-8bfd-07d3c65ddfe6.jpg?1783946316",
+  "colorIdentity": [
+    "G"
+  ]
+}

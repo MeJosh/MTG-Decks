@@ -1,0 +1,16 @@
+{
+  "id": "c3bc8b9e-4d22-41ba-b593-d383fd301ef9",
+  "name": "Eidolon of Rhetoric",
+  "typeLine": "Enchantment Creature — Spirit",
+  "manaCost": "{2}{W}",
+  "set": "JOU",
+  "setName": "Journey into Nyx",
+  "collectorNumber": "10",
+  "releasedAt": "2014-05-02",
+  "scryfallUri": "https://scryfall.com/card/jou/10/eidolon-of-rhetoric?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/3/c3bc8b9e-4d22-41ba-b593-d383fd301ef9.jpg?1783939461",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/3/c3bc8b9e-4d22-41ba-b593-d383fd301ef9.jpg?1783939461",
+  "colorIdentity": [
+    "W"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "8dbdce9e-94fa-4ed5-9b97-d2026cffe7cb",
+  "name": "Waterfront Bouncer",
+  "typeLine": "Creature — Merfolk Spellshaper",
+  "manaCost": "{1}{U}",
+  "set": "MMQ",
+  "setName": "Mercadian Masques",
+  "collectorNumber": "114",
+  "releasedAt": "1999-10-04",
+  "scryfallUri": "https://scryfall.com/card/mmq/114/waterfront-bouncer?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/d/8dbdce9e-94fa-4ed5-9b97-d2026cffe7cb.jpg?1783945957",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/d/8dbdce9e-94fa-4ed5-9b97-d2026cffe7cb.jpg?1783945957",
+  "colorIdentity": [
+    "U"
+  ]
+}

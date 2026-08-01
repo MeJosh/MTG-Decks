@@ -1,0 +1,16 @@
+{
+  "id": "3394cefd-a3c6-4917-8f46-234e441ecfb6",
+  "name": "Rhystic Study",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{U}",
+  "set": "PCY",
+  "setName": "Prophecy",
+  "collectorNumber": "45",
+  "releasedAt": "2000-06-05",
+  "scryfallUri": "https://scryfall.com/card/pcy/45/rhystic-study?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/3/3394cefd-a3c6-4917-8f46-234e441ecfb6.jpg?1783945789",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/3/3394cefd-a3c6-4917-8f46-234e441ecfb6.jpg?1783945789",
+  "colorIdentity": [
+    "U"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "2ee1d489-0980-444e-8b07-107be791b76e",
+  "name": "Kodama of the East Tree",
+  "typeLine": "Legendary Creature — Spirit",
+  "manaCost": "{4}{G}{G}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "227",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/227/kodama-of-the-east-tree?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/e/2ee1d489-0980-444e-8b07-107be791b76e.jpg?1783910665",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/e/2ee1d489-0980-444e-8b07-107be791b76e.jpg?1783910665",
+  "colorIdentity": [
+    "G"
+  ]
+}

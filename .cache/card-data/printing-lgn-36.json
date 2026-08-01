@@ -1,0 +1,16 @@
+{
+  "id": "9e36cf11-5dfb-4593-8335-f739b7c7829c",
+  "name": "Dreamborn Muse",
+  "typeLine": "Creature — Spirit",
+  "manaCost": "{2}{U}{U}",
+  "set": "LGN",
+  "setName": "Legions",
+  "collectorNumber": "36",
+  "releasedAt": "2003-02-03",
+  "scryfallUri": "https://scryfall.com/card/lgn/36/dreamborn-muse?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/e/9e36cf11-5dfb-4593-8335-f739b7c7829c.jpg?1783944923",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/e/9e36cf11-5dfb-4593-8335-f739b7c7829c.jpg?1783944923",
+  "colorIdentity": [
+    "U"
+  ]
+}

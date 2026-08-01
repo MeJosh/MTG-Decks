@@ -1,0 +1,18 @@
+{
+  "id": "8569ad47-a243-402d-899f-4e6b17ea4e1e",
+  "name": "Pramikon, Sky Rampart",
+  "typeLine": "Legendary Creature — Wall",
+  "manaCost": "{U}{R}{W}",
+  "set": "C19",
+  "setName": "Commander 2019",
+  "collectorNumber": "47",
+  "releasedAt": "2019-08-23",
+  "scryfallUri": "https://scryfall.com/card/c19/47/pramikon-sky-rampart?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/5/8569ad47-a243-402d-899f-4e6b17ea4e1e.jpg?1783932798",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/5/8569ad47-a243-402d-899f-4e6b17ea4e1e.jpg?1783932798",
+  "colorIdentity": [
+    "R",
+    "U",
+    "W"
+  ]
+}

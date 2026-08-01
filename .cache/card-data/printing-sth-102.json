@@ -1,0 +1,16 @@
+{
+  "id": "fa9af8e5-bc97-4704-ae5c-e3d2d5b72586",
+  "name": "Burgeoning",
+  "typeLine": "Enchantment",
+  "manaCost": "{G}",
+  "set": "STH",
+  "setName": "Stronghold",
+  "collectorNumber": "102",
+  "releasedAt": "1998-03-02",
+  "scryfallUri": "https://scryfall.com/card/sth/102/burgeoning?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/a/fa9af8e5-bc97-4704-ae5c-e3d2d5b72586.jpg?1783946552",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/a/fa9af8e5-bc97-4704-ae5c-e3d2d5b72586.jpg?1783946552",
+  "colorIdentity": [
+    "G"
+  ]
+}

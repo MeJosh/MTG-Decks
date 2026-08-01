@@ -1,0 +1,16 @@
+{
+  "id": "43ec71e9-0024-4f8f-b499-541fb7607fcd",
+  "name": "Intrepid Hero",
+  "typeLine": "Creature — Human Soldier",
+  "manaCost": "{2}{W}",
+  "set": "M13",
+  "setName": "Magic 2013",
+  "collectorNumber": "20",
+  "releasedAt": "2012-07-13",
+  "scryfallUri": "https://scryfall.com/card/m13/20/intrepid-hero?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/3/43ec71e9-0024-4f8f-b499-541fb7607fcd.jpg?1783940516",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/3/43ec71e9-0024-4f8f-b499-541fb7607fcd.jpg?1783940516",
+  "colorIdentity": [
+    "W"
+  ]
+}

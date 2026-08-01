@@ -1,0 +1,16 @@
+{
+  "id": "68684c8e-dc19-4a56-b511-4e21140b137f",
+  "name": "Retreat to Coralhelm",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{U}",
+  "set": "BFZ",
+  "setName": "Battle for Zendikar",
+  "collectorNumber": "82",
+  "releasedAt": "2015-10-02",
+  "scryfallUri": "https://scryfall.com/card/bfz/82/retreat-to-coralhelm?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/8/68684c8e-dc19-4a56-b511-4e21140b137f.jpg?1783938208",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/8/68684c8e-dc19-4a56-b511-4e21140b137f.jpg?1783938208",
+  "colorIdentity": [
+    "U"
+  ]
+}
