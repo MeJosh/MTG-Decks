@@ -1,0 +1,16 @@
+{
+  "id": "029b1edb-e1de-4f1c-81df-8d17f4920318",
+  "name": "Drakuseth, Maw of Flames",
+  "typeLine": "Legendary Creature — Dragon",
+  "manaCost": "{4}{R}{R}{R}",
+  "set": "FDN",
+  "setName": "Foundations",
+  "collectorNumber": "193",
+  "releasedAt": "2024-11-15",
+  "scryfallUri": "https://scryfall.com/card/fdn/193/drakuseth-maw-of-flames?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/2/029b1edb-e1de-4f1c-81df-8d17f4920318.jpg?1783909067",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/2/029b1edb-e1de-4f1c-81df-8d17f4920318.jpg?1783909067",
+  "colorIdentity": [
+    "R"
+  ]
+}

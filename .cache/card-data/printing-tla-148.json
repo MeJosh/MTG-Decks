@@ -1,0 +1,16 @@
+{
+  "id": "7d40b9cb-82ef-44c5-8d3c-c8bb4ce9891c",
+  "name": "Mongoose Lizard",
+  "typeLine": "Creature — Mongoose Lizard",
+  "manaCost": "{4}{R}{R}",
+  "set": "TLA",
+  "setName": "Avatar: The Last Airbender",
+  "collectorNumber": "148",
+  "releasedAt": "2025-11-21",
+  "scryfallUri": "https://scryfall.com/card/tla/148/mongoose-lizard?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/d/7d40b9cb-82ef-44c5-8d3c-c8bb4ce9891c.jpg?1783904954",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/d/7d40b9cb-82ef-44c5-8d3c-c8bb4ce9891c.jpg?1783904954",
+  "colorIdentity": [
+    "R"
+  ]
+}

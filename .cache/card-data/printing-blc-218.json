@@ -1,0 +1,16 @@
+{
+  "id": "109dee37-5de5-40fa-9405-8645be6c5076",
+  "name": "Garruk's Packleader",
+  "typeLine": "Creature — Beast",
+  "manaCost": "{4}{G}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "218",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/218/garruks-packleader?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/0/109dee37-5de5-40fa-9405-8645be6c5076.jpg?1783910666",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/0/109dee37-5de5-40fa-9405-8645be6c5076.jpg?1783910666",
+  "colorIdentity": [
+    "G"
+  ]
+}

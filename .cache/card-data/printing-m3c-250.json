@@ -1,0 +1,16 @@
+{
+  "id": "4ade356e-ed2f-4373-b898-c3ccb46324a1",
+  "name": "Ulvenwald Hydra",
+  "typeLine": "Creature — Hydra",
+  "manaCost": "{4}{G}{G}",
+  "set": "M3C",
+  "setName": "Modern Horizons 3 Commander",
+  "collectorNumber": "250",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/m3c/250/ulvenwald-hydra?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/a/4ade356e-ed2f-4373-b898-c3ccb46324a1.jpg?1783911363",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/a/4ade356e-ed2f-4373-b898-c3ccb46324a1.jpg?1783911363",
+  "colorIdentity": [
+    "G"
+  ]
+}

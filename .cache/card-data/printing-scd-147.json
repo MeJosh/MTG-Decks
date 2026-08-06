@@ -1,0 +1,16 @@
+{
+  "id": "b4487bbe-2bc4-48d9-8a6f-9b0c7555fb47",
+  "name": "Hoard-Smelter Dragon",
+  "typeLine": "Creature — Dragon",
+  "manaCost": "{4}{R}{R}",
+  "set": "SCD",
+  "setName": "Starter Commander Decks",
+  "collectorNumber": "147",
+  "releasedAt": "2022-12-02",
+  "scryfallUri": "https://scryfall.com/card/scd/147/hoard-smelter-dragon?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/4/b4487bbe-2bc4-48d9-8a6f-9b0c7555fb47.jpg?1783918677",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/4/b4487bbe-2bc4-48d9-8a6f-9b0c7555fb47.jpg?1783918677",
+  "colorIdentity": [
+    "R"
+  ]
+}

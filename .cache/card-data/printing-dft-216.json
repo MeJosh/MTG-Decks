@@ -1,0 +1,17 @@
+{
+  "id": "3d8493ee-bd06-4583-9908-a0dbcc5be6d7",
+  "name": "Pyrewood Gearhulk",
+  "typeLine": "Artifact Creature — Construct",
+  "manaCost": "{2}{R}{R}{G}{G}",
+  "set": "DFT",
+  "setName": "Aetherdrift",
+  "collectorNumber": "216",
+  "releasedAt": "2025-02-14",
+  "scryfallUri": "https://scryfall.com/card/dft/216/pyrewood-gearhulk?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/d/3d8493ee-bd06-4583-9908-a0dbcc5be6d7.jpg?1783907855",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/d/3d8493ee-bd06-4583-9908-a0dbcc5be6d7.jpg?1783907855",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ee47f23a-3ba9-4615-b170-c89d8ab99d78",
+  "name": "Goreclaw, Terror of Qal Sisma",
+  "typeLine": "Legendary Creature — Bear",
+  "manaCost": "{3}{G}",
+  "set": "CMM",
+  "setName": "Commander Masters",
+  "collectorNumber": "293",
+  "releasedAt": "2023-08-04",
+  "scryfallUri": "https://scryfall.com/card/cmm/293/goreclaw-terror-of-qal-sisma?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/e/ee47f23a-3ba9-4615-b170-c89d8ab99d78.jpg?1783915630",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/e/ee47f23a-3ba9-4615-b170-c89d8ab99d78.jpg?1783915630",
+  "colorIdentity": [
+    "G"
+  ]
+}

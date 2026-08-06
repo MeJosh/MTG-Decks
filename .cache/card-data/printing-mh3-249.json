@@ -1,0 +1,17 @@
+{
+  "id": "ebef3db0-2b58-4581-a79c-fbca9a059e63",
+  "name": "Bridgeworks Battle // Tanglespan Bridgeworks",
+  "typeLine": "Sorcery // Land",
+  "manaCost": "{2}{G}",
+  "set": "MH3",
+  "setName": "Modern Horizons 3",
+  "collectorNumber": "249",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh3/249/bridgeworks-battle-tanglespan-bridgeworks?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.jpg?1783911228",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.jpg?1783911228",
+  "backImage": "https://cards.scryfall.io/normal/back/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.jpg?1783911228",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "f169dfb2-e4c8-46e9-8591-e51bb82da082",
+  "name": "Forest",
+  "typeLine": "Basic Land — Forest",
+  "manaCost": "",
+  "set": "SOS",
+  "setName": "Secrets of Strixhaven",
+  "collectorNumber": "280",
+  "releasedAt": "2026-04-24",
+  "scryfallUri": "https://scryfall.com/card/sos/280/forest?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/1/f169dfb2-e4c8-46e9-8591-e51bb82da082.jpg?1783903611",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/1/f169dfb2-e4c8-46e9-8591-e51bb82da082.jpg?1783903611",
+  "colorIdentity": [
+    "G"
+  ]
+}

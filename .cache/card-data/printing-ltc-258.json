@@ -1,0 +1,16 @@
+{
+  "id": "a4c0f889-adcb-4947-830f-7fc6899575d4",
+  "name": "Realm Seekers",
+  "typeLine": "Creature — Elf Scout",
+  "manaCost": "{4}{G}{G}",
+  "set": "LTC",
+  "setName": "Tales of Middle-earth Commander",
+  "collectorNumber": "258",
+  "releasedAt": "2023-06-23",
+  "scryfallUri": "https://scryfall.com/card/ltc/258/realm-seekers?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/4/a4c0f889-adcb-4947-830f-7fc6899575d4.jpg?1783915911",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/4/a4c0f889-adcb-4947-830f-7fc6899575d4.jpg?1783915911",
+  "colorIdentity": [
+    "G"
+  ]
+}

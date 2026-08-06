@@ -1,0 +1,17 @@
+{
+  "id": "99535539-aa73-41ed-86ab-21c97b92620d",
+  "name": "Khalni Ambush // Khalni Territory",
+  "typeLine": "Instant // Land",
+  "manaCost": "{2}{G}",
+  "set": "ZNR",
+  "setName": "Zendikar Rising",
+  "collectorNumber": "192",
+  "releasedAt": "2020-09-25",
+  "scryfallUri": "https://scryfall.com/card/znr/192/khalni-ambush-khalni-territory?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/9/99535539-aa73-41ed-86ab-21c97b92620d.jpg?1783929343",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/9/99535539-aa73-41ed-86ab-21c97b92620d.jpg?1783929343",
+  "backImage": "https://cards.scryfall.io/normal/back/9/9/99535539-aa73-41ed-86ab-21c97b92620d.jpg?1783929343",
+  "colorIdentity": [
+    "G"
+  ]
+}

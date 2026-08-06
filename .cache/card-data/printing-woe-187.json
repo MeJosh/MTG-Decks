@@ -1,0 +1,16 @@
+{
+  "id": "bacb1fe5-0adf-461f-b698-9d09a8728c63",
+  "name": "Stormkeld Vanguard // Bear Down",
+  "typeLine": "Creature — Giant Warrior // Sorcery — Adventure",
+  "manaCost": "{4}{G}{G} // {1}{G}",
+  "set": "WOE",
+  "setName": "Wilds of Eldraine",
+  "collectorNumber": "187",
+  "releasedAt": "2023-09-08",
+  "scryfallUri": "https://scryfall.com/card/woe/187/stormkeld-vanguard-bear-down?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/a/bacb1fe5-0adf-461f-b698-9d09a8728c63.jpg?1783915077",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/a/bacb1fe5-0adf-461f-b698-9d09a8728c63.jpg?1783915077",
+  "colorIdentity": [
+    "G"
+  ]
+}

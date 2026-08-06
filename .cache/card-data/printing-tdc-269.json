@@ -1,0 +1,16 @@
+{
+  "id": "b84e46c2-f3ea-49ff-8f8b-58aa6a1175a4",
+  "name": "Selvala's Stampede",
+  "typeLine": "Sorcery",
+  "manaCost": "{4}{G}{G}",
+  "set": "TDC",
+  "setName": "Tarkir: Dragonstorm Commander",
+  "collectorNumber": "269",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdc/269/selvalas-stampede?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/8/b84e46c2-f3ea-49ff-8f8b-58aa6a1175a4.jpg?1783907040",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/8/b84e46c2-f3ea-49ff-8f8b-58aa6a1175a4.jpg?1783907040",
+  "colorIdentity": [
+    "G"
+  ]
+}

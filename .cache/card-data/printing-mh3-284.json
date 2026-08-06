@@ -1,0 +1,16 @@
+{
+  "id": "4aa9354d-3496-47f4-81c9-aead15efb8bb",
+  "name": "Annoyed Altisaur",
+  "typeLine": "Creature — Dinosaur",
+  "manaCost": "{5}{G}{G}",
+  "set": "MH3",
+  "setName": "Modern Horizons 3",
+  "collectorNumber": "284",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh3/284/annoyed-altisaur?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/a/4aa9354d-3496-47f4-81c9-aead15efb8bb.jpg?1783911212",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/a/4aa9354d-3496-47f4-81c9-aead15efb8bb.jpg?1783911212",
+  "colorIdentity": [
+    "G"
+  ]
+}

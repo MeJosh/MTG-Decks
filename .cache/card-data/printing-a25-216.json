@@ -1,0 +1,17 @@
+{
+  "id": "59221f7c-c950-4d66-b166-a2d8f8d0e959",
+  "name": "Ruric Thar, the Unbowed",
+  "typeLine": "Legendary Creature — Ogre Warrior",
+  "manaCost": "{4}{R}{G}",
+  "set": "A25",
+  "setName": "Masters 25",
+  "collectorNumber": "216",
+  "releasedAt": "2018-03-16",
+  "scryfallUri": "https://scryfall.com/card/a25/216/ruric-thar-the-unbowed?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/9/59221f7c-c950-4d66-b166-a2d8f8d0e959.jpg?1783935112",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/9/59221f7c-c950-4d66-b166-a2d8f8d0e959.jpg?1783935112",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

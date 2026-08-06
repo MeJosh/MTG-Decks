@@ -1,0 +1,16 @@
+{
+  "id": "a642c7b1-d4d1-4125-a66d-560438e5ee51",
+  "name": "Mountain",
+  "typeLine": "Basic Land — Mountain",
+  "manaCost": "",
+  "set": "SOS",
+  "setName": "Secrets of Strixhaven",
+  "collectorNumber": "278",
+  "releasedAt": "2026-04-24",
+  "scryfallUri": "https://scryfall.com/card/sos/278/mountain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/6/a642c7b1-d4d1-4125-a66d-560438e5ee51.jpg?1783903615",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/6/a642c7b1-d4d1-4125-a66d-560438e5ee51.jpg?1783903615",
+  "colorIdentity": [
+    "R"
+  ]
+}

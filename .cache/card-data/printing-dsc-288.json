@@ -1,0 +1,16 @@
+{
+  "id": "7e608136-d934-4785-abb6-f423722e3835",
+  "name": "Mosswort Bridge",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "DSC",
+  "setName": "Duskmourn: House of Horror Commander",
+  "collectorNumber": "288",
+  "releasedAt": "2024-09-27",
+  "scryfallUri": "https://scryfall.com/card/dsc/288/mosswort-bridge?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/e/7e608136-d934-4785-abb6-f423722e3835.jpg?1783909572",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/e/7e608136-d934-4785-abb6-f423722e3835.jpg?1783909572",
+  "colorIdentity": [
+    "G"
+  ]
+}

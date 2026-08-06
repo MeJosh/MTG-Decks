@@ -1,0 +1,16 @@
+{
+  "id": "6a9c39e4-a8cf-42dd-8d0e-45634b335546",
+  "name": "Ghalta, Primal Hunger",
+  "typeLine": "Legendary Creature — Elder Dinosaur",
+  "manaCost": "{10}{G}{G}",
+  "set": "FDN",
+  "setName": "Foundations",
+  "collectorNumber": "222",
+  "releasedAt": "2024-11-15",
+  "scryfallUri": "https://scryfall.com/card/fdn/222/ghalta-primal-hunger?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/a/6a9c39e4-a8cf-42dd-8d0e-45634b335546.jpg?1783909058",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/a/6a9c39e4-a8cf-42dd-8d0e-45634b335546.jpg?1783909058",
+  "colorIdentity": [
+    "G"
+  ]
+}

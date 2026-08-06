@@ -1,0 +1,16 @@
+{
+  "id": "80c1b1ea-2459-4986-8846-4db916d6b771",
+  "name": "Thunderfoot Baloth",
+  "typeLine": "Creature — Beast",
+  "manaCost": "{4}{G}{G}",
+  "set": "DSC",
+  "setName": "Duskmourn: House of Horror Commander",
+  "collectorNumber": "201",
+  "releasedAt": "2024-09-27",
+  "scryfallUri": "https://scryfall.com/card/dsc/201/thunderfoot-baloth?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/0/80c1b1ea-2459-4986-8846-4db916d6b771.jpg?1783909599",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/0/80c1b1ea-2459-4986-8846-4db916d6b771.jpg?1783909599",
+  "colorIdentity": [
+    "G"
+  ]
+}

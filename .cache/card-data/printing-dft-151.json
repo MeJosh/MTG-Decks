@@ -1,0 +1,16 @@
+{
+  "id": "5b11ec26-9e07-45e1-bcaa-5d44d1231586",
+  "name": "Agonasaur Rex",
+  "typeLine": "Creature — Dinosaur",
+  "manaCost": "{3}{G}{G}",
+  "set": "DFT",
+  "setName": "Aetherdrift",
+  "collectorNumber": "151",
+  "releasedAt": "2025-02-14",
+  "scryfallUri": "https://scryfall.com/card/dft/151/agonasaur-rex?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/b/5b11ec26-9e07-45e1-bcaa-5d44d1231586.jpg?1783907875",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/b/5b11ec26-9e07-45e1-bcaa-5d44d1231586.jpg?1783907875",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "f0e81ce2-7f59-4522-bff7-3dc3e50f8f8f",
+  "name": "Boarding Party",
+  "typeLine": "Creature — Human Pirate",
+  "manaCost": "{5}{R}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "CMR-163",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/CMR-163/boarding-party?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/0/f0e81ce2-7f59-4522-bff7-3dc3e50f8f8f.jpg?1783910112",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/0/f0e81ce2-7f59-4522-bff7-3dc3e50f8f8f.jpg?1783910112",
+  "colorIdentity": [
+    "R"
+  ]
+}

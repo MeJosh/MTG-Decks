@@ -1,0 +1,16 @@
+{
+  "id": "6989018c-37b1-4282-a4af-9cc97f160b4d",
+  "name": "Oliphaunt",
+  "typeLine": "Creature — Elephant",
+  "manaCost": "{5}{R}",
+  "set": "LTR",
+  "setName": "The Lord of the Rings: Tales of Middle-earth",
+  "collectorNumber": "139",
+  "releasedAt": "2023-06-23",
+  "scryfallUri": "https://scryfall.com/card/ltr/139/oliphaunt?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/9/6989018c-37b1-4282-a4af-9cc97f160b4d.jpg?1783916284",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/9/6989018c-37b1-4282-a4af-9cc97f160b4d.jpg?1783916284",
+  "colorIdentity": [
+    "R"
+  ]
+}

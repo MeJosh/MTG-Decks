@@ -1,0 +1,16 @@
+{
+  "id": "4e18bff6-bf0b-48f8-93e2-09d435247596",
+  "name": "Cloudthresher",
+  "typeLine": "Creature — Elemental",
+  "manaCost": "{2}{G}{G}{G}{G}",
+  "set": "CMA",
+  "setName": "Commander Anthology",
+  "collectorNumber": "96",
+  "releasedAt": "2017-06-09",
+  "scryfallUri": "https://scryfall.com/card/cma/96/cloudthresher?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/e/4e18bff6-bf0b-48f8-93e2-09d435247596.jpg?1783936269",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/e/4e18bff6-bf0b-48f8-93e2-09d435247596.jpg?1783936269",
+  "colorIdentity": [
+    "G"
+  ]
+}

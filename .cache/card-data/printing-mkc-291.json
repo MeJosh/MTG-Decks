@@ -1,0 +1,17 @@
+{
+  "id": "76af0d0d-1222-434e-a9ae-f562abf2bbb4",
+  "name": "Sheltered Thicket",
+  "typeLine": "Land — Mountain Forest",
+  "manaCost": "",
+  "set": "MKC",
+  "setName": "Murders at Karlov Manor Commander",
+  "collectorNumber": "291",
+  "releasedAt": "2024-02-09",
+  "scryfallUri": "https://scryfall.com/card/mkc/291/sheltered-thicket?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/6/76af0d0d-1222-434e-a9ae-f562abf2bbb4.jpg?1783912953",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/6/76af0d0d-1222-434e-a9ae-f562abf2bbb4.jpg?1783912953",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

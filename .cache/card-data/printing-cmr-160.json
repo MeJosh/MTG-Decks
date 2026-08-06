@@ -1,0 +1,16 @@
+{
+  "id": "90c51949-b1ef-4c6e-98b0-4fb33a81db24",
+  "name": "Alena, Kessig Trapper",
+  "typeLine": "Legendary Creature — Human Scout",
+  "manaCost": "{4}{R}",
+  "set": "CMR",
+  "setName": "Commander Legends",
+  "collectorNumber": "160",
+  "releasedAt": "2020-11-20",
+  "scryfallUri": "https://scryfall.com/card/cmr/160/alena-kessig-trapper?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/0/90c51949-b1ef-4c6e-98b0-4fb33a81db24.jpg?1783928824",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/0/90c51949-b1ef-4c6e-98b0-4fb33a81db24.jpg?1783928824",
+  "colorIdentity": [
+    "R"
+  ]
+}

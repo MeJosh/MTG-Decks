@@ -1,0 +1,16 @@
+{
+  "id": "11e4ba4b-62d1-43ed-82e8-cd45d7a62c65",
+  "name": "Spinerock Knoll",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "DSC",
+  "setName": "Duskmourn: House of Horror Commander",
+  "collectorNumber": "300",
+  "releasedAt": "2024-09-27",
+  "scryfallUri": "https://scryfall.com/card/dsc/300/spinerock-knoll?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/1/11e4ba4b-62d1-43ed-82e8-cd45d7a62c65.jpg?1783909567",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/1/11e4ba4b-62d1-43ed-82e8-cd45d7a62c65.jpg?1783909567",
+  "colorIdentity": [
+    "R"
+  ]
+}

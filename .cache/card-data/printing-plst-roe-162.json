@@ -1,0 +1,16 @@
+{
+  "id": "6f8e20d5-36b0-4ed9-a896-38dc9d811d4d",
+  "name": "Rapacious One",
+  "typeLine": "Creature — Eldrazi Drone",
+  "manaCost": "{5}{R}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "ROE-162",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/plst/ROE-162/rapacious-one?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/f/6f8e20d5-36b0-4ed9-a896-38dc9d811d4d.jpg?1783910114",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/f/6f8e20d5-36b0-4ed9-a896-38dc9d811d4d.jpg?1783910114",
+  "colorIdentity": [
+    "R"
+  ]
+}

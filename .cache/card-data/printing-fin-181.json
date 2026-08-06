@@ -1,0 +1,16 @@
+{
+  "id": "900206f1-7dd6-4db9-a430-73e560fd196b",
+  "name": "Coliseum Behemoth",
+  "typeLine": "Creature — Beast",
+  "manaCost": "{5}{G}{G}",
+  "set": "FIN",
+  "setName": "Final Fantasy",
+  "collectorNumber": "181",
+  "releasedAt": "2025-06-13",
+  "scryfallUri": "https://scryfall.com/card/fin/181/coliseum-behemoth?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/0/900206f1-7dd6-4db9-a430-73e560fd196b.jpg?1783906589",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/0/900206f1-7dd6-4db9-a430-73e560fd196b.jpg?1783906589",
+  "colorIdentity": [
+    "G"
+  ]
+}

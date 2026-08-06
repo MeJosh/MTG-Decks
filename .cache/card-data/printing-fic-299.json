@@ -1,0 +1,16 @@
+{
+  "id": "5fc6876d-7441-42ac-b9a1-c10a0f6a387a",
+  "name": "Bane of Progress",
+  "typeLine": "Creature — Elemental",
+  "manaCost": "{4}{G}{G}",
+  "set": "FIC",
+  "setName": "Final Fantasy Commander",
+  "collectorNumber": "299",
+  "releasedAt": "2025-06-13",
+  "scryfallUri": "https://scryfall.com/card/fic/299/bane-of-progress?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/f/5fc6876d-7441-42ac-b9a1-c10a0f6a387a.jpg?1783906264",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/f/5fc6876d-7441-42ac-b9a1-c10a0f6a387a.jpg?1783906264",
+  "colorIdentity": [
+    "G"
+  ]
+}

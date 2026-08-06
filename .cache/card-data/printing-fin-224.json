@@ -1,0 +1,17 @@
+{
+  "id": "442957fc-045d-4db6-b82a-445f172d23e4",
+  "name": "Gladiolus Amicitia",
+  "typeLine": "Legendary Creature — Human Warrior",
+  "manaCost": "{4}{R}{G}",
+  "set": "FIN",
+  "setName": "Final Fantasy",
+  "collectorNumber": "224",
+  "releasedAt": "2025-06-13",
+  "scryfallUri": "https://scryfall.com/card/fin/224/gladiolus-amicitia?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/4/442957fc-045d-4db6-b82a-445f172d23e4.jpg?1783906571",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/4/442957fc-045d-4db6-b82a-445f172d23e4.jpg?1783906571",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

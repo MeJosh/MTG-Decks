@@ -1,0 +1,16 @@
+{
+  "id": "b65810e6-e163-46a9-b2c0-941c53e5255a",
+  "name": "Garruk's Uprising",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{G}",
+  "set": "M3C",
+  "setName": "Modern Horizons 3 Commander",
+  "collectorNumber": "229",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/m3c/229/garruks-uprising?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/6/b65810e6-e163-46a9-b2c0-941c53e5255a.jpg?1783911369",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/6/b65810e6-e163-46a9-b2c0-941c53e5255a.jpg?1783911369",
+  "colorIdentity": [
+    "G"
+  ]
+}

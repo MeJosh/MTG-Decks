@@ -1,0 +1,16 @@
+{
+  "id": "cfd91d0d-bc6c-41a1-aecf-d31465717182",
+  "name": "Elvish Aberration",
+  "typeLine": "Creature — Elf Mutant",
+  "manaCost": "{5}{G}",
+  "set": "DMR",
+  "setName": "Dominaria Remastered",
+  "collectorNumber": "156",
+  "releasedAt": "2023-01-13",
+  "scryfallUri": "https://scryfall.com/card/dmr/156/elvish-aberration?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/f/cfd91d0d-bc6c-41a1-aecf-d31465717182.jpg?1783918445",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/f/cfd91d0d-bc6c-41a1-aecf-d31465717182.jpg?1783918445",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "d6794f92-1895-41fe-931f-42b0744e9f2e",
+  "name": "Soul of the Harvest",
+  "typeLine": "Creature — Elemental",
+  "manaCost": "{4}{G}{G}",
+  "set": "W16",
+  "setName": "Welcome Deck 2016",
+  "collectorNumber": "16",
+  "releasedAt": "2016-04-08",
+  "scryfallUri": "https://scryfall.com/card/w16/16/soul-of-the-harvest?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/6/d6794f92-1895-41fe-931f-42b0744e9f2e.jpg?1783937684",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/6/d6794f92-1895-41fe-931f-42b0744e9f2e.jpg?1783937684",
+  "colorIdentity": [
+    "G"
+  ]
+}

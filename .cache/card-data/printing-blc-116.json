@@ -1,0 +1,16 @@
+{
+  "id": "1512eddf-7a24-4f0a-967f-85e51cc08907",
+  "name": "Sunbird's Invocation",
+  "typeLine": "Enchantment",
+  "manaCost": "{5}{R}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "116",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/116/sunbirds-invocation?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/5/1512eddf-7a24-4f0a-967f-85e51cc08907.jpg?1783910700",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/5/1512eddf-7a24-4f0a-967f-85e51cc08907.jpg?1783910700",
+  "colorIdentity": [
+    "R"
+  ]
+}

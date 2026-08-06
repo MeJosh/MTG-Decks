@@ -1,0 +1,16 @@
+{
+  "id": "5b99f2f2-7000-401a-9201-b604238baf7a",
+  "name": "Inferno Titan",
+  "typeLine": "Creature — Giant",
+  "manaCost": "{4}{R}{R}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "198",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/198/inferno-titan?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/b/5b99f2f2-7000-401a-9201-b604238baf7a.jpg?1783910673",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/b/5b99f2f2-7000-401a-9201-b604238baf7a.jpg?1783910673",
+  "colorIdentity": [
+    "R"
+  ]
+}

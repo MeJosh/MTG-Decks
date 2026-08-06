@@ -1,0 +1,16 @@
+{
+  "id": "3502685d-4e57-4c5c-94c6-ae69048cdfbf",
+  "name": "Kulrath Zealot",
+  "typeLine": "Creature — Elemental Warrior",
+  "manaCost": "{5}{R}",
+  "set": "ECL",
+  "setName": "Lorwyn Eclipsed",
+  "collectorNumber": "148",
+  "releasedAt": "2026-01-23",
+  "scryfallUri": "https://scryfall.com/card/ecl/148/kulrath-zealot?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/5/3502685d-4e57-4c5c-94c6-ae69048cdfbf.jpg?1783904441",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/5/3502685d-4e57-4c5c-94c6-ae69048cdfbf.jpg?1783904441",
+  "colorIdentity": [
+    "R"
+  ]
+}

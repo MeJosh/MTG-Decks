@@ -1,0 +1,16 @@
+{
+  "id": "5ed7ca4d-5895-4074-8315-656363d14862",
+  "name": "Slavering Branchsnapper",
+  "typeLine": "Creature — Lizard",
+  "manaCost": "{4}{G}{G}",
+  "set": "DSK",
+  "setName": "Duskmourn: House of Horror",
+  "collectorNumber": "198",
+  "releasedAt": "2024-09-27",
+  "scryfallUri": "https://scryfall.com/card/dsk/198/slavering-branchsnapper?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/e/5ed7ca4d-5895-4074-8315-656363d14862.jpg?1783909449",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/e/5ed7ca4d-5895-4074-8315-656363d14862.jpg?1783909449",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "4e3bd256-09d8-4d13-90fb-dff4aed3f328",
+  "name": "Savage Ventmaw",
+  "typeLine": "Creature — Dragon",
+  "manaCost": "{4}{R}{G}",
+  "set": "SCD",
+  "setName": "Starter Commander Decks",
+  "collectorNumber": "240",
+  "releasedAt": "2022-12-02",
+  "scryfallUri": "https://scryfall.com/card/scd/240/savage-ventmaw?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/e/4e3bd256-09d8-4d13-90fb-dff4aed3f328.jpg?1783918635",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/e/4e3bd256-09d8-4d13-90fb-dff4aed3f328.jpg?1783918635",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

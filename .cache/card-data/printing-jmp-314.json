@@ -1,0 +1,16 @@
+{
+  "id": "99c40669-87fa-4b1e-885f-2d0a626c3a25",
+  "name": "Etali, Primal Storm",
+  "typeLine": "Legendary Creature — Elder Dinosaur",
+  "manaCost": "{4}{R}{R}",
+  "set": "JMP",
+  "setName": "Jumpstart",
+  "collectorNumber": "314",
+  "releasedAt": "2020-07-17",
+  "scryfallUri": "https://scryfall.com/card/jmp/314/etali-primal-storm?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/9/99c40669-87fa-4b1e-885f-2d0a626c3a25.jpg?1783930395",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/9/99c40669-87fa-4b1e-885f-2d0a626c3a25.jpg?1783930395",
+  "colorIdentity": [
+    "R"
+  ]
+}

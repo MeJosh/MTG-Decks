@@ -1,0 +1,17 @@
+{
+  "id": "cfabc340-0391-4019-8e96-f010177b1d68",
+  "name": "Cinder Glade",
+  "typeLine": "Land — Mountain Forest",
+  "manaCost": "",
+  "set": "BFZ",
+  "setName": "Battle for Zendikar",
+  "collectorNumber": "235",
+  "releasedAt": "2015-10-02",
+  "scryfallUri": "https://scryfall.com/card/bfz/235/cinder-glade?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/f/cfabc340-0391-4019-8e96-f010177b1d68.jpg?1783938175",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/f/cfabc340-0391-4019-8e96-f010177b1d68.jpg?1783938175",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

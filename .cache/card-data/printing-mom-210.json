@@ -1,0 +1,16 @@
+{
+  "id": "5f73cd60-cd89-4c7a-85a6-e0ae34ca101b",
+  "name": "Timberland Ancient",
+  "typeLine": "Creature — Treefolk",
+  "manaCost": "{4}{G}{G}",
+  "set": "MOM",
+  "setName": "March of the Machine",
+  "collectorNumber": "210",
+  "releasedAt": "2023-04-21",
+  "scryfallUri": "https://scryfall.com/card/mom/210/timberland-ancient?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/f/5f73cd60-cd89-4c7a-85a6-e0ae34ca101b.jpg?1783916960",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/f/5f73cd60-cd89-4c7a-85a6-e0ae34ca101b.jpg?1783916960",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "d46f7ddb-f986-4f1f-b096-ae1a02d0bdc8",
+  "name": "Genesis Wave",
+  "typeLine": "Sorcery",
+  "manaCost": "{X}{G}{G}{G}",
+  "set": "FDN",
+  "setName": "Foundations",
+  "collectorNumber": "221",
+  "releasedAt": "2024-11-15",
+  "scryfallUri": "https://scryfall.com/card/fdn/221/genesis-wave?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/4/d46f7ddb-f986-4f1f-b096-ae1a02d0bdc8.jpg?1783909059",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/4/d46f7ddb-f986-4f1f-b096-ae1a02d0bdc8.jpg?1783909059",
+  "colorIdentity": [
+    "G"
+  ]
+}

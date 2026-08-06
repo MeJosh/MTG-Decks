@@ -1,0 +1,16 @@
+{
+  "id": "d6a8759d-0dc8-4218-93ac-b1a35088f776",
+  "name": "Surrak, the Hunt Caller",
+  "typeLine": "Legendary Creature — Human Warrior",
+  "manaCost": "{2}{G}{G}",
+  "set": "FDN",
+  "setName": "Foundations",
+  "collectorNumber": "647",
+  "releasedAt": "2024-11-15",
+  "scryfallUri": "https://scryfall.com/card/fdn/647/surrak-the-hunt-caller?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/6/d6a8759d-0dc8-4218-93ac-b1a35088f776.jpg?1783908915",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/6/d6a8759d-0dc8-4218-93ac-b1a35088f776.jpg?1783908915",
+  "colorIdentity": [
+    "G"
+  ]
+}

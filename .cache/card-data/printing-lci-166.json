@@ -1,0 +1,16 @@
+{
+  "id": "98aeb9dc-18f9-4120-ac3d-226c62a1dc1d",
+  "name": "Seismic Monstrosaur",
+  "typeLine": "Creature — Dinosaur",
+  "manaCost": "{4}{R}{R}",
+  "set": "LCI",
+  "setName": "The Lost Caverns of Ixalan",
+  "collectorNumber": "166",
+  "releasedAt": "2023-11-17",
+  "scryfallUri": "https://scryfall.com/card/lci/166/seismic-monstrosaur?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/8/98aeb9dc-18f9-4120-ac3d-226c62a1dc1d.jpg?1783913754",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/8/98aeb9dc-18f9-4120-ac3d-226c62a1dc1d.jpg?1783913754",
+  "colorIdentity": [
+    "R"
+  ]
+}

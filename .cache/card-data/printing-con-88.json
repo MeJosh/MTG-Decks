@@ -1,0 +1,16 @@
+{
+  "id": "b83ad801-44e7-48d0-9f34-0d10536bb4dc",
+  "name": "Paleoloth",
+  "typeLine": "Creature — Beast",
+  "manaCost": "{4}{G}{G}",
+  "set": "CON",
+  "setName": "Conflux",
+  "collectorNumber": "88",
+  "releasedAt": "2009-02-06",
+  "scryfallUri": "https://scryfall.com/card/con/88/paleoloth?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/8/b83ad801-44e7-48d0-9f34-0d10536bb4dc.jpg?1783942474",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/8/b83ad801-44e7-48d0-9f34-0d10536bb4dc.jpg?1783942474",
+  "colorIdentity": [
+    "G"
+  ]
+}

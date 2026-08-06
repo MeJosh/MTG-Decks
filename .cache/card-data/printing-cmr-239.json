@@ -1,0 +1,16 @@
+{
+  "id": "af5105ee-09e2-4344-ab39-00f0e9034c47",
+  "name": "Kodama of the East Tree",
+  "typeLine": "Legendary Creature — Spirit",
+  "manaCost": "{4}{G}{G}",
+  "set": "CMR",
+  "setName": "Commander Legends",
+  "collectorNumber": "239",
+  "releasedAt": "2020-11-20",
+  "scryfallUri": "https://scryfall.com/card/cmr/239/kodama-of-the-east-tree?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/f/af5105ee-09e2-4344-ab39-00f0e9034c47.jpg?1783928789",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/f/af5105ee-09e2-4344-ab39-00f0e9034c47.jpg?1783928789",
+  "colorIdentity": [
+    "G"
+  ]
+}

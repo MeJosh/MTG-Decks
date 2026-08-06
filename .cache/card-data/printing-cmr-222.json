@@ -1,0 +1,16 @@
+{
+  "id": "d26025f0-72c0-4875-b2d7-916666b835d9",
+  "name": "Dawnglade Regent",
+  "typeLine": "Creature — Elk",
+  "manaCost": "{5}{G}{G}",
+  "set": "CMR",
+  "setName": "Commander Legends",
+  "collectorNumber": "222",
+  "releasedAt": "2020-11-20",
+  "scryfallUri": "https://scryfall.com/card/cmr/222/dawnglade-regent?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/2/d26025f0-72c0-4875-b2d7-916666b835d9.jpg?1783928798",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/2/d26025f0-72c0-4875-b2d7-916666b835d9.jpg?1783928798",
+  "colorIdentity": [
+    "G"
+  ]
+}

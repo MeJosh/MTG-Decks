@@ -1,0 +1,17 @@
+{
+  "id": "080ef367-7904-4e5c-a8b4-1fb62f951f3e",
+  "name": "Gruul Ragebeast",
+  "typeLine": "Creature — Beast",
+  "manaCost": "{5}{R}{G}",
+  "set": "GTC",
+  "setName": "Gatecrash",
+  "collectorNumber": "170",
+  "releasedAt": "2013-02-01",
+  "scryfallUri": "https://scryfall.com/card/gtc/170/gruul-ragebeast?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/8/080ef367-7904-4e5c-a8b4-1fb62f951f3e.jpg?1783940106",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/8/080ef367-7904-4e5c-a8b4-1fb62f951f3e.jpg?1783940106",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "3689a7f1-9713-412e-a030-9cba463c170e",
+  "name": "See the Unwritten",
+  "typeLine": "Sorcery",
+  "manaCost": "{4}{G}{G}",
+  "set": "KTK",
+  "setName": "Khans of Tarkir",
+  "collectorNumber": "149",
+  "releasedAt": "2014-09-26",
+  "scryfallUri": "https://scryfall.com/card/ktk/149/see-the-unwritten?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/6/3689a7f1-9713-412e-a030-9cba463c170e.jpg?1783939064",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/6/3689a7f1-9713-412e-a030-9cba463c170e.jpg?1783939064",
+  "colorIdentity": [
+    "G"
+  ]
+}

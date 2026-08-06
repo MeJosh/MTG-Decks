@@ -1,0 +1,17 @@
+{
+  "id": "32da0d6c-64dd-4aec-b63e-953e96164603",
+  "name": "Kessig Wolf Run",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "TDC",
+  "setName": "Tarkir: Dragonstorm Commander",
+  "collectorNumber": "375",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdc/375/kessig-wolf-run?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/2/32da0d6c-64dd-4aec-b63e-953e96164603.jpg?1783906980",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/2/32da0d6c-64dd-4aec-b63e-953e96164603.jpg?1783906980",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

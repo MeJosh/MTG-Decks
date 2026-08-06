@@ -1,0 +1,16 @@
+{
+  "id": "162fcdec-bf3c-43ba-9ada-212f7dec5fbd",
+  "name": "Monstrous Vortex",
+  "typeLine": "Enchantment",
+  "manaCost": "{3}{G}",
+  "set": "MH3",
+  "setName": "Modern Horizons 3",
+  "collectorNumber": "162",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh3/162/monstrous-vortex?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/6/162fcdec-bf3c-43ba-9ada-212f7dec5fbd.jpg?1783911259",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/6/162fcdec-bf3c-43ba-9ada-212f7dec5fbd.jpg?1783911259",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "745d297d-4bb4-40cf-bb9c-99dac04e5069",
+  "name": "Gilanra, Caller of Wirewood",
+  "typeLine": "Legendary Creature — Elf Druid",
+  "manaCost": "{2}{G}",
+  "set": "CMR",
+  "setName": "Commander Legends",
+  "collectorNumber": "230",
+  "releasedAt": "2020-11-20",
+  "scryfallUri": "https://scryfall.com/card/cmr/230/gilanra-caller-of-wirewood?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/4/745d297d-4bb4-40cf-bb9c-99dac04e5069.jpg?1783928793",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/4/745d297d-4bb4-40cf-bb9c-99dac04e5069.jpg?1783928793",
+  "colorIdentity": [
+    "G"
+  ]
+}

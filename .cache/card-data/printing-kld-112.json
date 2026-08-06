@@ -1,0 +1,16 @@
+{
+  "id": "e0f43147-4552-48fd-be0a-0629b9a0ad69",
+  "name": "Combustible Gearhulk",
+  "typeLine": "Artifact Creature — Construct",
+  "manaCost": "{4}{R}{R}",
+  "set": "KLD",
+  "setName": "Kaladesh",
+  "collectorNumber": "112",
+  "releasedAt": "2016-09-30",
+  "scryfallUri": "https://scryfall.com/card/kld/112/combustible-gearhulk?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/0/e0f43147-4552-48fd-be0a-0629b9a0ad69.jpg?1783937195",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/0/e0f43147-4552-48fd-be0a-0629b9a0ad69.jpg?1783937195",
+  "colorIdentity": [
+    "R"
+  ]
+}

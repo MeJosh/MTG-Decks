@@ -1,0 +1,16 @@
+{
+  "id": "a83a2fe7-36df-4a38-8dd3-605eeb5f58f1",
+  "name": "Mordant Dragon",
+  "typeLine": "Creature — Dragon",
+  "manaCost": "{3}{R}{R}{R}",
+  "set": "SCD",
+  "setName": "Starter Commander Decks",
+  "collectorNumber": "152",
+  "releasedAt": "2022-12-02",
+  "scryfallUri": "https://scryfall.com/card/scd/152/mordant-dragon?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/8/a83a2fe7-36df-4a38-8dd3-605eeb5f58f1.jpg?1783918673",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/8/a83a2fe7-36df-4a38-8dd3-605eeb5f58f1.jpg?1783918673",
+  "colorIdentity": [
+    "R"
+  ]
+}

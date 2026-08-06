@@ -1,0 +1,16 @@
+{
+  "id": "bc90ca5e-720e-4b36-a50e-4948fd356ded",
+  "name": "Incinerator of the Guilty",
+  "typeLine": "Creature — Dragon",
+  "manaCost": "{4}{R}{R}",
+  "set": "PMKM",
+  "setName": "Murders at Karlov Manor Promos",
+  "collectorNumber": "132p",
+  "releasedAt": "2024-02-09",
+  "scryfallUri": "https://scryfall.com/card/pmkm/132p/incinerator-of-the-guilty?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/c/bc90ca5e-720e-4b36-a50e-4948fd356ded.jpg?1783912686",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/c/bc90ca5e-720e-4b36-a50e-4948fd356ded.jpg?1783912686",
+  "colorIdentity": [
+    "R"
+  ]
+}

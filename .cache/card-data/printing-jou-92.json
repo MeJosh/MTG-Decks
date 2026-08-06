@@ -1,0 +1,16 @@
+{
+  "id": "44a92b7a-7119-45b3-b9ed-5dbf5abca818",
+  "name": "Cyclops of Eternal Fury",
+  "typeLine": "Enchantment Creature — Cyclops",
+  "manaCost": "{4}{R}{R}",
+  "set": "JOU",
+  "setName": "Journey into Nyx",
+  "collectorNumber": "92",
+  "releasedAt": "2014-05-02",
+  "scryfallUri": "https://scryfall.com/card/jou/92/cyclops-of-eternal-fury?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/4/44a92b7a-7119-45b3-b9ed-5dbf5abca818.jpg?1783939427",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/4/44a92b7a-7119-45b3-b9ed-5dbf5abca818.jpg?1783939427",
+  "colorIdentity": [
+    "R"
+  ]
+}

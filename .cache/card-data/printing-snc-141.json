@@ -1,0 +1,16 @@
+{
+  "id": "5354868b-c96b-4765-b0c8-8895093e4019",
+  "name": "Cleanup Crew",
+  "typeLine": "Creature — Human Citizen",
+  "manaCost": "{4}{G}{G}",
+  "set": "SNC",
+  "setName": "Streets of New Capenna",
+  "collectorNumber": "141",
+  "releasedAt": "2022-04-29",
+  "scryfallUri": "https://scryfall.com/card/snc/141/cleanup-crew?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/3/5354868b-c96b-4765-b0c8-8895093e4019.jpg?1783923105",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/3/5354868b-c96b-4765-b0c8-8895093e4019.jpg?1783923105",
+  "colorIdentity": [
+    "G"
+  ]
+}

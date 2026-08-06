@@ -1,0 +1,16 @@
+{
+  "id": "c01ab5c8-f9b7-482c-a900-1388b727b89f",
+  "name": "Flameblast Dragon",
+  "typeLine": "Creature — Dragon",
+  "manaCost": "{4}{R}{R}",
+  "set": "M12",
+  "setName": "Magic 2012",
+  "collectorNumber": "133",
+  "releasedAt": "2011-07-15",
+  "scryfallUri": "https://scryfall.com/card/m12/133/flameblast-dragon?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/0/c01ab5c8-f9b7-482c-a900-1388b727b89f.jpg?1783941071",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/0/c01ab5c8-f9b7-482c-a900-1388b727b89f.jpg?1783941071",
+  "colorIdentity": [
+    "R"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "bd73c214-f6b6-49e9-b6e8-af6b1f1fb0f0",
+  "name": "Shriekwood Devourer",
+  "typeLine": "Creature — Treefolk",
+  "manaCost": "{5}{G}{G}",
+  "set": "DSC",
+  "setName": "Duskmourn: House of Horror Commander",
+  "collectorNumber": "35",
+  "releasedAt": "2024-09-27",
+  "scryfallUri": "https://scryfall.com/card/dsc/35/shriekwood-devourer?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/d/bd73c214-f6b6-49e9-b6e8-af6b1f1fb0f0.jpg?1783909653",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/d/bd73c214-f6b6-49e9-b6e8-af6b1f1fb0f0.jpg?1783909653",
+  "colorIdentity": [
+    "G"
+  ]
+}
