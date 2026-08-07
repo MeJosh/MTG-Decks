@@ -1,0 +1,16 @@
+{
+  "id": "05d5a7b3-18b6-4b1d-85cc-2253e605390c",
+  "name": "Creeping Corrosion",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{G}{G}",
+  "set": "MBS",
+  "setName": "Mirrodin Besieged",
+  "collectorNumber": "78",
+  "releasedAt": "2011-02-04",
+  "scryfallUri": "https://scryfall.com/card/mbs/78/creeping-corrosion?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/5/05d5a7b3-18b6-4b1d-85cc-2253e605390c.jpg?1783941377",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/5/05d5a7b3-18b6-4b1d-85cc-2253e605390c.jpg?1783941377",
+  "colorIdentity": [
+    "G"
+  ]
+}

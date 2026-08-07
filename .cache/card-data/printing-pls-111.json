@@ -1,0 +1,17 @@
+{
+  "id": "6907fa19-29ed-4319-8835-68f424c92831",
+  "name": "Hull Breach",
+  "typeLine": "Sorcery",
+  "manaCost": "{R}{G}",
+  "set": "PLS",
+  "setName": "Planeshift",
+  "collectorNumber": "111",
+  "releasedAt": "2001-02-05",
+  "scryfallUri": "https://scryfall.com/card/pls/111/hull-breach?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/9/6907fa19-29ed-4319-8835-68f424c92831.jpg?1783945605",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/9/6907fa19-29ed-4319-8835-68f424c92831.jpg?1783945605",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

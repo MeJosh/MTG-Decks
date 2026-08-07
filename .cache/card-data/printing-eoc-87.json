@@ -1,0 +1,16 @@
+{
+  "id": "df294fe7-884d-4fd0-9554-dfba132471cd",
+  "name": "Chain Reaction",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{R}{R}",
+  "set": "EOC",
+  "setName": "Edge of Eternities Commander",
+  "collectorNumber": "87",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoc/87/chain-reaction?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/f/df294fe7-884d-4fd0-9554-dfba132471cd.jpg?1783906040",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/f/df294fe7-884d-4fd0-9554-dfba132471cd.jpg?1783906040",
+  "colorIdentity": [
+    "R"
+  ]
+}

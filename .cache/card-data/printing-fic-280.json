@@ -1,0 +1,16 @@
+{
+  "id": "47dfd4bd-a7a0-40bd-80e8-16c5ddd91091",
+  "name": "Night's Whisper",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{B}",
+  "set": "FIC",
+  "setName": "Final Fantasy Commander",
+  "collectorNumber": "280",
+  "releasedAt": "2025-06-13",
+  "scryfallUri": "https://scryfall.com/card/fic/280/nights-whisper?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/7/47dfd4bd-a7a0-40bd-80e8-16c5ddd91091.jpg?1783906273",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/7/47dfd4bd-a7a0-40bd-80e8-16c5ddd91091.jpg?1783906273",
+  "colorIdentity": [
+    "B"
+  ]
+}

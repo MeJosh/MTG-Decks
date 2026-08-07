@@ -1,0 +1,16 @@
+{
+  "id": "eca092fc-7c67-4a73-989e-5297bbaaea76",
+  "name": "Demand Answers",
+  "typeLine": "Instant",
+  "manaCost": "{1}{R}",
+  "set": "MKM",
+  "setName": "Murders at Karlov Manor",
+  "collectorNumber": "122",
+  "releasedAt": "2024-02-09",
+  "scryfallUri": "https://scryfall.com/card/mkm/122/demand-answers?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/c/eca092fc-7c67-4a73-989e-5297bbaaea76.jpg?1783912883",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/c/eca092fc-7c67-4a73-989e-5297bbaaea76.jpg?1783912883",
+  "colorIdentity": [
+    "R"
+  ]
+}

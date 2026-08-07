@@ -1,0 +1,16 @@
+{
+  "id": "662097e6-355f-4192-9fa7-4b8c22346a64",
+  "name": "Moonlight Bargain",
+  "typeLine": "Instant",
+  "manaCost": "{3}{B}{B}",
+  "set": "C18",
+  "setName": "Commander 2018",
+  "collectorNumber": "114",
+  "releasedAt": "2018-08-10",
+  "scryfallUri": "https://scryfall.com/card/c18/114/moonlight-bargain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/6/662097e6-355f-4192-9fa7-4b8c22346a64.jpg?1783934299",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/6/662097e6-355f-4192-9fa7-4b8c22346a64.jpg?1783934299",
+  "colorIdentity": [
+    "B"
+  ]
+}

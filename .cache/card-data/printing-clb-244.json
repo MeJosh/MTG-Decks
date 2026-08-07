@@ -1,0 +1,16 @@
+{
+  "id": "543d1e79-cac6-455c-9fda-f13c849579d6",
+  "name": "Nature's Lore",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "CLB",
+  "setName": "Commander Legends: Battle for Baldur's Gate",
+  "collectorNumber": "244",
+  "releasedAt": "2022-06-10",
+  "scryfallUri": "https://scryfall.com/card/clb/244/natures-lore?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/4/543d1e79-cac6-455c-9fda-f13c849579d6.jpg?1783922708",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/4/543d1e79-cac6-455c-9fda-f13c849579d6.jpg?1783922708",
+  "colorIdentity": [
+    "G"
+  ]
+}

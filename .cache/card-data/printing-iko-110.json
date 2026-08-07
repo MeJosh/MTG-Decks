@@ -1,0 +1,16 @@
+{
+  "id": "43d93cfd-06d1-4c6a-87f6-9b6eaa2a995f",
+  "name": "Cathartic Reunion",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{R}",
+  "set": "IKO",
+  "setName": "Ikoria: Lair of Behemoths",
+  "collectorNumber": "110",
+  "releasedAt": "2020-04-24",
+  "scryfallUri": "https://scryfall.com/card/iko/110/cathartic-reunion?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/4/3/43d93cfd-06d1-4c6a-87f6-9b6eaa2a995f.jpg?1783931053",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/4/3/43d93cfd-06d1-4c6a-87f6-9b6eaa2a995f.jpg?1783931053",
+  "colorIdentity": [
+    "R"
+  ]
+}

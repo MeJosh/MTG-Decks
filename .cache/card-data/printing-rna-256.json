@@ -1,0 +1,17 @@
+{
+  "id": "d88b90fa-a7f1-4739-a507-d22dede9384f",
+  "name": "Rakdos Guildgate",
+  "typeLine": "Land — Gate",
+  "manaCost": "",
+  "set": "RNA",
+  "setName": "Ravnica Allegiance",
+  "collectorNumber": "256",
+  "releasedAt": "2019-01-25",
+  "scryfallUri": "https://scryfall.com/card/rna/256/rakdos-guildgate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/8/d88b90fa-a7f1-4739-a507-d22dede9384f.jpg?1783933614",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/8/d88b90fa-a7f1-4739-a507-d22dede9384f.jpg?1783933614",
+  "colorIdentity": [
+    "B",
+    "R"
+  ]
+}

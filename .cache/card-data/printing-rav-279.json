@@ -1,0 +1,17 @@
+{
+  "id": "fce07335-cc78-4683-b2f0-9c98a06ea1d8",
+  "name": "Overgrown Tomb",
+  "typeLine": "Land — Swamp Forest",
+  "manaCost": "",
+  "set": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "collectorNumber": "279",
+  "releasedAt": "2005-10-07",
+  "scryfallUri": "https://scryfall.com/card/rav/279/overgrown-tomb?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/c/fce07335-cc78-4683-b2f0-9c98a06ea1d8.jpg?1783943591",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/c/fce07335-cc78-4683-b2f0-9c98a06ea1d8.jpg?1783943591",
+  "colorIdentity": [
+    "B",
+    "G"
+  ]
+}

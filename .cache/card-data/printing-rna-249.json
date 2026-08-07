@@ -1,0 +1,17 @@
+{
+  "id": "33d10573-1695-4a73-b92d-d478572b85ec",
+  "name": "Gruul Guildgate",
+  "typeLine": "Land — Gate",
+  "manaCost": "",
+  "set": "RNA",
+  "setName": "Ravnica Allegiance",
+  "collectorNumber": "249",
+  "releasedAt": "2019-01-25",
+  "scryfallUri": "https://scryfall.com/card/rna/249/gruul-guildgate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/3/33d10573-1695-4a73-b92d-d478572b85ec.jpg?1783933616",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/3/33d10573-1695-4a73-b92d-d478572b85ec.jpg?1783933616",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

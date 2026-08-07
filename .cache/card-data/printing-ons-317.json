@@ -1,0 +1,16 @@
+{
+  "id": "c5202668-a32c-4473-b272-e86264992576",
+  "name": "Forgotten Cave",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "ONS",
+  "setName": "Onslaught",
+  "collectorNumber": "317",
+  "releasedAt": "2002-10-07",
+  "scryfallUri": "https://scryfall.com/card/ons/317/forgotten-cave?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/5/c5202668-a32c-4473-b272-e86264992576.jpg?1783945029",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/5/c5202668-a32c-4473-b272-e86264992576.jpg?1783945029",
+  "colorIdentity": [
+    "R"
+  ]
+}

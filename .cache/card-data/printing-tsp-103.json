@@ -1,0 +1,16 @@
+{
+  "id": "f1a68a28-05fa-4c6e-896d-ddb9aea3a38d",
+  "name": "Demonic Collusion",
+  "typeLine": "Sorcery",
+  "manaCost": "{3}{B}{B}",
+  "set": "TSP",
+  "setName": "Time Spiral",
+  "collectorNumber": "103",
+  "releasedAt": "2006-10-06",
+  "scryfallUri": "https://scryfall.com/card/tsp/103/demonic-collusion?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/1/f1a68a28-05fa-4c6e-896d-ddb9aea3a38d.jpg?1783943234",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/1/f1a68a28-05fa-4c6e-896d-ddb9aea3a38d.jpg?1783943234",
+  "colorIdentity": [
+    "B"
+  ]
+}

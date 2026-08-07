@@ -1,0 +1,17 @@
+{
+  "id": "f281e16f-0fe1-4095-bd63-0a4479f75c11",
+  "name": "Blood Crypt",
+  "typeLine": "Land — Swamp Mountain",
+  "manaCost": "",
+  "set": "DIS",
+  "setName": "Dissension",
+  "collectorNumber": "171",
+  "releasedAt": "2006-05-05",
+  "scryfallUri": "https://scryfall.com/card/dis/171/blood-crypt?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/2/f281e16f-0fe1-4095-bd63-0a4479f75c11.jpg?1783943377",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/2/f281e16f-0fe1-4095-bd63-0a4479f75c11.jpg?1783943377",
+  "colorIdentity": [
+    "B",
+    "R"
+  ]
+}

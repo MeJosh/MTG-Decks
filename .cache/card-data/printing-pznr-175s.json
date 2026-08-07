@@ -1,0 +1,16 @@
+{
+  "id": "a6baa9ab-a187-44e2-9417-51913f42b2d7",
+  "name": "Valakut Exploration",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{R}",
+  "set": "PZNR",
+  "setName": "Zendikar Rising Promos",
+  "collectorNumber": "175s",
+  "releasedAt": "2020-09-25",
+  "scryfallUri": "https://scryfall.com/card/pznr/175s/valakut-exploration?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/6/a6baa9ab-a187-44e2-9417-51913f42b2d7.jpg?1783929204",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/6/a6baa9ab-a187-44e2-9417-51913f42b2d7.jpg?1783929204",
+  "colorIdentity": [
+    "R"
+  ]
+}

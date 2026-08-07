@@ -1,0 +1,17 @@
+{
+  "id": "86706d8e-de08-4778-94ba-ae75ed522472",
+  "name": "Golgari Guildgate",
+  "typeLine": "Land — Gate",
+  "manaCost": "",
+  "set": "GRN",
+  "setName": "Guilds of Ravnica",
+  "collectorNumber": "248",
+  "releasedAt": "2018-10-05",
+  "scryfallUri": "https://scryfall.com/card/grn/248/golgari-guildgate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/6/86706d8e-de08-4778-94ba-ae75ed522472.jpg?1783934102",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/6/86706d8e-de08-4778-94ba-ae75ed522472.jpg?1783934102",
+  "colorIdentity": [
+    "B",
+    "G"
+  ]
+}

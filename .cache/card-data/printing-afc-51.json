@@ -1,0 +1,17 @@
+{
+  "id": "761e1f77-5231-4008-829f-99650b429fb3",
+  "name": "Klauth's Will",
+  "typeLine": "Instant",
+  "manaCost": "{X}{R}{R}{G}",
+  "set": "AFC",
+  "setName": "Forgotten Realms Commander",
+  "collectorNumber": "51",
+  "releasedAt": "2021-07-23",
+  "scryfallUri": "https://scryfall.com/card/afc/51/klauths-will?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/6/761e1f77-5231-4008-829f-99650b429fb3.jpg?1783926238",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/6/761e1f77-5231-4008-829f-99650b429fb3.jpg?1783926238",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

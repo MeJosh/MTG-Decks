@@ -1,0 +1,16 @@
+{
+  "id": "8967ceff-9e25-46da-926b-e05f4ee98325",
+  "name": "Realms Uncharted",
+  "typeLine": "Instant",
+  "manaCost": "{2}{G}",
+  "set": "ROE",
+  "setName": "Rise of the Eldrazi",
+  "collectorNumber": "206",
+  "releasedAt": "2010-04-23",
+  "scryfallUri": "https://scryfall.com/card/roe/206/realms-uncharted?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/9/8967ceff-9e25-46da-926b-e05f4ee98325.jpg?1783941959",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/9/8967ceff-9e25-46da-926b-e05f4ee98325.jpg?1783941959",
+  "colorIdentity": [
+    "G"
+  ]
+}

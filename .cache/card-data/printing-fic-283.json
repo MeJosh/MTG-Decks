@@ -1,0 +1,16 @@
+{
+  "id": "953c7338-e30d-452c-89ff-0c5fca690b2f",
+  "name": "Rise of the Dark Realms",
+  "typeLine": "Sorcery",
+  "manaCost": "{7}{B}{B}",
+  "set": "FIC",
+  "setName": "Final Fantasy Commander",
+  "collectorNumber": "283",
+  "releasedAt": "2025-06-13",
+  "scryfallUri": "https://scryfall.com/card/fic/283/rise-of-the-dark-realms?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/5/953c7338-e30d-452c-89ff-0c5fca690b2f.jpg?1783906272",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/5/953c7338-e30d-452c-89ff-0c5fca690b2f.jpg?1783906272",
+  "colorIdentity": [
+    "B"
+  ]
+}

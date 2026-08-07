@@ -1,0 +1,16 @@
+{
+  "id": "5a970429-6369-4422-a343-00b30267f09d",
+  "name": "Circuitous Route",
+  "typeLine": "Sorcery",
+  "manaCost": "{3}{G}",
+  "set": "GRN",
+  "setName": "Guilds of Ravnica",
+  "collectorNumber": "125",
+  "releasedAt": "2018-10-05",
+  "scryfallUri": "https://scryfall.com/card/grn/125/circuitous-route?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/a/5a970429-6369-4422-a343-00b30267f09d.jpg?1783934153",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/a/5a970429-6369-4422-a343-00b30267f09d.jpg?1783934153",
+  "colorIdentity": [
+    "G"
+  ]
+}

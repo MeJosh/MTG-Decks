@@ -1,0 +1,16 @@
+{
+  "id": "9ed862a2-d3e2-4543-81a6-453a96399d14",
+  "name": "Azusa, Lost but Seeking",
+  "typeLine": "Legendary Creature — Human Monk",
+  "manaCost": "{2}{G}",
+  "set": "CHK",
+  "setName": "Champions of Kamigawa",
+  "collectorNumber": "201",
+  "releasedAt": "2004-10-01",
+  "scryfallUri": "https://scryfall.com/card/chk/201/azusa-lost-but-seeking?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/e/9ed862a2-d3e2-4543-81a6-453a96399d14.jpg?1783944292",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/e/9ed862a2-d3e2-4543-81a6-453a96399d14.jpg?1783944292",
+  "colorIdentity": [
+    "G"
+  ]
+}

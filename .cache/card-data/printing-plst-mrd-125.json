@@ -1,0 +1,16 @@
+{
+  "id": "85a4341b-b2c7-4529-87f3-4ead0faa2bbe",
+  "name": "Molder Slug",
+  "typeLine": "Creature — Slug Beast",
+  "manaCost": "{3}{G}{G}",
+  "set": "PLST",
+  "setName": "The List",
+  "collectorNumber": "MRD-125",
+  "releasedAt": "2022-11-18",
+  "scryfallUri": "https://scryfall.com/card/plst/MRD-125/molder-slug?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/5/85a4341b-b2c7-4529-87f3-4ead0faa2bbe.jpg?1783919941",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/5/85a4341b-b2c7-4529-87f3-4ead0faa2bbe.jpg?1783919941",
+  "colorIdentity": [
+    "G"
+  ]
+}

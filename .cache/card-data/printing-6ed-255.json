@@ -1,0 +1,16 @@
+{
+  "id": "185823cc-8c08-481f-9429-e996f4983090",
+  "name": "Summer Bloom",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "6ED",
+  "setName": "Classic Sixth Edition",
+  "collectorNumber": "255",
+  "releasedAt": "1999-04-21",
+  "scryfallUri": "https://scryfall.com/card/6ed/255/summer-bloom?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/8/185823cc-8c08-481f-9429-e996f4983090.jpg?1783946155",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/8/185823cc-8c08-481f-9429-e996f4983090.jpg?1783946155",
+  "colorIdentity": [
+    "G"
+  ]
+}

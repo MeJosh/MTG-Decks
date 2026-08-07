@@ -1,0 +1,16 @@
+{
+  "id": "d59c87f5-95ab-4385-abbe-99a3149bdbcf",
+  "name": "World Shaper",
+  "typeLine": "Creature — Merfolk Shaman",
+  "manaCost": "{3}{G}",
+  "set": "RIX",
+  "setName": "Rivals of Ixalan",
+  "collectorNumber": "151",
+  "releasedAt": "2018-01-19",
+  "scryfallUri": "https://scryfall.com/card/rix/151/world-shaper?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/5/d59c87f5-95ab-4385-abbe-99a3149bdbcf.jpg?1783935279",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/5/d59c87f5-95ab-4385-abbe-99a3149bdbcf.jpg?1783935279",
+  "colorIdentity": [
+    "G"
+  ]
+}

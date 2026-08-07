@@ -1,0 +1,16 @@
+{
+  "id": "7e098506-b69d-4ab0-8ee9-af0d8c7efb8d",
+  "name": "Ramunap Excavator",
+  "typeLine": "Creature — Snake Cleric",
+  "manaCost": "{2}{G}",
+  "set": "M3C",
+  "setName": "Modern Horizons 3 Commander",
+  "collectorNumber": "241",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/m3c/241/ramunap-excavator?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/e/7e098506-b69d-4ab0-8ee9-af0d8c7efb8d.jpg?1783911367",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/e/7e098506-b69d-4ab0-8ee9-af0d8c7efb8d.jpg?1783911367",
+  "colorIdentity": [
+    "G"
+  ]
+}

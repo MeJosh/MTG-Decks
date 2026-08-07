@@ -1,0 +1,17 @@
+{
+  "id": "8652e3a1-bcd4-4c0c-a085-34f19702df26",
+  "name": "Pernicious Deed",
+  "typeLine": "Enchantment",
+  "manaCost": "{1}{B}{G}",
+  "set": "A25",
+  "setName": "Masters 25",
+  "collectorNumber": "212",
+  "releasedAt": "2018-03-16",
+  "scryfallUri": "https://scryfall.com/card/a25/212/pernicious-deed?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/8/6/8652e3a1-bcd4-4c0c-a085-34f19702df26.jpg?1783935114",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/8/6/8652e3a1-bcd4-4c0c-a085-34f19702df26.jpg?1783935114",
+  "colorIdentity": [
+    "B",
+    "G"
+  ]
+}

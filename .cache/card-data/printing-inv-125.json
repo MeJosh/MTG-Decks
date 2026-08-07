@@ -1,0 +1,16 @@
+{
+  "id": "ac86055d-ce08-4b05-a92c-45e007ca0ba4",
+  "name": "Spreading Plague",
+  "typeLine": "Enchantment",
+  "manaCost": "{4}{B}",
+  "set": "INV",
+  "setName": "Invasion",
+  "collectorNumber": "125",
+  "releasedAt": "2000-10-02",
+  "scryfallUri": "https://scryfall.com/card/inv/125/spreading-plague?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/c/ac86055d-ce08-4b05-a92c-45e007ca0ba4.jpg?1783945691",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/c/ac86055d-ce08-4b05-a92c-45e007ca0ba4.jpg?1783945691",
+  "colorIdentity": [
+    "B"
+  ]
+}

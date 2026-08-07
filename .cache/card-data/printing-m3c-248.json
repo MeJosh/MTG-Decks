@@ -1,0 +1,16 @@
+{
+  "id": "d5f11a08-8324-461a-8dbd-ecef0e511dee",
+  "name": "Sylvan Scrying",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "M3C",
+  "setName": "Modern Horizons 3 Commander",
+  "collectorNumber": "248",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/m3c/248/sylvan-scrying?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/5/d5f11a08-8324-461a-8dbd-ecef0e511dee.jpg?1783911364",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/5/d5f11a08-8324-461a-8dbd-ecef0e511dee.jpg?1783911364",
+  "colorIdentity": [
+    "G"
+  ]
+}

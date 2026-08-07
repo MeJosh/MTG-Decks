@@ -1,0 +1,16 @@
+{
+  "id": "c2598da4-0764-440a-9e9d-0161e68667fb",
+  "name": "No Mercy",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{B}{B}",
+  "set": "DMR",
+  "setName": "Dominaria Remastered",
+  "collectorNumber": "308",
+  "releasedAt": "2023-01-13",
+  "scryfallUri": "https://scryfall.com/card/dmr/308/no-mercy?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/2/c2598da4-0764-440a-9e9d-0161e68667fb.jpg?1783918377",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/2/c2598da4-0764-440a-9e9d-0161e68667fb.jpg?1783918377",
+  "colorIdentity": [
+    "B"
+  ]
+}

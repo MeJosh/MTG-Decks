@@ -1,0 +1,16 @@
+{
+  "id": "fb01696a-855c-45af-804c-d41acb6496e1",
+  "name": "Blasphemous Act",
+  "typeLine": "Sorcery",
+  "manaCost": "{8}{R}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "114",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/114/blasphemous-act?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/b/fb01696a-855c-45af-804c-d41acb6496e1.jpg?1783910701",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/b/fb01696a-855c-45af-804c-d41acb6496e1.jpg?1783910701",
+  "colorIdentity": [
+    "R"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "c43aeb5a-8bdc-4aa9-89d1-156f97ac38aa",
+  "name": "Faithless Looting",
+  "typeLine": "Sorcery",
+  "manaCost": "{R}",
+  "set": "TDC",
+  "setName": "Tarkir: Dragonstorm Commander",
+  "collectorNumber": "213",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdc/213/faithless-looting?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/4/c43aeb5a-8bdc-4aa9-89d1-156f97ac38aa.jpg?1783907070",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/4/c43aeb5a-8bdc-4aa9-89d1-156f97ac38aa.jpg?1783907070",
+  "colorIdentity": [
+    "R"
+  ]
+}

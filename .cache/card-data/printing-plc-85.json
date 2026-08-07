@@ -1,0 +1,16 @@
+{
+  "id": "26c68473-70ca-40ba-b5c6-71ec30f88a2c",
+  "name": "Damnation",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{B}{B}",
+  "set": "PLC",
+  "setName": "Planar Chaos",
+  "collectorNumber": "85",
+  "releasedAt": "2007-02-02",
+  "scryfallUri": "https://scryfall.com/card/plc/85/damnation?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/6/26c68473-70ca-40ba-b5c6-71ec30f88a2c.jpg?1783943151",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/6/26c68473-70ca-40ba-b5c6-71ec30f88a2c.jpg?1783943151",
+  "colorIdentity": [
+    "B"
+  ]
+}

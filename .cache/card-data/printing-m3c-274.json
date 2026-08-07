@@ -1,0 +1,17 @@
+{
+  "id": "a65eeee0-dc46-4ab9-a61f-c844c9705c0a",
+  "name": "Terminate",
+  "typeLine": "Instant",
+  "manaCost": "{B}{R}",
+  "set": "M3C",
+  "setName": "Modern Horizons 3 Commander",
+  "collectorNumber": "274",
+  "releasedAt": "2024-06-14",
+  "scryfallUri": "https://scryfall.com/card/m3c/274/terminate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/6/a65eeee0-dc46-4ab9-a61f-c844c9705c0a.jpg?1783911356",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/6/a65eeee0-dc46-4ab9-a61f-c844c9705c0a.jpg?1783911356",
+  "colorIdentity": [
+    "B",
+    "R"
+  ]
+}

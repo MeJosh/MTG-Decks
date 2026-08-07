@@ -1,0 +1,16 @@
+{
+  "id": "2501b5b8-32f1-4bac-b186-d9331702226c",
+  "name": "Chaos Warp",
+  "typeLine": "Instant",
+  "manaCost": "{2}{R}",
+  "set": "DSC",
+  "setName": "Duskmourn: House of Horror Commander",
+  "collectorNumber": "162",
+  "releasedAt": "2024-09-27",
+  "scryfallUri": "https://scryfall.com/card/dsc/162/chaos-warp?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/5/2501b5b8-32f1-4bac-b186-d9331702226c.jpg?1783909612",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/5/2501b5b8-32f1-4bac-b186-d9331702226c.jpg?1783909612",
+  "colorIdentity": [
+    "R"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "12d6d674-40aa-42d7-88b3-f65603ecaa1e",
+  "name": "Squee, Goblin Nabob",
+  "typeLine": "Legendary Creature — Goblin",
+  "manaCost": "{2}{R}",
+  "set": "CMM",
+  "setName": "Commander Masters",
+  "collectorNumber": "258",
+  "releasedAt": "2023-08-04",
+  "scryfallUri": "https://scryfall.com/card/cmm/258/squee-goblin-nabob?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/2/12d6d674-40aa-42d7-88b3-f65603ecaa1e.jpg?1783915642",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/2/12d6d674-40aa-42d7-88b3-f65603ecaa1e.jpg?1783915642",
+  "colorIdentity": [
+    "R"
+  ]
+}

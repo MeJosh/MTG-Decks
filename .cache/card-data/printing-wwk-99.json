@@ -1,0 +1,16 @@
+{
+  "id": "d8f81e8a-e309-4bac-81de-326756cd8901",
+  "name": "Explore",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "WWK",
+  "setName": "Worldwake",
+  "collectorNumber": "99",
+  "releasedAt": "2010-02-05",
+  "scryfallUri": "https://scryfall.com/card/wwk/99/explore?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/8/d8f81e8a-e309-4bac-81de-326756cd8901.jpg?1783942046",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/8/d8f81e8a-e309-4bac-81de-326756cd8901.jpg?1783942046",
+  "colorIdentity": [
+    "G"
+  ]
+}

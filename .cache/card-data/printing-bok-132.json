@@ -1,0 +1,16 @@
+{
+  "id": "27eaba1c-3137-4419-bf90-eb287a7c736e",
+  "name": "Lifegift",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{G}",
+  "set": "BOK",
+  "setName": "Betrayers of Kamigawa",
+  "collectorNumber": "132",
+  "releasedAt": "2005-02-04",
+  "scryfallUri": "https://scryfall.com/card/bok/132/lifegift?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/7/27eaba1c-3137-4419-bf90-eb287a7c736e.jpg?1783944183",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/7/27eaba1c-3137-4419-bf90-eb287a7c736e.jpg?1783944183",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "1b59533a-3e38-495d-873e-2f89fbd08494",
+  "name": "Sol Ring",
+  "typeLine": "Artifact",
+  "manaCost": "{1}",
+  "set": "C13",
+  "setName": "Commander 2013",
+  "collectorNumber": "259",
+  "releasedAt": "2013-11-01",
+  "scryfallUri": "https://scryfall.com/card/c13/259/sol-ring?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/b/1b59533a-3e38-495d-873e-2f89fbd08494.jpg?1783939636",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/b/1b59533a-3e38-495d-873e-2f89fbd08494.jpg?1783939636",
+  "colorIdentity": []
+}

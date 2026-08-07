@@ -1,0 +1,17 @@
+{
+  "id": "1c81a779-6b91-4de2-9065-d6821a787e7d",
+  "name": "Tear Asunder",
+  "typeLine": "Instant",
+  "manaCost": "{1}{G}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "241",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/241/tear-asunder?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/c/1c81a779-6b91-4de2-9065-d6821a787e7d.jpg?1783910659",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/c/1c81a779-6b91-4de2-9065-d6821a787e7d.jpg?1783910659",
+  "colorIdentity": [
+    "B",
+    "G"
+  ]
+}

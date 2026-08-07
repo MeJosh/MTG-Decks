@@ -1,0 +1,17 @@
+{
+  "id": "69be21b4-c613-47c6-ba57-f4785861af3e",
+  "name": "Stomping Ground",
+  "typeLine": "Land — Mountain Forest",
+  "manaCost": "",
+  "set": "EOE",
+  "setName": "Edge of Eternities",
+  "collectorNumber": "258",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoe/258/stomping-ground?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/9/69be21b4-c613-47c6-ba57-f4785861af3e.jpg?1783905913",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/9/69be21b4-c613-47c6-ba57-f4785861af3e.jpg?1783905913",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

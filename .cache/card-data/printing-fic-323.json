@@ -1,0 +1,17 @@
+{
+  "id": "dae88c31-77a5-40aa-84be-d74b4545a6ee",
+  "name": "Decimate",
+  "typeLine": "Sorcery",
+  "manaCost": "{2}{R}{G}",
+  "set": "FIC",
+  "setName": "Final Fantasy Commander",
+  "collectorNumber": "323",
+  "releasedAt": "2025-06-13",
+  "scryfallUri": "https://scryfall.com/card/fic/323/decimate?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/a/dae88c31-77a5-40aa-84be-d74b4545a6ee.jpg?1783906251",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/a/dae88c31-77a5-40aa-84be-d74b4545a6ee.jpg?1783906251",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

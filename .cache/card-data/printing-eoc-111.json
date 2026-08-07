@@ -1,0 +1,16 @@
+{
+  "id": "732c208b-cd9e-48a9-9b9d-aba63066ba53",
+  "name": "Titania, Protector of Argoth",
+  "typeLine": "Legendary Creature — Elemental",
+  "manaCost": "{3}{G}{G}",
+  "set": "EOC",
+  "setName": "Edge of Eternities Commander",
+  "collectorNumber": "111",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoc/111/titania-protector-of-argoth?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/3/732c208b-cd9e-48a9-9b9d-aba63066ba53.jpg?1783906029",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/3/732c208b-cd9e-48a9-9b9d-aba63066ba53.jpg?1783906029",
+  "colorIdentity": [
+    "G"
+  ]
+}

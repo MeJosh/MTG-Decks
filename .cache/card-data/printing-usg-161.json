@@ -1,0 +1,16 @@
+{
+  "id": "d1dd33a1-1603-4368-9c32-e4c9fd6ecd08",
+  "name": "Tainted Aether",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{B}{B}",
+  "set": "USG",
+  "setName": "Urza's Saga",
+  "collectorNumber": "161",
+  "releasedAt": "1998-10-12",
+  "scryfallUri": "https://scryfall.com/card/usg/161/tainted-aether?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/1/d1dd33a1-1603-4368-9c32-e4c9fd6ecd08.jpg?1783946337",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/1/d1dd33a1-1603-4368-9c32-e4c9fd6ecd08.jpg?1783946337",
+  "colorIdentity": [
+    "B"
+  ]
+}

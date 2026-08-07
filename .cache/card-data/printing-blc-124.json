@@ -1,0 +1,16 @@
+{
+  "id": "580bbd5b-795e-41fe-b061-579c42218670",
+  "name": "Tempt with Discovery",
+  "typeLine": "Sorcery",
+  "manaCost": "{3}{G}",
+  "set": "BLC",
+  "setName": "Bloomburrow Commander",
+  "collectorNumber": "124",
+  "releasedAt": "2024-08-02",
+  "scryfallUri": "https://scryfall.com/card/blc/124/tempt-with-discovery?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/5/8/580bbd5b-795e-41fe-b061-579c42218670.jpg?1783910697",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/5/8/580bbd5b-795e-41fe-b061-579c42218670.jpg?1783910697",
+  "colorIdentity": [
+    "G"
+  ]
+}

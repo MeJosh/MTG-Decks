@@ -1,0 +1,16 @@
+{
+  "id": "99add821-568b-4931-8525-a673e6cc8f65",
+  "name": "Pest Infestation",
+  "typeLine": "Sorcery",
+  "manaCost": "{X}{X}{G}",
+  "set": "EOC",
+  "setName": "Edge of Eternities Commander",
+  "collectorNumber": "103",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoc/103/pest-infestation?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/9/99add821-568b-4931-8525-a673e6cc8f65.jpg?1783906034",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/9/99add821-568b-4931-8525-a673e6cc8f65.jpg?1783906034",
+  "colorIdentity": [
+    "G"
+  ]
+}

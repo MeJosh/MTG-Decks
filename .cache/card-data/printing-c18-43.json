@@ -1,0 +1,18 @@
+{
+  "id": "213d6fb8-5624-4804-b263-51f339482754",
+  "name": "Lord Windgrace",
+  "typeLine": "Legendary Planeswalker — Windgrace",
+  "manaCost": "{2}{B}{R}{G}",
+  "set": "C18",
+  "setName": "Commander 2018",
+  "collectorNumber": "43",
+  "releasedAt": "2018-08-10",
+  "scryfallUri": "https://scryfall.com/card/c18/43/lord-windgrace?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/1/213d6fb8-5624-4804-b263-51f339482754.jpg?1783934329",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/1/213d6fb8-5624-4804-b263-51f339482754.jpg?1783934329",
+  "colorIdentity": [
+    "B",
+    "G",
+    "R"
+  ]
+}

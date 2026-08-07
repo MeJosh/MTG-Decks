@@ -1,0 +1,16 @@
+{
+  "id": "d771fc5d-b9a1-4637-8241-3f54616b64af",
+  "name": "Regrowth",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "MH1",
+  "setName": "Modern Horizons",
+  "collectorNumber": "175",
+  "releasedAt": "2019-06-14",
+  "scryfallUri": "https://scryfall.com/card/mh1/175/regrowth?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/7/d771fc5d-b9a1-4637-8241-3f54616b64af.jpg?1783933093",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/7/d771fc5d-b9a1-4637-8241-3f54616b64af.jpg?1783933093",
+  "colorIdentity": [
+    "G"
+  ]
+}

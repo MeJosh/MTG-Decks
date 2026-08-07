@@ -1,0 +1,16 @@
+{
+  "id": "1c5974dd-78fc-4bfb-8678-72041c797584",
+  "name": "Geode Rager",
+  "typeLine": "Creature — Elemental",
+  "manaCost": "{4}{R}{R}",
+  "set": "CLB",
+  "setName": "Commander Legends: Battle for Baldur's Gate",
+  "collectorNumber": "794",
+  "releasedAt": "2022-06-10",
+  "scryfallUri": "https://scryfall.com/card/clb/794/geode-rager?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/c/1c5974dd-78fc-4bfb-8678-72041c797584.jpg?1783922423",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/c/1c5974dd-78fc-4bfb-8678-72041c797584.jpg?1783922423",
+  "colorIdentity": [
+    "R"
+  ]
+}

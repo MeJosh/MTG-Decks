@@ -1,0 +1,16 @@
+{
+  "id": "afcb7cef-8aeb-4c84-88e9-6df17768e292",
+  "name": "Tranquil Thicket",
+  "typeLine": "Land",
+  "manaCost": "",
+  "set": "ONS",
+  "setName": "Onslaught",
+  "collectorNumber": "326",
+  "releasedAt": "2002-10-07",
+  "scryfallUri": "https://scryfall.com/card/ons/326/tranquil-thicket?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/f/afcb7cef-8aeb-4c84-88e9-6df17768e292.jpg?1783945026",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/f/afcb7cef-8aeb-4c84-88e9-6df17768e292.jpg?1783945026",
+  "colorIdentity": [
+    "G"
+  ]
+}

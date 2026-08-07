@@ -1,0 +1,17 @@
+{
+  "id": "777552e5-cc2d-460f-b26f-977c6ebcfc6b",
+  "name": "Omnath, Locus of Rage",
+  "typeLine": "Legendary Creature — Elemental",
+  "manaCost": "{3}{R}{R}{G}{G}",
+  "set": "EOC",
+  "setName": "Edge of Eternities Commander",
+  "collectorNumber": "123",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoc/123/omnath-locus-of-rage?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/7/7/777552e5-cc2d-460f-b26f-977c6ebcfc6b.jpg?1783906026",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/7/7/777552e5-cc2d-460f-b26f-977c6ebcfc6b.jpg?1783906026",
+  "colorIdentity": [
+    "G",
+    "R"
+  ]
+}

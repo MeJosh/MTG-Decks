@@ -1,0 +1,16 @@
+{
+  "id": "1c72229c-f3da-4e35-af79-14452efe581b",
+  "name": "Edge of Autumn",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "TSR",
+  "setName": "Time Spiral Remastered",
+  "collectorNumber": "201",
+  "releasedAt": "2021-03-19",
+  "scryfallUri": "https://scryfall.com/card/tsr/201/edge-of-autumn?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/1/c/1c72229c-f3da-4e35-af79-14452efe581b.jpg?1783927783",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/1/c/1c72229c-f3da-4e35-af79-14452efe581b.jpg?1783927783",
+  "colorIdentity": [
+    "G"
+  ]
+}

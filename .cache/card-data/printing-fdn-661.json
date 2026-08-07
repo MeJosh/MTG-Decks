@@ -1,0 +1,17 @@
+{
+  "id": "019e8d47-a086-4e9f-8130-8c3b2dc50179",
+  "name": "Maelstrom Pulse",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{B}{G}",
+  "set": "FDN",
+  "setName": "Foundations",
+  "collectorNumber": "661",
+  "releasedAt": "2024-11-15",
+  "scryfallUri": "https://scryfall.com/card/fdn/661/maelstrom-pulse?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/0/1/019e8d47-a086-4e9f-8130-8c3b2dc50179.jpg?1783908910",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/0/1/019e8d47-a086-4e9f-8130-8c3b2dc50179.jpg?1783908910",
+  "colorIdentity": [
+    "B",
+    "G"
+  ]
+}

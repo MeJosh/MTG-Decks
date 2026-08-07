@@ -1,0 +1,17 @@
+{
+  "id": "97cf4cd8-9cb5-482e-92ca-da657b410e48",
+  "name": "Gaze of Granite",
+  "typeLine": "Sorcery",
+  "manaCost": "{X}{B}{B}{G}",
+  "set": "EOC",
+  "setName": "Edge of Eternities Commander",
+  "collectorNumber": "116",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoc/116/gaze-of-granite?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/9/7/97cf4cd8-9cb5-482e-92ca-da657b410e48.jpg?1783906029",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/9/7/97cf4cd8-9cb5-482e-92ca-da657b410e48.jpg?1783906029",
+  "colorIdentity": [
+    "B",
+    "G"
+  ]
+}

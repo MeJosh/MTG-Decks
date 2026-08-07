@@ -1,0 +1,16 @@
+{
+  "id": "d089c2c1-e304-4f28-8700-5b9b3029bdbc",
+  "name": "Evolution Sage",
+  "typeLine": "Creature — Elf Druid",
+  "manaCost": "{2}{G}",
+  "set": "LCC",
+  "setName": "The Lost Caverns of Ixalan Commander",
+  "collectorNumber": "240",
+  "releasedAt": "2023-11-17",
+  "scryfallUri": "https://scryfall.com/card/lcc/240/evolution-sage?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/0/d089c2c1-e304-4f28-8700-5b9b3029bdbc.jpg?1783913859",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/0/d089c2c1-e304-4f28-8700-5b9b3029bdbc.jpg?1783913859",
+  "colorIdentity": [
+    "G"
+  ]
+}

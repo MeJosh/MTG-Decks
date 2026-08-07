@@ -1,0 +1,16 @@
+{
+  "id": "f96acfea-009a-4ac9-8746-64f65199024f",
+  "name": "Lethal Vapors",
+  "typeLine": "Enchantment",
+  "manaCost": "{2}{B}{B}",
+  "set": "SCG",
+  "setName": "Scourge",
+  "collectorNumber": "68",
+  "releasedAt": "2003-05-26",
+  "scryfallUri": "https://scryfall.com/card/scg/68/lethal-vapors?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/9/f96acfea-009a-4ac9-8746-64f65199024f.jpg?1783944879",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/9/f96acfea-009a-4ac9-8746-64f65199024f.jpg?1783944879",
+  "colorIdentity": [
+    "B"
+  ]
+}

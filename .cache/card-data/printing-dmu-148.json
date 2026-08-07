@@ -1,0 +1,16 @@
+{
+  "id": "25e5dc88-9573-4eaa-bd37-eb0dee4add03",
+  "name": "Thrill of Possibility",
+  "typeLine": "Instant",
+  "manaCost": "{1}{R}",
+  "set": "DMU",
+  "setName": "Dominaria United",
+  "collectorNumber": "148",
+  "releasedAt": "2022-09-09",
+  "scryfallUri": "https://scryfall.com/card/dmu/148/thrill-of-possibility?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/5/25e5dc88-9573-4eaa-bd37-eb0dee4add03.jpg?1783921308",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/5/25e5dc88-9573-4eaa-bd37-eb0dee4add03.jpg?1783921308",
+  "colorIdentity": [
+    "R"
+  ]
+}

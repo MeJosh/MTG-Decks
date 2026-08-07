@@ -1,0 +1,17 @@
+{
+  "id": "f1f6efcf-6ac3-4bf9-9bd2-d5c78a5defb3",
+  "name": "Windgrace's Judgment",
+  "typeLine": "Instant",
+  "manaCost": "{3}{B}{G}",
+  "set": "EOC",
+  "setName": "Edge of Eternities Commander",
+  "collectorNumber": "129",
+  "releasedAt": "2025-08-01",
+  "scryfallUri": "https://scryfall.com/card/eoc/129/windgraces-judgment?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/f/1/f1f6efcf-6ac3-4bf9-9bd2-d5c78a5defb3.jpg?1783906023",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/f/1/f1f6efcf-6ac3-4bf9-9bd2-d5c78a5defb3.jpg?1783906023",
+  "colorIdentity": [
+    "B",
+    "G"
+  ]
+}

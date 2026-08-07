@@ -1,0 +1,16 @@
+{
+  "id": "cdb6432f-3f56-4c92-b09a-2a5b64620c04",
+  "name": "Life from the Loam",
+  "typeLine": "Sorcery",
+  "manaCost": "{1}{G}",
+  "set": "TDC",
+  "setName": "Tarkir: Dragonstorm Commander",
+  "collectorNumber": "96",
+  "releasedAt": "2025-04-11",
+  "scryfallUri": "https://scryfall.com/card/tdc/96/life-from-the-loam?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/d/cdb6432f-3f56-4c92-b09a-2a5b64620c04.jpg?1783907137",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/d/cdb6432f-3f56-4c92-b09a-2a5b64620c04.jpg?1783907137",
+  "colorIdentity": [
+    "G"
+  ]
+}
