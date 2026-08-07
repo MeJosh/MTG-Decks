@@ -1,0 +1,16 @@
+---
+const allDecksHref = `${import.meta.env.BASE_URL}/all`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0;url=${allDecksHref}`} />
+    <link rel="canonical" href={allDecksHref} />
+    <title>Deck Library · MTG Decks</title>
+  </head>
+  <body>
+    <a href={allDecksHref}>Deck Library</a>
+  </body>
+</html>

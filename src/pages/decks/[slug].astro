@@ -15,12 +15,13 @@ const { Content } = await render(entry);
 const deck = await loadPublishedDeck(entry.data.decklist, entry.data.featuredCard);
 const deckSource = Buffer.from(deck.source, 'utf8').toString('base64');
 const deckFileUrl = `https://github.com/MeJosh/MTG-Decks/blob/main/decks/${encodeURIComponent(entry.data.decklist)}`;
+const formatHref = `${import.meta.env.BASE_URL}/${entry.data.format.toLocaleLowerCase('en-US')}`;
 ---
 
 <BaseLayout title={`${entry.data.title} · MTG Decks`}>
   <header class="deck-header">
     <div>
-      <p class="eyebrow">{entry.data.format}</p>
+      <a class="eyebrow eyebrow-link" href={formatHref}>{entry.data.format}</a>
       <h1>{entry.data.title}</h1>
     </div>
     <div class="deck-meta">

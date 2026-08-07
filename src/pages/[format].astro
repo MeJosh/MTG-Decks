@@ -30,6 +30,7 @@ const autocompleteCards = [...new Set(
     ...deck.companion.map(({ card }) => card.name),
   ]),
 )].sort((a, b) => a.localeCompare(b));
+const deckLibraryHref = `${import.meta.env.BASE_URL}/decks`;
 
 const manaColors = {
   W: { name: 'White', symbol: 'W' },
@@ -51,7 +52,11 @@ export async function getStaticPaths() {
 
 <BaseLayout title={selectedFormat ? `${selectedFormat[0]?.toUpperCase()}${selectedFormat.slice(1)} Decks · MTG Decks` : 'All Decks · MTG Decks'}>
   <header class="home-header">
-    <p class="eyebrow">Deck library</p>
+    {selectedFormat ? (
+      <a class="eyebrow eyebrow-link" href={deckLibraryHref}>Deck library</a>
+    ) : (
+      <p class="eyebrow">Deck library</p>
+    )}
     <h1>Decks worth keeping.</h1>
     <p>A small, Git-managed collection of Magic decks, built for quick reference now and deeper analysis later.</p>
   </header>
