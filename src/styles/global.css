@@ -88,6 +88,7 @@ button, input, textarea { font: inherit; }
 .primer pre[data-language="sideboard-out"]::before, .primer pre[data-language="sideboard-in"]::before { display: block; margin-bottom: .55rem; color: var(--muted); font-family: inherit; font-size: .68rem; font-weight: 750; letter-spacing: .1em; line-height: 1; text-transform: uppercase; }
 .primer pre[data-language="sideboard-out"]::before { content: "Out"; }
 .primer pre[data-language="sideboard-in"]::before { content: "In"; }
+.primer .matchup-content:has(> pre[data-language="sideboard-out"] + pre[data-language="sideboard-in"]) { display: grid; gap: .75rem; }
 @media (min-width: 40.01rem) {
   .primer .matchup-content:has(> pre[data-language="sideboard-out"] + pre[data-language="sideboard-in"]) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 }
