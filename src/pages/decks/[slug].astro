@@ -54,6 +54,42 @@ const formatHref = `${import.meta.env.BASE_URL}/${entry.data.format.toLocaleLowe
 </BaseLayout>
 
 <script>
+  for (const primer of document.querySelectorAll<HTMLElement>('.primer')) {
+    const sideboardingHeading = [...primer.querySelectorAll('h2')].find(
+      (heading) => heading.textContent?.trim().toLocaleLowerCase('en-US') === 'sideboarding',
+    );
+    if (!sideboardingHeading) continue;
+
+    let element = sideboardingHeading.nextElementSibling;
+    while (element && element.tagName !== 'H2') {
+      if (element.tagName !== 'H3') {
+        element = element.nextElementSibling;
+        continue;
+      }
+
+      const heading = element;
+      const matchup = document.createElement('details');
+      matchup.className = 'matchup';
+
+      const summary = document.createElement('summary');
+      summary.textContent = heading.textContent;
+      matchup.append(summary);
+
+      const content = document.createElement('div');
+      content.className = 'matchup-content';
+      let next = heading.nextElementSibling;
+      while (next && next.tagName !== 'H2' && next.tagName !== 'H3') {
+        const following = next.nextElementSibling;
+        content.append(next);
+        next = following;
+      }
+      matchup.append(content);
+
+      heading.replaceWith(matchup);
+      element = next;
+    }
+  }
+
   for (const actions of document.querySelectorAll<HTMLElement>('[data-deck-source]')) {
     const encodedSource = actions.dataset.deckSource ?? '';
     const source = new TextDecoder().decode(Uint8Array.from(atob(encodedSource), (byte) => byte.charCodeAt(0)));

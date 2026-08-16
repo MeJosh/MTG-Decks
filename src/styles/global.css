@@ -73,6 +73,24 @@ button, input, textarea { font: inherit; }
 .primer h2 { margin: 0 0 1.25rem; color: var(--ink); font-size: 1.65rem; letter-spacing: -.03em; }
 .primer h3 { color: var(--ink); }
 .primer a { color: var(--accent); }
+.primer .matchup { margin: .7rem 0; border: 1px solid var(--line); border-radius: .55rem; background: var(--surface-raised); }
+.primer .matchup summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 1rem; color: var(--ink); cursor: pointer; font-weight: 650; letter-spacing: -.015em; list-style: none; }
+.primer .matchup summary::-webkit-details-marker { display: none; }
+.primer .matchup summary::after { width: .55rem; height: .55rem; flex: none; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; content: ""; transform: rotate(45deg) translateY(-.15rem); transition: transform .18s ease; }
+.primer .matchup[open] summary { border-bottom: 1px solid var(--line); }
+.primer .matchup[open] summary::after { transform: rotate(225deg) translate(-.1rem, -.1rem); }
+.primer .matchup summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.primer .matchup-content { padding: 1rem; }
+.primer .matchup-content > :first-child { margin-top: 0; }
+.primer .matchup-content > :last-child { margin-bottom: 0; }
+.primer pre { overflow-x: auto; margin: 0; padding: .9rem 1rem; border-radius: .35rem; background: var(--surface); color: var(--soft); font-size: .88rem; line-height: 1.65; }
+.primer pre[data-language="sideboard-out"], .primer pre[data-language="sideboard-in"] { border: 1px solid var(--line); }
+.primer pre[data-language="sideboard-out"]::before, .primer pre[data-language="sideboard-in"]::before { display: block; margin-bottom: .55rem; color: var(--muted); font-family: inherit; font-size: .68rem; font-weight: 750; letter-spacing: .1em; line-height: 1; text-transform: uppercase; }
+.primer pre[data-language="sideboard-out"]::before { content: "Out"; }
+.primer pre[data-language="sideboard-in"]::before { content: "In"; }
+@media (min-width: 40.01rem) {
+  .primer .matchup-content:has(> pre[data-language="sideboard-out"] + pre[data-language="sideboard-in"]) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+}
 .home-header { max-width: 48rem; margin-bottom: clamp(1.5rem, 2.75vw, 2.5rem); }
 .home-header .eyebrow { display: inline-block; color: var(--accent); font-size: .7rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
 .eyebrow-link { text-decoration: none; text-underline-offset: .22em; }
