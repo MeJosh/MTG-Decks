@@ -1,0 +1,16 @@
+{
+  "id": "efb965a7-877a-4302-b507-25b0a9e32d9b",
+  "name": "Thoughtcast",
+  "typeLine": "Sorcery",
+  "manaCost": "{4}{U}",
+  "set": "MRD",
+  "setName": "Mirrodin",
+  "collectorNumber": "54",
+  "releasedAt": "2003-10-02",
+  "scryfallUri": "https://scryfall.com/card/mrd/54/thoughtcast?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/e/f/efb965a7-877a-4302-b507-25b0a9e32d9b.jpg?1783944550",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/e/f/efb965a7-877a-4302-b507-25b0a9e32d9b.jpg?1783944550",
+  "colorIdentity": [
+    "U"
+  ]
+}

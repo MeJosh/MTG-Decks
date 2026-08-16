@@ -1,0 +1,16 @@
+{
+  "id": "a7895890-a774-4c7c-9f15-78b8aadfd9ef",
+  "name": "Structural Distortion",
+  "typeLine": "Sorcery",
+  "manaCost": "{3}{R}",
+  "set": "SOI",
+  "setName": "Shadows over Innistrad",
+  "collectorNumber": "185",
+  "releasedAt": "2016-04-08",
+  "scryfallUri": "https://scryfall.com/card/soi/185/structural-distortion?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/a/7/a7895890-a774-4c7c-9f15-78b8aadfd9ef.jpg?1783937741",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/a/7/a7895890-a774-4c7c-9f15-78b8aadfd9ef.jpg?1783937741",
+  "colorIdentity": [
+    "R"
+  ]
+}

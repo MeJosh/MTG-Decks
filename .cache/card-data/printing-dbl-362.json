@@ -1,0 +1,16 @@
+{
+  "id": "3499687b-5dd3-4a0c-96a3-7db227abcaf2",
+  "name": "Blood Fountain",
+  "typeLine": "Artifact",
+  "manaCost": "{B}",
+  "set": "DBL",
+  "setName": "Innistrad: Double Feature",
+  "collectorNumber": "362",
+  "releasedAt": "2022-01-28",
+  "scryfallUri": "https://scryfall.com/card/dbl/362/blood-fountain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/4/3499687b-5dd3-4a0c-96a3-7db227abcaf2.jpg?1783924250",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/4/3499687b-5dd3-4a0c-96a3-7db227abcaf2.jpg?1783924250",
+  "colorIdentity": [
+    "B"
+  ]
+}

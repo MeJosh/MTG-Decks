@@ -1,0 +1,16 @@
+{
+  "id": "396f1cdf-712b-4518-a0e8-0039303dccdc",
+  "name": "Fiery Cannonade",
+  "typeLine": "Instant",
+  "manaCost": "{2}{R}",
+  "set": "CMR",
+  "setName": "Commander Legends",
+  "collectorNumber": "178",
+  "releasedAt": "2020-11-20",
+  "scryfallUri": "https://scryfall.com/card/cmr/178/fiery-cannonade?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/3/9/396f1cdf-712b-4518-a0e8-0039303dccdc.jpg?1783928815",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/3/9/396f1cdf-712b-4518-a0e8-0039303dccdc.jpg?1783928815",
+  "colorIdentity": [
+    "R"
+  ]
+}

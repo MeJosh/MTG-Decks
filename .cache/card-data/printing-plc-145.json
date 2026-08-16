@@ -1,0 +1,16 @@
+{
+  "id": "da2a65d6-0887-4fe8-a6e6-909208fddd90",
+  "name": "Essence Warden",
+  "typeLine": "Creature — Elf Shaman",
+  "manaCost": "{G}",
+  "set": "PLC",
+  "setName": "Planar Chaos",
+  "collectorNumber": "145",
+  "releasedAt": "2007-02-02",
+  "scryfallUri": "https://scryfall.com/card/plc/145/essence-warden?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/a/da2a65d6-0887-4fe8-a6e6-909208fddd90.jpg?1783943137",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/a/da2a65d6-0887-4fe8-a6e6-909208fddd90.jpg?1783943137",
+  "colorIdentity": [
+    "G"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "65689442-e679-4844-91a8-f6a39a7c1f9b",
+  "name": "Makeshift Munitions",
+  "typeLine": "Enchantment",
+  "manaCost": "{1}{R}",
+  "set": "XLN",
+  "setName": "Ixalan",
+  "collectorNumber": "151",
+  "releasedAt": "2017-09-29",
+  "scryfallUri": "https://scryfall.com/card/xln/151/makeshift-munitions?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/5/65689442-e679-4844-91a8-f6a39a7c1f9b.jpg?1783935743",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/5/65689442-e679-4844-91a8-f6a39a7c1f9b.jpg?1783935743",
+  "colorIdentity": [
+    "R"
+  ]
+}

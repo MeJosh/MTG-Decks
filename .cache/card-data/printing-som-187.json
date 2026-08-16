@@ -1,0 +1,16 @@
+{
+  "id": "603d217b-6375-46fc-992a-8dbd779da1e5",
+  "name": "Nihil Spellbomb",
+  "typeLine": "Artifact",
+  "manaCost": "{1}",
+  "set": "SOM",
+  "setName": "Scars of Mirrodin",
+  "collectorNumber": "187",
+  "releasedAt": "2010-10-01",
+  "scryfallUri": "https://scryfall.com/card/som/187/nihil-spellbomb?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/0/603d217b-6375-46fc-992a-8dbd779da1e5.jpg?1783941703",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/0/603d217b-6375-46fc-992a-8dbd779da1e5.jpg?1783941703",
+  "colorIdentity": [
+    "B"
+  ]
+}

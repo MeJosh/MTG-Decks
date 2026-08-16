@@ -1,0 +1,16 @@
+{
+  "id": "24517d9c-6cde-41e8-9e82-ee73f069379a",
+  "name": "Nest Invader",
+  "typeLine": "Creature — Eldrazi Drone",
+  "manaCost": "{1}{G}",
+  "set": "ROE",
+  "setName": "Rise of the Eldrazi",
+  "collectorNumber": "201",
+  "releasedAt": "2010-04-23",
+  "scryfallUri": "https://scryfall.com/card/roe/201/nest-invader?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/4/24517d9c-6cde-41e8-9e82-ee73f069379a.jpg?1783941961",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/4/24517d9c-6cde-41e8-9e82-ee73f069379a.jpg?1783941961",
+  "colorIdentity": [
+    "G"
+  ]
+}

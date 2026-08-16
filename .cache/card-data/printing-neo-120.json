@@ -1,0 +1,16 @@
+{
+  "id": "6338942d-d650-4571-8ec6-4d658792c53e",
+  "name": "Reckoner's Bargain",
+  "typeLine": "Instant",
+  "manaCost": "{1}{B}",
+  "set": "NEO",
+  "setName": "Kamigawa: Neon Dynasty",
+  "collectorNumber": "120",
+  "releasedAt": "2022-02-18",
+  "scryfallUri": "https://scryfall.com/card/neo/120/reckoners-bargain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/6/3/6338942d-d650-4571-8ec6-4d658792c53e.jpg?1783923877",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/6/3/6338942d-d650-4571-8ec6-4d658792c53e.jpg?1783923877",
+  "colorIdentity": [
+    "B"
+  ]
+}

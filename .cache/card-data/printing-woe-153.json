@@ -1,0 +1,16 @@
+{
+  "id": "b3d6027c-813f-46df-95b4-e2e305a67620",
+  "name": "Torch the Tower",
+  "typeLine": "Instant",
+  "manaCost": "{R}",
+  "set": "WOE",
+  "setName": "Wilds of Eldraine",
+  "collectorNumber": "153",
+  "releasedAt": "2023-09-08",
+  "scryfallUri": "https://scryfall.com/card/woe/153/torch-the-tower?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/b/3/b3d6027c-813f-46df-95b4-e2e305a67620.jpg?1783915088",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/b/3/b3d6027c-813f-46df-95b4-e2e305a67620.jpg?1783915088",
+  "colorIdentity": [
+    "R"
+  ]
+}

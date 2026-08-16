@@ -1,0 +1,16 @@
+{
+  "id": "ccd3afb3-5574-4f2d-adbe-969a428f1c63",
+  "name": "Snow-Covered Mountain",
+  "typeLine": "Basic Snow Land — Mountain",
+  "manaCost": "",
+  "set": "ICE",
+  "setName": "Ice Age",
+  "collectorNumber": "379",
+  "releasedAt": "1995-06-03",
+  "scryfallUri": "https://scryfall.com/card/ice/379/snow-covered-mountain?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/c/c/ccd3afb3-5574-4f2d-adbe-969a428f1c63.jpg?1783947446",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/c/c/ccd3afb3-5574-4f2d-adbe-969a428f1c63.jpg?1783947446",
+  "colorIdentity": [
+    "R"
+  ]
+}

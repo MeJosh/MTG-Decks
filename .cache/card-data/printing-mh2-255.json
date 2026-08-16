@@ -1,0 +1,17 @@
+{
+  "id": "d80dc025-c2c4-48c2-8354-7d9ddb430eb9",
+  "name": "Silverbluff Bridge",
+  "typeLine": "Artifact Land",
+  "manaCost": "",
+  "set": "MH2",
+  "setName": "Modern Horizons 2",
+  "collectorNumber": "255",
+  "releasedAt": "2021-06-18",
+  "scryfallUri": "https://scryfall.com/card/mh2/255/silverbluff-bridge?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/d/8/d80dc025-c2c4-48c2-8354-7d9ddb430eb9.jpg?1783926793",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/d/8/d80dc025-c2c4-48c2-8354-7d9ddb430eb9.jpg?1783926793",
+  "colorIdentity": [
+    "R",
+    "U"
+  ]
+}

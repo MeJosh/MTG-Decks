@@ -1,29 +1,31 @@
 MAINBOARD:
-4 Thoughtcast (PLST) MM2-64
-4 Myr Enforcer (MMA) 209
 4 Galvanic Blast (SOM) 91
+4 Myr Enforcer (MRD) 211
+4 Thoughtcast (MRD) 54
 4 Vault of Whispers (MRD) 286
 4 Drossforge Bridge (MH2) 246
 4 Mistvault Bridge (MH2) 249
 4 Refurbished Familiar (MH3) 105
-4 Reckoner's Bargain (PLST) NEO-120
-4 Utrom Monitor (TMC) 113
-1 Makeshift Munitions (JMP) 348
-1 Fanatical Offering (LCI) 105
-1 Cryogen Relic (EOE) 52
-1 Sewer-veillance Cam (TMT) 53
-3 Nihil Spellbomb (A25) 226
+3 Nihil Spellbomb (SOM) 187
+3 Great Furnace (MRD) 282
 3 Krark-Clan Shaman (MRD) 98
-3 Ichor Wellspring (BRC) 143
-3 Silverbluff Bridge (EOC) 180
-2 Great Furnace (C18) 250
-2 Toxin Analysis (MKM) 107
-2 Blood Fountain (J25) 407
-2 Seat of the Synod (J25) 773
+3 Utrom Monitor (TMC) 113
+1 Makeshift Munitions (XLN) 151
+1 Kenku Artificer (CLB) 80
+1 Fanatical Offering (LCI) 105
+1 Toxin Analysis (MKM) 107
+2 Seat of the Synod (MRD) 283
+2 Blood Fountain (DBL) 362
+2 Torch the Tower (WOE) 153
+2 Silverbluff Bridge (MH2) 255
+4 Reckoner's Bargain (NEO) 120
+4 Ichor Wellspring (BRR) 21
 
 SIDEBOARD:
-4 Blue Elemental Blast (4ED) 63
+1 Blue Elemental Blast (4ED) 63
+1 Krark-Clan Shaman (MRD) 98
+1 Kenku Artificer (CLB) 80
 4 Red Elemental Blast (4ED) 218
-2 Kenku Artificer (CLB) 80
+4 Hydroblast (ICE) 72
+2 Extract a Confession (MKM) 84
 2 Unexpected Fangs (PLST) IKO-102
-3 Extract a Confession (MKM) 84

@@ -1,0 +1,16 @@
+{
+  "id": "2877281d-c85d-4f32-b40d-828b93c4ee8e",
+  "name": "Great Furnace",
+  "typeLine": "Artifact Land",
+  "manaCost": "",
+  "set": "MRD",
+  "setName": "Mirrodin",
+  "collectorNumber": "282",
+  "releasedAt": "2003-10-02",
+  "scryfallUri": "https://scryfall.com/card/mrd/282/great-furnace?utm_source=api",
+  "image": "https://cards.scryfall.io/normal/front/2/8/2877281d-c85d-4f32-b40d-828b93c4ee8e.jpg?1783944493",
+  "artCrop": "https://cards.scryfall.io/art_crop/front/2/8/2877281d-c85d-4f32-b40d-828b93c4ee8e.jpg?1783944493",
+  "colorIdentity": [
+    "R"
+  ]
+}

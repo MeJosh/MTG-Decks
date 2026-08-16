@@ -19,6 +19,7 @@ MAINBOARD:
 1 Rakdos Carnarium (DIS) 178
 1 Lethal Vapors (SCG) 68
 1 Hull Breach (PLS) 111
+1 Summer Bloom (VIS) 122
 1 Gateway Plaza (WAR) 246
 1 Regrowth (MH1) 175
 1 Creeping Corrosion (MBS) 78
@@ -31,6 +32,9 @@ MAINBOARD:
 1 Barren Moor (ONS) 312
 1 Forgotten Cave (ONS) 317
 1 Tranquil Thicket (ONS) 326
+4 Forest (UNH) 140
+3 Mountain (UNH) 139
+2 Swamp (UNH) 138
 1 Lifegift (BOK) 132
 1 Demonic Collusion (TSP) 103
 1 Bojuka Bog (WWK) 132
@@ -42,7 +46,7 @@ MAINBOARD:
 1 Urborg, Tomb of Yawgmoth (PLC) 165
 1 Gruul Turf (GPT) 158
 1 Moment's Peace (ODY) 251
-1 Summer Bloom (6ED) 255
+1 Valakut Exploration (PZNR) 175s
 1 Rings of Brighthearth (CMR) 335
 1 Edge of Autumn (TSR) 201
 1 Yavimaya, Cradle of Growth (MH2) 261
@@ -78,6 +82,7 @@ MAINBOARD:
 1 Tear Asunder (BLC) 241
 1 Chaos Warp (DSC) 162
 1 Maelstrom Pulse (FDN) 661
+1 Maze's End (FDN) 727
 1 Faithless Looting (TDC) 213
 1 Life from the Loam (TDC) 96
 1 Rise of the Dark Realms (FIC) 283
@@ -90,8 +95,3 @@ MAINBOARD:
 1 Omnath, Locus of Rage (EOC) 123
 1 Gaze of Granite (EOC) 116
 1 Chain Reaction (EOC) 87
-4 Forest (UNH) 140
-3 Mountain (UNH) 139
-2 Swamp (UNH) 138
-1 Valakut Exploration (PZNR) 175s
-1 Maze's End (FDN) 727
